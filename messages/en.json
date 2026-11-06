@@ -337,6 +337,61 @@
         "ctaPrimary": "Start customizing in the Trip Planner",
         "ctaSecondary": "Browse trip ideas"
     },
+    "experienceDetail": {
+        "backToExperiences": "Back to Experiences",
+        "durationLabel": "Duration",
+        "breadcrumb": "Breadcrumb",
+        "home": "Home",
+        "experiences": "Experiences",
+        "quickFacts": "Quick facts",
+        "addToTrip": "Add to my trip",
+        "savedToTrip": "Saved to my trip",
+        "addShort": "Add to trip",
+        "savedShort": "Saved",
+        "facts": {
+            "duration": "Typical duration",
+            "effort": "Activity level",
+            "elevation": "Elevation",
+            "location": "Location",
+            "bestFor": "Best suited for"
+        },
+        "about": {
+            "eyebrow": "Overview",
+            "heading": "About this experience"
+        },
+        "expect": {
+            "eyebrow": "On the day",
+            "heading": "What to expect"
+        },
+        "notes": {
+            "eyebrow": "Practical logistics",
+            "heading": "Field notes"
+        },
+        "tip": {
+            "eyebrow": "Insider tip"
+        },
+        "plan": {
+            "eyebrow": "Itinerary builder",
+            "heading": "Make this part of your Nuwara Eliya journey",
+            "text": "Save it to your trip now and build a day plan around it later.",
+            "planAround": "Plan itinerary around this",
+            "note": "Nothing to book or pay here. Saved experiences stay in this browser."
+        },
+        "ask": {
+            "heading": "Ask an Insider",
+            "text": "Not sure how this fits your trip? Ask before you plan.",
+            "cta": "Request Local Assistance"
+        },
+        "location": {
+            "eyebrow": "Location",
+            "openInMaps": "Open in Maps"
+        },
+        "nearby": {
+            "eyebrow": "Continue the day",
+            "heading": "Pairings & nearby",
+            "viewAll": "View all experiences"
+        }
+    },
     "footer": {
         "logoTitle": "Nuwara Insider",
         "tagline": "Discover Nuwara Eliya like a local. Plan a trip that feels like yours.",
@@ -360,5 +415,800 @@
         "region": "Little England, Sri Lanka",
         "followHeading": "Follow Us",
         "followOn": "Nuwara Insider on {platform} (opens in a new tab)"
+    },
+    "termsPage": {
+        "crumbSection": "Legal",
+        "title": "Terms of use",
+        "updated": "Last updated 1 November 2026",
+        "intro": "These terms explain what you can expect from Nuwara Insider and what we ask of you. They are short on purpose.",
+        "summaryHeading": "In short",
+        "summary": [
+            "This site gives travel advice. It does not sell, book or arrange anything.",
+            "Times, distances and conditions are estimates, so check before you go.",
+            "Advice from Ask an Insider is given in good faith. It is not professional advice.",
+            "Outdoor travel carries risk, and the decisions on the day remain yours."
+        ],
+        "contentsLabel": "On this page",
+        "sections": [
+            {
+                "id": "what-this-site-is",
+                "title": "What this site is",
+                "blocks": [
+                    "Nuwara Insider is a guide and planner for visitors to Nuwara Eliya in Sri Lanka. It offers descriptions of places, ready-made trip ideas, travel guides, a trip planner and a way to ask a question. It is for your personal trip planning."
+                ]
+            },
+            {
+                "id": "no-bookings",
+                "title": "No bookings or payments",
+                "blocks": [
+                    "You cannot book, reserve or pay for anything on this site. The times in a plan are suggestions about when a place suits you, not reservations. We do not arrange transport, stays, guides or tickets.",
+                    "If you decide to use a driver, hotel, guide or any other service, that arrangement is between you and that provider."
+                ]
+            },
+            {
+                "id": "plans-and-estimates",
+                "title": "Plans and estimates",
+                "blocks": [
+                    "Itineraries are built from fixed rules and the answers you give. Drive times, visit lengths and heights are estimates. Weather, road conditions, opening hours, entry fees and rules at parks and estates can change without notice, so please check them before you travel.",
+                    "Mountain weather in particular can change quickly. We cannot promise clear skies, open roads or access to any place on a given day."
+                ]
+            },
+            {
+                "id": "your-safety",
+                "title": "Your safety and your choices",
+                "blocks": [
+                    "Walking, hiking, early starts and mountain roads carry real risk. You are responsible for judging whether an outing suits your health, fitness, group and the conditions on the day. Follow the instructions of park, estate and local staff.",
+                    "Where a place is marked as demanding, take that seriously. Turning back is always a good plan."
+                ]
+            },
+            {
+                "id": "ask-an-insider",
+                "title": "Ask an Insider",
+                "blocks": [
+                    "Replies are local advice given in good faith. They are not medical, legal or other professional advice, and they depend on what you tell us and on conditions that change.",
+                    "There is no fixed response time, and we may decline to answer a question. How we handle what you send is described in the privacy page."
+                ]
+            },
+            {
+                "id": "links-and-content",
+                "title": "Links and content",
+                "blocks": [
+                    "Some links lead to other websites, such as Google Maps. We do not control those sites and are not responsible for them.",
+                    "The text and design of this site belong to Nuwara Insider, and some photographs belong to their owners. You are welcome to use the site and share links to it. Please ask us before republishing whole pages or photographs.",
+                    "Please do not misuse the site, or send it anything unlawful, abusive or misleading. We may block misuse."
+                ]
+            },
+            {
+                "id": "limits-and-changes",
+                "title": "Limits and changes",
+                "blocks": [
+                    "We take care to keep the information here accurate, but we cannot promise that it is complete or up to date. To the extent the law allows, we are not responsible for losses that come from relying on it. Nothing in these terms takes away rights you have under the law.",
+                    "We may change the site or these terms. The date at the top shows when this page last changed. Questions can go through Ask an Insider."
+                ]
+            }
+        ],
+        "contact": {
+            "heading": "Questions about these terms?",
+            "text": "Send them through Ask an Insider and a person will read them.",
+            "cta": "Ask an Insider"
+        },
+        "other": "Read the privacy page"
+    },
+    "privacyPage": {
+        "crumbSection": "Legal",
+        "title": "Privacy",
+        "updated": "Last updated 1 November 2026",
+        "intro": "This page explains, in plain language, what Nuwara Insider keeps about you and what it does not. The short version is that we ask for very little.",
+        "summaryHeading": "In short",
+        "summary": [
+            "Your planner answers and saved places stay in your own browser.",
+            "A question you send through Ask an Insider reaches us by email, and we use it only to answer you.",
+            "We do not use analytics or advertising trackers on this site.",
+            "There are no accounts, and nothing on this site takes a payment."
+        ],
+        "contentsLabel": "On this page",
+        "sections": [
+            {
+                "id": "what-you-send",
+                "title": "What you send us",
+                "blocks": [
+                    "The only time you send us information is when you use Ask an Insider. The form asks for:",
+                    [
+                        "your question and the topic it is about",
+                        "an email address, a WhatsApp number, or both, so we can reply",
+                        "your travel dates, if you choose to give them",
+                        "any of three optional notes about your trip: an infant or toddler, motion sickness on winding roads, or a slower walking pace"
+                    ],
+                    "Please do not include anything more sensitive than you need to. The optional notes are there so we can answer well, and you can leave them blank."
+                ]
+            },
+            {
+                "id": "on-your-device",
+                "title": "What stays on your device",
+                "blocks": [
+                    "The trip planner and the saved-places list work without an account. Your answers, your planner draft and the places you save are kept in your browser's local storage on your own device. We do not receive them and cannot see them. Clearing your browser data removes them.",
+                    "When you open a finished itinerary, the answers that produced it are written into the link itself, such as the number of days and your interests. If you share that link, the person who opens it can see those answers. The link does not contain your name or contact details."
+                ]
+            },
+            {
+                "id": "how-we-use-it",
+                "title": "How we use it",
+                "blocks": [
+                    "We use what you send through Ask an Insider only to read your question and reply to you. Your message reaches us as an email. We do not add you to a mailing list, and we do not sell your details.",
+                    "The planner and the saved list never leave your browser, so there is nothing for us to use there."
+                ]
+            },
+            {
+                "id": "other-companies",
+                "title": "Other companies involved",
+                "blocks": [
+                    "A few outside services touch the site, and you should know about them:",
+                    [
+                        "Email: your question travels through our email service so that it can reach us.",
+                        "Hosting: the server that delivers this site may keep standard logs, such as the pages requested and the visitor's IP address, for security and to keep the site running.",
+                        "Photos: some photographs on this site are currently loaded directly from Unsplash and Google servers, so your browser contacts those companies when a page with those photos opens. We are replacing them with our own photographs.",
+                        "Maps: a place's location opens in Google Maps only if you click the link. Nothing is sent to Google until you do."
+                    ]
+                ]
+            },
+            {
+                "id": "cookies",
+                "title": "Cookies and tracking",
+                "blocks": [
+                    "We do not use analytics, advertising or tracking cookies, and we do not build a profile of you.",
+                    "The site may remember your language choice in a small cookie so that it opens in the right language. It does not identify you."
+                ]
+            },
+            {
+                "id": "keeping-deleting",
+                "title": "Keeping and deleting",
+                "blocks": [
+                    "We keep your question and our reply only as long as needed to answer you and follow up. If you would like them deleted, tell us through Ask an Insider and we will delete them.",
+                    "Because planner answers and saved places are stored only on your device, you can delete them yourself by clearing this site's data in your browser settings."
+                ]
+            },
+            {
+                "id": "contact",
+                "title": "Contact",
+                "blocks": [
+                    "Questions about this page, or a request to see or delete what you have sent us, can go through Ask an Insider. Choose the topic Something else."
+                ]
+            }
+        ],
+        "contact": {
+            "heading": "Questions about this page?",
+            "text": "Send them through Ask an Insider and a person will read them.",
+            "cta": "Ask an Insider"
+        },
+        "other": "Read the terms of use"
+    },
+    "askInsiderPage": {
+        "crumbSection": "Ask an Insider",
+        "crumbPlace": "Nuwara Eliya",
+        "headingLead": "Ask a local",
+        "headingAccent": "before you plan.",
+        "subheading": "Roads, weather, tea estates, pacing for the family. Send a question and get a straight answer from someone who knows the area.",
+        "expect": {
+            "heading": "What to expect",
+            "steps": {
+                "send": {
+                    "title": "Send your question",
+                    "text": "Pick a topic and tell us what you are trying to work out. Travel dates help, but they are optional."
+                },
+                "read": {
+                    "title": "A person reads it",
+                    "text": "Your message is read by a person, not a chatbot."
+                },
+                "reply": {
+                    "title": "You get a reply",
+                    "text": "We reply to the email or WhatsApp number you leave. There is no fixed response time, so ask early if your dates are close."
+                }
+            }
+        },
+        "scope": {
+            "heading": "Advice only",
+            "text": "We do not take bookings, reservations or payments. This is a place to ask, not to buy."
+        },
+        "planner": {
+            "heading": "Prefer to start with a plan?",
+            "text": "Answer a few short questions and get a day-by-day itinerary. You can still ask us about it afterwards.",
+            "cta": "Plan my trip"
+        }
+    },
+    "askInsiderForm": {
+        "heading": "Send your question",
+        "intro": "The more detail you give, the more useful the answer. Nothing here is a booking.",
+        "optional": "(optional)",
+        "topic": {
+            "legend": "What is it about?"
+        },
+        "topics": {
+            "roads-weather": "Roads and weather",
+            "estates-factories": "Tea estates and factories",
+            "places-heritage": "Heritage and places",
+            "pacing": "Pacing for families or older travelers",
+            "nature-quiet": "Quiet places and nature",
+            "itinerary-help": "Help with my itinerary",
+            "broken-link": "Report a broken link",
+            "other": "Something else"
+        },
+        "message": {
+            "label": "Your question",
+            "placeholder": "For example: we arrive by train from Kandy and want to see Horton Plains. Is one early morning enough?",
+            "counter": "{count} / {max}"
+        },
+        "dates": {
+            "label": "Travel dates",
+            "placeholder": "Mid-December, or 12 to 15 Dec"
+        },
+        "contact": {
+            "legend": "How should we reply?",
+            "hint": "Give an email, a WhatsApp number, or both."
+        },
+        "email": {
+            "label": "Email",
+            "placeholder": "name@example.com"
+        },
+        "whatsapp": {
+            "label": "WhatsApp number",
+            "placeholder": "+94 77 123 4567",
+            "hint": "Include the country code."
+        },
+        "needs": {
+            "legend": "Plan around",
+            "hint": "Tick anything we should keep in mind when we answer. Optional.",
+            "infant-toddler": "Travelling with an infant or toddler",
+            "motion-sensitivity": "Motion sickness on winding roads",
+            "slower-walking": "Slower walking pace"
+        },
+        "errors": {
+            "required": "This field is required.",
+            "invalid": "That does not look right. Please check it and try again.",
+            "tooShort": "Please write at least {min} characters.",
+            "tooLong": "Please keep this under {max} characters.",
+            "contact": "Add an email or a WhatsApp number so we can reply."
+        },
+        "submit": "Send question",
+        "sending": "Sending",
+        "privacyNote": "We only use your details to answer this question. Read the <link>privacy page</link>.",
+        "failed": {
+            "heading": "That did not send",
+            "text": "Please try again in a moment. What you wrote is still here."
+        },
+        "success": {
+            "heading": "Question sent",
+            "text": "Thank you. We have your question and will reply to the email or WhatsApp number you gave. Replies are not instant, so please allow some time.",
+            "again": "Ask another question",
+            "guides": "Read the guides"
+        }
+    },
+    "guideDetail": {
+        "backToGuides": "Back to Guides",
+        "breadcrumb": "Breadcrumb",
+        "home": "Home",
+        "guides": "Travel Guides",
+        "plan": {
+            "eyebrow": "Next step",
+            "heading": "Turn this advice into a plan",
+            "text": "Use what you have read to build a day-by-day itinerary that fits your dates and pace.",
+            "cta": "Open the Trip Planner",
+            "ask": "Or ask a local"
+        },
+        "related": {
+            "eyebrow": "Keep reading",
+            "heading": "More guides",
+            "viewAll": "All guides"
+        }
+    },
+    "guidesPage": {
+        "eyebrow": "Field notes & practical advice",
+        "heading": "All Guides",
+        "subheading": "The practical side of the trip, written by someone who lives here.",
+        "readGuide": "Read Guide",
+        "filtersLabel": "Filter guides by topic",
+        "allTopics": "All guides ({count})",
+        "moreEyebrow": "The library",
+        "moreHeading": "More guides",
+        "showing": "{count, plural, one {Showing # guide} other {Showing # guides}}",
+        "crumbSection": "Travel Guides",
+        "crumbPlace": "Nuwara Eliya & Central Highlands",
+        "count": "{count, plural, one {# guide} other {# guides}}",
+        "headingLead": "Practical advice for",
+        "headingAccent": "the high country.",
+        "stats": {
+            "guidesTitle": "{count, plural, one {# in-depth guide} other {# in-depth guides}}",
+            "guidesText": "Written from local experience",
+            "topicsTitle": "{count, plural, one {# topic} other {# topics}}",
+            "topicsText": "Planning, packing, getting there and more",
+            "minutesTitle": "{count} min of reading",
+            "minutesText": "Worth reading before you travel"
+        },
+        "ctaEyebrow": "Route customization",
+        "ctaHeading": "Want these guides turned into a plan for your trip?",
+        "ctaText": "Match where you are staying, your pace and the hill-country weather in a day-by-day itinerary, instead of juggling separate notes.",
+        "ctaPrimary": "Launch Itinerary Planner",
+        "ctaSecondary": "Request Local Assistance"
+    },
+    "aboutPage": {
+        "crumbSection": "About",
+        "crumbPlace": "Nuwara Insider",
+        "headingLead": "Honest advice for",
+        "headingAccent": "the high country.",
+        "subheading": "Nuwara Insider is a digital local travel consultant for Nuwara Eliya. It helps independent travelers decide where to go, in what order and when, without selling them a hotel or a tour.",
+        "mosaic": {
+            "label": "Nuwara Eliya",
+            "place": "Sri Lanka's hill country"
+        },
+        "principles": {
+            "eyebrow": "How we think",
+            "heading": "Four ideas behind every recommendation",
+            "items": {
+                "pacing": {
+                    "title": "Mountain roads are slow",
+                    "text": "Distances look short on a map and take much longer on winding hill roads. Plans here have fewer stops and more time between them."
+                },
+                "mornings": {
+                    "title": "Mornings come first",
+                    "text": "Mornings are usually the clearest part of the day, and mist tends to build later. Each place has a best time of day, and the planner orders every day around it. It also flags the wetter months."
+                },
+                "advice": {
+                    "title": "Advice, not sales",
+                    "text": "There is nothing to book, reserve or pay for on this site. It is a place to decide and plan, then go."
+                },
+                "estimates": {
+                    "title": "Estimates, said plainly",
+                    "text": "Drive times and visit lengths are estimates, not promises. We say so on every plan and refine them as we learn more."
+                }
+            }
+        },
+        "numbers": {
+            "eyebrow": "The site so far",
+            "heading": "Measured in altitudes and honest detail",
+            "caption": "Counted from the site's own data",
+            "items": {
+                "elevation": {
+                    "value": "{min, number}–{max, number} m",
+                    "label": "Elevation range",
+                    "text": "The spread between the lowest and the highest place on the site."
+                },
+                "experiences": {
+                    "label": "Experiences",
+                    "text": "Places and outings, each with a best time of day, an effort level and a link to open in maps."
+                },
+                "tripIdeas": {
+                    "label": "Trip ideas",
+                    "text": "Ready-made routes you can open in the planner and change to suit you."
+                },
+                "guides": {
+                    "label": "Travel guides",
+                    "text": "Practical reading on weather, getting there, what to pack and more."
+                }
+            }
+        },
+        "planner": {
+            "eyebrow": "How the planner works",
+            "heading": "A plan built from fixed rules",
+            "intro": "Answer a few questions and the planner builds a day-by-day itinerary. It follows set rules, not AI, so the same answers always give the same plan, and a shared link shows exactly what you saw.",
+            "cta": "Try the planner",
+            "rules": {
+                "pace": {
+                    "title": "Your pace sets the day",
+                    "text": "A relaxed pace means fewer stops and later starts. An active pace fits more in and can begin at dawn."
+                },
+                "party": {
+                    "title": "Who is travelling matters",
+                    "text": "Demanding outings are left out for families and for travelers who want a relaxed pace, and the plan tells you what was left out and why."
+                },
+                "transit": {
+                    "title": "How you get around changes the plan",
+                    "text": "Far places such as Horton Plains need a car, so they are left out if you travel by train and local transport. Drive times run longer on that route and when you drive yourself."
+                },
+                "month": {
+                    "title": "The month of your trip counts",
+                    "text": "May to September are treated as the wetter months, so rain-sensitive stops are ranked lower and the plan says so."
+                },
+                "saved": {
+                    "title": "Places you save stay in",
+                    "text": "Anything you save is always included. If it cannot fit, the plan tells you instead of quietly dropping it."
+                }
+            }
+        },
+        "cta": {
+            "eyebrow": "Next step",
+            "heading": "Start with a plan, or just ask.",
+            "text": "Answer a few questions to get a day-by-day itinerary, or send a question to a local first.",
+            "plan": "Plan my trip",
+            "ask": "Ask an Insider",
+            "ideas": "Browse trip ideas"
+        }
+    },
+    "tripIdeasPage": {
+        "eyebrow": "Trip Ideas",
+        "heading": "All Trip Ideas",
+        "subheading": "Whole itineraries, not a list of things to sort through yourself. Pick the one closest to your trip and adjust from there.",
+        "viewItinerary": "View Itinerary",
+        "crumbSection": "Curated Itineraries",
+        "crumbPlace": "Nuwara Eliya & Highlands",
+        "count": "{count, plural, one {# trip idea} other {# trip ideas}}",
+        "headingLead": "Pick a trip that",
+        "headingAccent": "already makes sense.",
+        "ctaHeading": "Want to adjust a trip for your dates and style?",
+        "ctaText": "Start from any idea above and shape it around your dates, pace and interests in the planner.",
+        "ctaPrimary": "Start customizing in the Trip Planner",
+        "ctaSecondary": "Browse experiences"
+    },
+    "tripIdeaDetail": {
+        "backToTripIdeas": "Back to Trip Ideas",
+        "day": "Day",
+        "highlightsLabel": "What this trip covers",
+        "breadcrumb": "Breadcrumb",
+        "home": "Home",
+        "tripIdeas": "Trip Ideas",
+        "quickFacts": "Trip at a glance",
+        "facts": {
+            "duration": "Duration",
+            "days": "Day by day",
+            "experiences": "Experiences included"
+        },
+        "daysValue": "{count, plural, one {# day} other {# days}}",
+        "experiencesValue": "{count, plural, one {# experience} other {# experiences}}",
+        "about": {
+            "eyebrow": "Overview",
+            "heading": "About this trip"
+        },
+        "itinerary": {
+            "eyebrow": "The route",
+            "heading": "Day by day"
+        },
+        "plan": {
+            "cta": "Customize in Trip Planner",
+            "note": "Time slots in the planner are preferences, not bookings."
+        },
+        "pack": {
+            "heading": "What to pack",
+            "text": "Hill-country weather changes quickly. See what is actually worth carrying.",
+            "cta": "Read the packing guide"
+        },
+        "cta": {
+            "heading": "Want to customize this trip for your dates and travel style?",
+            "text": "Use this itinerary as a starting point and adjust it in the planner, or ask for local help.",
+            "primary": "Customize in Trip Planner",
+            "secondary": "Request Local Assistance"
+        }
+    },
+    "planner": {
+        "progress": {
+            "label": "Questionnaire progress",
+            "stepOf": "Step {current} of {total}"
+        },
+        "selections": {
+            "label": "Your selections so far",
+            "edit": "Edit {step}"
+        },
+        "nav": {
+            "back": "Previous step",
+            "backTo": "Back to {step}",
+            "exit": "Exit planner",
+            "continue": "Continue",
+            "continueTo": "Continue to {step}",
+            "finish": "Build my itinerary",
+            "nextUp": "Step {number} is next: {step}",
+            "lastStep": "Last step",
+            "startOver": "Start over"
+        },
+        "tipTitle": "Planning note",
+        "interestsSelected": "{count} of {total} selected",
+        "chips": {
+            "format": "{step}: {value}",
+            "interests": "{count, plural, one {# interest} other {# interests}}"
+        },
+        "reassurance": "No sign-up or payment needed. You can change any answer and rebuild your itinerary at any time.",
+        "savedNote": "{count, plural, one {Your # saved experience will be included in the plan.} other {Your # saved experiences will be included in the plan.}}",
+        "steps": {
+            "days": {
+                "label": "Length",
+                "eyebrow": "Trip length",
+                "title": "How many days will you spend in Nuwara Eliya?",
+                "text": "Choose the number of days you want to fill with experiences."
+            },
+            "party": {
+                "label": "Party",
+                "eyebrow": "Who is travelling",
+                "title": "Who is coming with you?",
+                "text": "Families get gentler days, with no demanding experiences and no dawn starts."
+            },
+            "month": {
+                "label": "When",
+                "eyebrow": "Time of year",
+                "title": "When are you visiting?",
+                "text": "The wetter months favour experiences that hold up in the rain."
+            },
+            "interests": {
+                "label": "Interests",
+                "eyebrow": "What you love",
+                "title": "What would you love to experience in Nuwara Eliya?",
+                "text": "Select all that appeal to you. We spread them across your days."
+            },
+            "pace": {
+                "label": "Pace",
+                "eyebrow": "Daily rhythm",
+                "title": "What pace suits you?",
+                "text": "This sets how many stops a day, and how early you start."
+            },
+            "transit": {
+                "label": "Transit",
+                "eyebrow": "Getting around",
+                "title": "How will you get around?",
+                "text": "Distances in the hills are longer than they look on a map."
+            }
+        },
+        "tips": {
+            "month": "December to March is the most reliable window for clear mornings.",
+            "interests": "Hill-country drives take longer than map distances suggest, so we group experiences that sit close together.",
+            "pace": "Dawn starts are where trips get tiring, so relaxed plans leave them out.",
+            "transit": "Horton Plains and Ramboda Falls are far from town and need a vehicle."
+        },
+        "options": {
+            "days": {
+                "1": {
+                    "title": "1 day",
+                    "text": "A single outing"
+                },
+                "2": {
+                    "title": "2 days",
+                    "text": "A short break"
+                },
+                "3": {
+                    "title": "3 days",
+                    "text": "A well-rounded stay"
+                },
+                "4": {
+                    "title": "4 or more days",
+                    "text": "Room to slow down"
+                }
+            },
+            "party": {
+                "solo": {
+                    "title": "Solo",
+                    "text": "Just you"
+                },
+                "couple": {
+                    "title": "Couple",
+                    "text": "Two of you"
+                },
+                "family": {
+                    "title": "Family with kids",
+                    "text": "No demanding experiences, no dawn starts"
+                },
+                "friends": {
+                    "title": "Friends",
+                    "text": "A group of friends"
+                }
+            },
+            "month": {
+                "1": {
+                    "title": "January"
+                },
+                "2": {
+                    "title": "February"
+                },
+                "3": {
+                    "title": "March"
+                },
+                "4": {
+                    "title": "April"
+                },
+                "5": {
+                    "title": "May"
+                },
+                "6": {
+                    "title": "June"
+                },
+                "7": {
+                    "title": "July"
+                },
+                "8": {
+                    "title": "August"
+                },
+                "9": {
+                    "title": "September"
+                },
+                "10": {
+                    "title": "October"
+                },
+                "11": {
+                    "title": "November"
+                },
+                "12": {
+                    "title": "December"
+                },
+                "unsure": {
+                    "title": "Not sure yet",
+                    "text": "We will plan without a season"
+                }
+            },
+            "pace": {
+                "relaxed": {
+                    "title": "Relaxed",
+                    "text": "Two stops a day, later starts, no dawn hikes"
+                },
+                "balanced": {
+                    "title": "Balanced",
+                    "text": "Three stops a day, with the occasional early start"
+                },
+                "active": {
+                    "title": "Active",
+                    "text": "Four stops a day, and early starts are fine"
+                }
+            },
+            "transit": {
+                "private-driver": {
+                    "title": "Private driver",
+                    "text": "No limits: every experience is within reach"
+                },
+                "train-local": {
+                    "title": "Train and local tuk-tuks",
+                    "text": "Leaves out stops that need a vehicle, such as Horton Plains and Ramboda"
+                },
+                "self-drive": {
+                    "title": "Self-drive",
+                    "text": "Adds drive time and avoids pre-dawn starts"
+                }
+            }
+        },
+        "experiencesCount": "{count, plural, one {# experience} other {# experiences}}"
+    },
+    "result": {
+        "minutes": "{count} min",
+        "hours": "{count, plural, one {# hr} other {# hrs}}",
+        "hoursMinutes": "{hours} hr {minutes} min",
+        "savedBadge": "Saved by you",
+        "invalid": {
+            "title": "This itinerary link is incomplete",
+            "text": "Some answers are missing from the link, so the plan cannot be rebuilt. Start the planner to build a fresh one.",
+            "cta": "Start the planner"
+        },
+        "view": {
+            "edit": "Edit preferences",
+            "eyebrow": "Your itinerary",
+            "title": "Your {count}-day itinerary",
+            "intro": "Built from your answers with simple, open rules. Change any answer and the plan updates.",
+            "summary": "Your answers",
+            "interests": "Your interests",
+            "facts": {
+                "length": "Length",
+                "party": "Travelling",
+                "month": "When",
+                "pace": "Pace",
+                "transit": "Getting around"
+            },
+            "subtitleMore": "{first} +{count} more",
+            "daySummary": "{count, plural, one {# stop} other {# stops}}, {from} to {to}"
+        },
+        "notice": {
+            "title": "Notes on this plan",
+            "fewerStops": "We found {planned} stops that fit your answers, the opening times and a realistic day. Your pace allows up to {wanted}.",
+            "uncovered": "Nothing fitted your interest in {interests} with your other answers. Try more days, a different pace or a different way of getting around.",
+            "fewMatches": "Only {matched} of the {total} stops match your interests. The rest round out your days.",
+            "pinned": "{count, plural, one {# of your saved experiences} other {# of your saved experiences}} could not fit: {titles}. Try more days or a different pace.",
+            "wet": "{month} is on the wetter side, so weather-sensitive stops rank lower and carry a note.",
+            "leftOut": {
+                "needs-vehicle": "{titles} match your interests but {count, plural, one {needs} other {need}} a vehicle, so we left {count, plural, one {it} other {them}} out. Choose a private driver or self-drive to include {count, plural, one {it} other {them}}.",
+                "early-start": "{titles} match your interests but {count, plural, one {needs} other {need}} a very early start, which a relaxed pace, a family trip or self-driving leaves out.",
+                "too-demanding": "{titles} match your interests but {count, plural, one {is} other {are}} too demanding for a family trip or a relaxed pace."
+            }
+        },
+        "empty": {
+            "title": "We could not build a plan from these answers",
+            "text": "Nothing fitted together with this combination. Try more days, a different pace or a different way of getting around."
+        },
+        "places": {
+            "title": "Places on this plan",
+            "text": "Open any place in Maps to check the route before you go."
+        },
+        "help": {
+            "title": "Want a local to look it over?",
+            "text": "Not sure the plan works for you? Ask for local help.",
+            "cta": "Request Local Assistance"
+        },
+        "actions": {
+            "print": "Print / Save PDF",
+            "share": "Share link",
+            "copied": "Link copied",
+            "copiedNote": "Anyone with this link sees the same itinerary.",
+            "failedNote": "Could not copy automatically. Copy the link from your browser's address bar instead.",
+            "ask": "Request Local Assistance"
+        },
+        "tabs": {
+            "label": "Days of your itinerary"
+        },
+        "outline": {
+            "eyebrow": "Your whole trip",
+            "heading": "Full {count}-day outline",
+            "hint": "Choose a day to see its stops.",
+            "view": "View day {number}",
+            "showing": "Showing now"
+        },
+        "day": {
+            "label": "Day {number}",
+            "stats": {
+                "leave": "Leave town",
+                "stops": "Stops",
+                "driving": "Driving, there and back",
+                "active": "Time at the places"
+            },
+            "pacing": "About 15 minutes of slack is built in between stops. All drive times are approximate and assume you stay in or near Nuwara Eliya town.",
+            "drive": "About {duration} drive",
+            "return": "Back in town: about {duration} drive from the last stop",
+            "break": {
+                "title": "Midday break",
+                "text": "Time to eat and rest. Nothing is booked for you here."
+            }
+        },
+        "practical": "Practical note",
+        "why": {
+            "label": "Why it's here",
+            "matched": "Chosen for your interest in {interests}.",
+            "filler": "Added to round out the day, close to your other stops.",
+            "saved": "You saved this experience, so it is part of your plan."
+        },
+        "note": {
+            "dawn": "This is an early start.",
+            "dawnAt": "This is an early start: leave town around {time}.",
+            "vehicle": "This stop is far from town and needs a vehicle. Arrange a driver or taxi for it.",
+            "wet": "Best in dry weather, and your travel month is on the wetter side."
+        }
+    },
+    "savedDrawer": {
+        "open": "{count, plural, =0 {Open saved places} one {Open saved places, 1 place saved} other {Open saved places, # places saved}}",
+        "title": "Saved places",
+        "countLine": "{count, plural, =0 {Nothing saved yet} one {1 place} other {# places}}",
+        "close": "Close saved places",
+        "remove": "Remove {title}",
+        "planCta": "Plan my trip with these",
+        "planNote": "Saved places are included in your plan automatically.",
+        "clear": "Clear all",
+        "clearConfirm": "Remove all saved places?",
+        "clearYes": "Yes, clear",
+        "clearNo": "Keep them",
+        "emptyTitle": "Nothing saved yet",
+        "emptyText": "Choose Add to Trip on any experience and it will appear here.",
+        "browse": "Browse experiences"
+    },
+    "notFound": {
+        "code": "404",
+        "eyebrow": "Page not found",
+        "heading": "Lost in the mist",
+        "text": "The page you were looking for is not here. It may have moved, or the link may be wrong. These places will get you back on track.",
+        "popularLabel": "Popular places",
+        "waypoints": {
+            "home": {
+                "title": "Back to the homepage",
+                "text": "Start again with featured experiences, trip ideas and guides.",
+                "cta": "Go home"
+            },
+            "guides": {
+                "title": "Travel guides",
+                "text": "Practical advice on weather, getting there and what to pack.",
+                "cta": "Read the guides"
+            },
+            "planner": {
+                "title": "Plan my trip",
+                "text": "Answer a few questions and get a day-by-day itinerary.",
+                "cta": "Start planning"
+            },
+            "ask": {
+                "title": "Ask an Insider",
+                "text": "Not sure where to go? Ask a local before you plan.",
+                "cta": "Ask a question"
+            }
+        },
+        "report": {
+            "eyebrow": "Found a broken link?",
+            "heading": "Let us know",
+            "text": "If a link on this site brought you here, tell us which page and we will fix it.",
+            "cta": "Report a broken link",
+            "secondary": "Browse trip ideas"
+        }
     }
 }

@@ -9,7 +9,6 @@ import SavedTripDrawer, {
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { ButtonLink } from "./Button";
-import LanguageSwitcher from "./LanguageSwitcher";
 
 const NAV_LINKS = [
     { key: "experiences", href: "/experiences" },
@@ -67,10 +66,6 @@ export default function Navbar({
             link: "text-on-primary/85 hover:bg-surface-container-lowest/10 hover:text-on-primary",
             linkActive: "bg-surface-container-lowest/20 text-on-primary",
             toggle: "text-on-primary hover:bg-surface-container-lowest/10",
-            langText: "text-on-primary",
-            langActive: "bg-surface-container-lowest/25 text-on-primary",
-            langIdle:
-                "text-on-primary/75 hover:bg-surface-container-lowest/10 hover:text-on-primary",
         }
         : {
             tile: "bg-primary-container text-on-primary",
@@ -79,10 +74,6 @@ export default function Navbar({
             link: "text-on-surface-variant hover:bg-surface-container hover:text-on-surface",
             linkActive: "bg-primary-container text-on-primary-container",
             toggle: "text-on-surface hover:bg-surface-container",
-            langText: "text-on-surface-variant",
-            langActive: "bg-primary-container text-on-primary-container",
-            langIdle:
-                "text-on-surface-variant hover:bg-surface-container hover:text-on-surface",
         };
 
     return (
@@ -155,12 +146,6 @@ export default function Navbar({
                     </nav>
 
                     <div className="flex items-center gap-3">
-                        <LanguageSwitcher
-                            className={cn("hidden lg:flex", tone.langText)}
-                            activeClassName={tone.langActive}
-                            idleClassName={tone.langIdle}
-                        />
-
                         <SavedTripDrawer
                             items={savedItems}
                             triggerClassName={tone.toggle}
@@ -231,12 +216,6 @@ export default function Navbar({
                         );
                     })}
                 </nav>
-                <div className="mt-4 flex items-center justify-between border-t border-outline-variant/40 pt-4">
-                    <span className="font-sans text-label-md text-on-surface-variant">
-                        {t("language")}
-                    </span>
-                    <LanguageSwitcher />
-                </div>
                 <ButtonLink
                     href="/plan-my-trip"
                     size="lg"

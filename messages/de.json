@@ -337,6 +337,61 @@
         "ctaPrimary": "Reise im Reiseplaner individuell gestalten",
         "ctaSecondary": "Reiseideen entdecken"
     },
+    "experienceDetail": {
+        "backToExperiences": "Zurück zu allen Erlebnissen",
+        "durationLabel": "Dauer",
+        "breadcrumb": "Brotkrumennavigation",
+        "home": "Startseite",
+        "experiences": "Erlebnisse",
+        "quickFacts": "Auf einen Blick",
+        "addToTrip": "Zu meiner Reise hinzufügen",
+        "savedToTrip": "Zu meiner Reise hinzugefügt",
+        "addShort": "Zur Reise hinzufügen",
+        "savedShort": "Gespeichert",
+        "facts": {
+            "duration": "Typische Dauer",
+            "effort": "Aktivitätsniveau",
+            "elevation": "Höhenlage",
+            "location": "Standort",
+            "bestFor": "Besonders geeignet für"
+        },
+        "about": {
+            "eyebrow": "Überblick",
+            "heading": "Über dieses Erlebnis"
+        },
+        "expect": {
+            "eyebrow": "Vor Ort",
+            "heading": "Das erwartet dich"
+        },
+        "notes": {
+            "eyebrow": "Praktische Informationen",
+            "heading": "Tipps aus erster Hand"
+        },
+        "tip": {
+            "eyebrow": "Insider-Tipp"
+        },
+        "plan": {
+            "eyebrow": "Reiseplanung",
+            "heading": "Integriere dieses Erlebnis in deine Reise nach Nuwara Eliya",
+            "text": "Speichere dieses Erlebnis jetzt und erstelle später einen passenden Tagesplan darum herum.",
+            "planAround": "Reise rund um dieses Erlebnis planen",
+            "note": "Hier gibt es nichts zu buchen oder zu bezahlen. Gespeicherte Erlebnisse bleiben in diesem Browser."
+        },
+        "ask": {
+            "heading": "Frag einen Einheimischen",
+            "text": "Du bist dir nicht sicher, wie dieses Erlebnis in deine Reise passt? Frag uns, bevor du planst.",
+            "cta": "Lokale Empfehlungen anfragen"
+        },
+        "location": {
+            "eyebrow": "Standort",
+            "openInMaps": "In Karten öffnen"
+        },
+        "nearby": {
+            "eyebrow": "So kannst du deinen Tag fortsetzen",
+            "heading": "Passende Erlebnisse in der Nähe",
+            "viewAll": "Alle Erlebnisse entdecken"
+        }
+    },
     "footer": {
         "logoTitle": "Nuwara Insider",
         "tagline": "Entdecke Nuwara Eliya wie ein Einheimischer. Plane eine Reise ganz nach deinem Geschmack.",
@@ -360,5 +415,800 @@
         "region": "Klein-England, Sri Lanka",
         "followHeading": "Folge uns",
         "followOn": "Nuwara Insider auf {platform} (öffnet in einem neuen Tab)"
+    },
+    "termsPage": {
+        "crumbSection": "Rechtliches",
+        "title": "Nutzungsbedingungen",
+        "updated": "Zuletzt aktualisiert am 1. November 2026",
+        "intro": "Diese Nutzungsbedingungen erklären, was du von Nuwara Insider erwarten kannst und was wir von dir erwarten. Wir haben sie bewusst kurz und verständlich gehalten.",
+        "summaryHeading": "Kurz zusammengefasst",
+        "summary": [
+            "Diese Website bietet Reiseinformationen und Empfehlungen. Sie verkauft, bucht oder organisiert keine Dienstleistungen.",
+            "Zeitangaben, Entfernungen und Bedingungen sind Schätzwerte. Bitte überprüfe sie vor deiner Reise.",
+            "Die Antworten von „Ask an Insider“ erfolgen nach bestem Wissen und Gewissen. Sie ersetzen keine professionelle Beratung.",
+            "Aktivitäten im Freien sind mit Risiken verbunden. Die Verantwortung für deine Entscheidungen vor Ort liegt bei dir."
+        ],
+        "contentsLabel": "Auf dieser Seite",
+        "sections": [
+            {
+                "id": "what-this-site-is",
+                "title": "Was diese Website bietet",
+                "blocks": [
+                    "Nuwara Insider ist ein Reiseführer und Reiseplaner für Besucher von Nuwara Eliya in Sri Lanka. Die Website bietet Beschreibungen von Sehenswürdigkeiten, fertige Reiseideen, Reiseführer, einen Reiseplaner und die Möglichkeit, Fragen zu stellen. Sie dient ausschließlich deiner persönlichen Reiseplanung."
+                ]
+            },
+            {
+                "id": "no-bookings",
+                "title": "Keine Buchungen oder Zahlungen",
+                "blocks": [
+                    "Über diese Website kannst du nichts buchen, reservieren oder bezahlen. Die in einem Reiseplan angegebenen Uhrzeiten sind lediglich Empfehlungen dazu, wann sich ein Besuch anbietet, und stellen keine Reservierungen dar. Wir organisieren weder Transport noch Unterkünfte, Reiseführer oder Eintrittskarten.",
+                    "Wenn du dich für einen Fahrer, ein Hotel, einen Reiseführer oder eine andere Dienstleistung entscheidest, kommt die Vereinbarung direkt zwischen dir und dem jeweiligen Anbieter zustande."
+                ]
+            },
+            {
+                "id": "plans-and-estimates",
+                "title": "Reisepläne und Schätzwerte",
+                "blocks": [
+                    "Unsere Reiserouten basieren auf festgelegten Regeln und deinen Angaben. Fahrzeiten, Besuchsdauern und Höhenangaben sind Schätzwerte. Wetter, Straßenverhältnisse, Öffnungszeiten, Eintrittspreise und Vorschriften in Nationalparks und Teeplantagen können sich jederzeit ändern. Bitte überprüfe diese Informationen vor deiner Reise.",
+                    "Insbesondere das Wetter in den Bergen kann sich schnell ändern. Wir können weder klaren Himmel noch freie Straßen oder den Zugang zu einem bestimmten Ort an einem bestimmten Tag garantieren."
+                ]
+            },
+            {
+                "id": "your-safety",
+                "title": "Deine Sicherheit und deine Entscheidungen",
+                "blocks": [
+                    "Spaziergänge, Wanderungen, frühe Aufbrüche und Fahrten auf Bergstraßen sind mit realen Risiken verbunden. Du bist selbst dafür verantwortlich einzuschätzen, ob eine Aktivität zu deinem Gesundheitszustand, deiner Fitness, deiner Reisegruppe und den aktuellen Bedingungen passt. Befolge stets die Anweisungen des Personals in Nationalparks, Teeplantagen und vor Ort.",
+                    "Wenn eine Aktivität als anspruchsvoll gekennzeichnet ist, solltest du diese Einschätzung ernst nehmen. Umzukehren ist jederzeit eine vernünftige Entscheidung."
+                ]
+            },
+            {
+                "id": "ask-an-insider",
+                "title": "Ask an Insider",
+                "blocks": [
+                    "Unsere Antworten sind lokale Empfehlungen, die wir nach bestem Wissen und Gewissen geben. Sie stellen keine medizinische, rechtliche oder sonstige professionelle Beratung dar und basieren auf deinen Angaben sowie auf Bedingungen, die sich jederzeit ändern können.",
+                    "Es gibt keine garantierte Antwortzeit und wir behalten uns vor, einzelne Fragen nicht zu beantworten. Wie wir mit deinen übermittelten Informationen umgehen, wird auf unserer Datenschutzseite beschrieben."
+                ]
+            },
+            {
+                "id": "links-and-content",
+                "title": "Links und Inhalte",
+                "blocks": [
+                    "Einige Links führen zu externen Websites, beispielsweise zu Google Maps. Auf diese Websites haben wir keinen Einfluss und übernehmen keine Verantwortung für deren Inhalte.",
+                    "Die Texte und das Design dieser Website gehören Nuwara Insider. Einige Fotografien sind Eigentum ihrer jeweiligen Urheber. Du kannst unsere Website gerne nutzen und Links zu ihr teilen. Bitte frage uns vorher um Erlaubnis, wenn du ganze Seiten oder Fotografien erneut veröffentlichen möchtest.",
+                    "Bitte missbrauche diese Website nicht und übermittle keine rechtswidrigen, beleidigenden oder irreführenden Inhalte. Bei Missbrauch behalten wir uns vor, den Zugang zu sperren."
+                ]
+            },
+            {
+                "id": "limits-and-changes",
+                "title": "Haftungsbeschränkungen und Änderungen",
+                "blocks": [
+                    "Wir bemühen uns, alle Informationen auf dieser Website korrekt und aktuell zu halten. Dennoch können wir nicht garantieren, dass sämtliche Angaben vollständig oder auf dem neuesten Stand sind. Soweit gesetzlich zulässig, übernehmen wir keine Haftung für Schäden oder Verluste, die durch das Vertrauen auf diese Informationen entstehen. Die dir gesetzlich zustehenden Rechte bleiben von diesen Nutzungsbedingungen unberührt.",
+                    "Wir behalten uns vor, die Website oder diese Nutzungsbedingungen jederzeit zu ändern. Das Datum am Anfang dieser Seite zeigt an, wann die letzte Änderung vorgenommen wurde. Bei Fragen kannst du uns über „Ask an Insider“ kontaktieren."
+                ]
+            }
+        ],
+        "contact": {
+            "heading": "Fragen zu diesen Nutzungsbedingungen?",
+            "text": "Sende uns deine Frage über „Ask an Insider“. Eine echte Person wird sie lesen.",
+            "cta": "Ask an Insider"
+        },
+        "other": "Datenschutzerklärung lesen"
+    },
+    "privacyPage": {
+        "crumbSection": "Rechtliches",
+        "title": "Datenschutz",
+        "updated": "Zuletzt aktualisiert am 1. November 2026",
+        "intro": "Auf dieser Seite erklären wir in verständlicher Sprache, welche Informationen Nuwara Insider über dich speichert und welche nicht. Kurz gesagt: Wir fragen nur sehr wenige persönliche Daten ab.",
+        "summaryHeading": "Kurz zusammengefasst",
+        "summary": [
+            "Deine Angaben im Reiseplaner und deine gespeicherten Orte bleiben ausschließlich in deinem eigenen Browser.",
+            "Eine Frage, die du über „Ask an Insider“ sendest, erreicht uns per E-Mail und wird ausschließlich zur Beantwortung deiner Anfrage verwendet.",
+            "Wir verwenden auf dieser Website weder Analysetools noch Werbe- oder Tracking-Technologien.",
+            "Es gibt keine Benutzerkonten und keine Zahlungsfunktionen auf dieser Website."
+        ],
+        "contentsLabel": "Auf dieser Seite",
+        "sections": [
+            {
+                "id": "what-you-send",
+                "title": "Welche Informationen du uns übermittelst",
+                "blocks": [
+                    "Du übermittelst uns nur dann persönliche Informationen, wenn du „Ask an Insider“ verwendest. Das Formular fragt folgende Angaben ab:",
+                    [
+                        "Deine Frage und das dazugehörige Thema",
+                        "Eine E-Mail-Adresse, eine WhatsApp-Nummer oder beides, damit wir dir antworten können",
+                        "Deine Reisedaten, falls du diese angeben möchtest",
+                        "Bis zu drei optionale Hinweise zu deiner Reise: ein Baby oder Kleinkind in deiner Reisegruppe, Reiseübelkeit auf kurvenreichen Straßen oder ein langsameres Gehtempo"
+                    ],
+                    "Bitte gib nicht mehr persönliche Informationen preis, als für deine Anfrage notwendig sind. Die optionalen Hinweise helfen uns, dir eine passende Antwort zu geben. Du kannst sie aber auch einfach leer lassen."
+                ]
+            },
+            {
+                "id": "on-your-device",
+                "title": "Welche Daten auf deinem Gerät bleiben",
+                "blocks": [
+                    "Der Reiseplaner und deine Merkliste funktionieren ohne Benutzerkonto. Deine Antworten, dein Entwurf im Reiseplaner und deine gespeicherten Orte werden im lokalen Speicher deines Browsers auf deinem eigenen Gerät abgelegt. Wir erhalten diese Daten nicht und können sie nicht einsehen. Wenn du deine Browserdaten löschst, werden auch diese Informationen entfernt.",
+                    "Wenn du eine fertige Reiseroute öffnest, werden die Angaben, auf denen sie basiert, direkt in den Link geschrieben, beispielsweise die Anzahl der Reisetage und deine Interessen. Wenn du diesen Link teilst, können andere Personen diese Angaben sehen. Dein Name und deine Kontaktdaten sind nicht Bestandteil des Links."
+                ]
+            },
+            {
+                "id": "how-we-use-it",
+                "title": "Wie wir deine Daten verwenden",
+                "blocks": [
+                    "Informationen, die du über „Ask an Insider“ übermittelst, verwenden wir ausschließlich, um deine Frage zu lesen und dir zu antworten. Deine Nachricht erreicht uns per E-Mail. Wir nehmen dich nicht in einen Newsletter auf und verkaufen deine persönlichen Daten nicht.",
+                    "Der Reiseplaner und deine Merkliste verlassen niemals deinen Browser. Daher erhalten wir diese Daten nicht und können sie auch nicht anderweitig verwenden."
+                ]
+            },
+            {
+                "id": "other-companies",
+                "title": "Beteiligte Drittanbieter",
+                "blocks": [
+                    "Einige externe Dienste sind an der Bereitstellung dieser Website beteiligt. Darüber solltest du Bescheid wissen:",
+                    [
+                        "E-Mail: Deine Anfrage wird über unseren E-Mail-Dienst weitergeleitet, damit sie uns erreicht.",
+                        "Hosting: Der Server, über den diese Website bereitgestellt wird, kann standardmäßige Protokolldaten speichern, beispielsweise aufgerufene Seiten und die IP-Adresse des Besuchers. Dies dient der Sicherheit und dem zuverlässigen Betrieb der Website.",
+                        "Fotos: Einige Fotografien auf dieser Website werden derzeit direkt von den Servern von Unsplash und Google geladen. Dein Browser stellt daher beim Öffnen einer Seite mit diesen Bildern eine Verbindung zu den jeweiligen Anbietern her. Wir ersetzen diese Bilder schrittweise durch eigene Fotografien.",
+                        "Karten: Der Standort eines Ortes wird nur dann in Google Maps geöffnet, wenn du aktiv auf den entsprechenden Link klickst. Erst dann werden Informationen an Google übermittelt."
+                    ]
+                ]
+            },
+            {
+                "id": "cookies",
+                "title": "Cookies und Tracking",
+                "blocks": [
+                    "Wir verwenden keine Analyse-, Werbe- oder Tracking-Cookies und erstellen keine persönlichen Nutzerprofile.",
+                    "Die Website kann deine Sprachauswahl in einem kleinen Cookie speichern, damit sie beim nächsten Besuch in der richtigen Sprache geöffnet wird. Dieser Cookie dient nicht dazu, dich persönlich zu identifizieren."
+                ]
+            },
+            {
+                "id": "keeping-deleting",
+                "title": "Speicherung und Löschung deiner Daten",
+                "blocks": [
+                    "Wir speichern deine Anfrage und unsere Antwort nur so lange, wie es für die Beantwortung und gegebenenfalls notwendige Rückfragen erforderlich ist. Wenn du möchtest, dass diese Daten gelöscht werden, teile uns dies über „Ask an Insider“ mit. Wir werden sie dann löschen.",
+                    "Da deine Angaben im Reiseplaner und deine gespeicherten Orte ausschließlich auf deinem eigenen Gerät gespeichert werden, kannst du sie selbst entfernen, indem du die Website-Daten in deinen Browsereinstellungen löschst."
+                ]
+            },
+            {
+                "id": "contact",
+                "title": "Kontakt",
+                "blocks": [
+                    "Wenn du Fragen zu dieser Datenschutzerklärung hast oder erfahren möchtest, welche Informationen du uns übermittelt hast, beziehungsweise deren Löschung beantragen möchtest, kannst du uns über „Ask an Insider“ kontaktieren. Wähle dazu das Thema „Sonstiges“."
+                ]
+            }
+        ],
+        "contact": {
+            "heading": "Fragen zu dieser Datenschutzerklärung?",
+            "text": "Sende uns deine Frage über „Ask an Insider“. Eine echte Person wird sie lesen.",
+            "cta": "Ask an Insider"
+        },
+        "other": "Nutzungsbedingungen lesen"
+    },
+    "askInsiderPage": {
+        "crumbSection": "Frag einen Einheimischen",
+        "crumbPlace": "Nuwara Eliya",
+        "headingLead": "Frag einen Einheimischen",
+        "headingAccent": "bevor du deine Reise planst.",
+        "subheading": "Bergstraßen, Wetter, Teeplantagen oder die richtige Reiseplanung mit der Familie – stelle uns deine Frage und erhalte eine ehrliche Antwort von jemandem, der sich vor Ort auskennt.",
+        "expect": {
+            "heading": "Was dich erwartet",
+            "steps": {
+                "send": {
+                    "title": "Stelle deine Frage",
+                    "text": "Wähle ein Thema und erzähle uns, wobei du Hilfe benötigst. Deine Reisedaten sind hilfreich, aber freiwillig."
+                },
+                "read": {
+                    "title": "Ein Mensch liest deine Nachricht",
+                    "text": "Deine Nachricht wird von einem echten Menschen gelesen, nicht von einem Chatbot."
+                },
+                "reply": {
+                    "title": "Du erhältst eine Antwort",
+                    "text": "Wir antworten dir über die angegebene E-Mail-Adresse oder WhatsApp-Nummer. Da es keine feste Antwortzeit gibt, empfehlen wir dir, frühzeitig zu fragen, wenn deine Reise bald bevorsteht."
+                }
+            }
+        },
+        "scope": {
+            "heading": "Nur persönliche Empfehlungen",
+            "text": "Wir nehmen keine Buchungen, Reservierungen oder Zahlungen entgegen. Hier kannst du Fragen stellen und dich beraten lassen – nicht direkt etwas kaufen."
+        },
+        "planner": {
+            "heading": "Möchtest du lieber mit einem Reiseplan beginnen?",
+            "text": "Beantworte ein paar kurze Fragen und erhalte eine individuelle Reiseroute mit Tagesplanung. Anschließend kannst du uns jederzeit weitere Fragen dazu stellen.",
+            "cta": "Meine Reise planen"
+        }
+    },
+    "askInsiderForm": {
+        "heading": "Stelle deine Frage",
+        "intro": "Je mehr Details du angibst, desto hilfreicher können wir dir antworten. Deine Anfrage ist keine Buchung.",
+        "optional": "(optional)",
+        "topic": {
+            "legend": "Worum geht es?"
+        },
+        "topics": {
+            "roads-weather": "Straßenverhältnisse und Wetter",
+            "estates-factories": "Teeplantagen und Teefabriken",
+            "places-heritage": "Historische Orte und Sehenswürdigkeiten",
+            "pacing": "Reisetempo für Familien und ältere Reisende",
+            "nature-quiet": "Ruhige Orte und Natur",
+            "itinerary-help": "Hilfe bei meiner Reiseroute",
+            "broken-link": "Defekten Link melden",
+            "other": "Sonstiges"
+        },
+        "message": {
+            "label": "Deine Frage",
+            "placeholder": "Zum Beispiel: Wir kommen mit dem Zug aus Kandy und möchten Horton Plains besuchen. Reicht dafür ein früher Morgen aus?",
+            "counter": "{count} / {max}"
+        },
+        "dates": {
+            "label": "Reisedaten",
+            "placeholder": "Mitte Dezember oder vom 12. bis 15. Dezember"
+        },
+        "contact": {
+            "legend": "Wie sollen wir dir antworten?",
+            "hint": "Gib eine E-Mail-Adresse, eine WhatsApp-Nummer oder beides an."
+        },
+        "email": {
+            "label": "E-Mail-Adresse",
+            "placeholder": "name@example.com"
+        },
+        "whatsapp": {
+            "label": "WhatsApp-Nummer",
+            "placeholder": "+94 77 123 4567",
+            "hint": "Bitte gib die internationale Ländervorwahl an."
+        },
+        "needs": {
+            "legend": "Bei der Planung berücksichtigen",
+            "hint": "Wähle alles aus, was wir bei unserer Antwort beachten sollten. Freiwillige Angaben.",
+            "infant-toddler": "Reise mit einem Baby oder Kleinkind",
+            "motion-sensitivity": "Reiseübelkeit auf kurvenreichen Straßen",
+            "slower-walking": "Langsameres Gehtempo"
+        },
+        "errors": {
+            "required": "Dieses Feld muss ausgefüllt werden.",
+            "invalid": "Diese Eingabe scheint nicht korrekt zu sein. Bitte überprüfe sie und versuche es erneut.",
+            "tooShort": "Bitte gib mindestens {min} Zeichen ein.",
+            "tooLong": "Bitte beschränke deine Eingabe auf maximal {max} Zeichen.",
+            "contact": "Bitte gib eine E-Mail-Adresse oder eine WhatsApp-Nummer an, damit wir dir antworten können."
+        },
+        "submit": "Frage senden",
+        "sending": "Wird gesendet",
+        "privacyNote": "Wir verwenden deine Angaben ausschließlich zur Beantwortung deiner Frage. Lies dazu unsere <link>Datenschutzerklärung</link>.",
+        "failed": {
+            "heading": "Nachricht konnte nicht gesendet werden",
+            "text": "Bitte versuche es gleich noch einmal. Deine Eingaben sind weiterhin vorhanden."
+        },
+        "success": {
+            "heading": "Frage erfolgreich gesendet",
+            "text": "Vielen Dank! Wir haben deine Frage erhalten und werden dir über die angegebene E-Mail-Adresse oder WhatsApp-Nummer antworten. Da Antworten nicht sofort erfolgen, bitten wir dich um etwas Geduld.",
+            "again": "Eine weitere Frage stellen",
+            "guides": "Reiseführer lesen"
+        }
+    },
+    "guideDetail": {
+        "backToGuides": "Zurück zu den Reiseführern",
+        "breadcrumb": "Brotkrumennavigation",
+        "home": "Startseite",
+        "guides": "Reiseführer",
+        "plan": {
+            "eyebrow": "Dein nächster Schritt",
+            "heading": "Mach aus diesen Tipps einen Reiseplan",
+            "text": "Nutze die Informationen aus diesem Beitrag, um eine individuelle Tagesplanung zu erstellen, die zu deinen Reisedaten und deinem Reisetempo passt.",
+            "cta": "Reiseplaner öffnen",
+            "ask": "Oder frag einen Einheimischen"
+        },
+        "related": {
+            "eyebrow": "Weiterlesen",
+            "heading": "Weitere Reiseführer",
+            "viewAll": "Alle Reiseführer"
+        }
+    },
+    "guidesPage": {
+        "eyebrow": "Insider-Tipps & praktische Ratschläge",
+        "heading": "Alle Reiseführer",
+        "subheading": "Alles Praktische rund um deine Reise – verfasst von jemandem, der hier lebt.",
+        "readGuide": "Reiseführer lesen",
+        "filtersLabel": "Reiseführer nach Themen filtern",
+        "allTopics": "Alle Reiseführer ({count})",
+        "moreEyebrow": "Die Wissenssammlung",
+        "moreHeading": "Weitere Reiseführer",
+        "showing": "{count, plural, one {# Reiseführer wird angezeigt} other {# Reiseführer werden angezeigt}}",
+        "crumbSection": "Reiseführer",
+        "crumbPlace": "Nuwara Eliya & zentrales Hochland",
+        "count": "{count, plural, one {# Reiseführer} other {# Reiseführer}}",
+        "headingLead": "Praktische Tipps für",
+        "headingAccent": "das Hochland.",
+        "stats": {
+            "guidesTitle": "{count, plural, one {# ausführlicher Reiseführer} other {# ausführliche Reiseführer}}",
+            "guidesText": "Aus persönlicher lokaler Erfahrung geschrieben",
+            "topicsTitle": "{count, plural, one {# Thema} other {# Themen}}",
+            "topicsText": "Reiseplanung, Packtipps, Anreise und vieles mehr",
+            "minutesTitle": "{count} Min. Lesezeit",
+            "minutesText": "Wissenswertes vor deiner Reise"
+        },
+        "ctaEyebrow": "Individuelle Routenplanung",
+        "ctaHeading": "Möchtest du aus diesen Reiseführern einen persönlichen Reiseplan machen?",
+        "ctaText": "Berücksichtige deinen Aufenthaltsort, dein Reisetempo und das Wetter im Hochland in einer individuellen Tagesplanung, statt verschiedene Informationen selbst zusammenzustellen.",
+        "ctaPrimary": "Reiseplaner starten",
+        "ctaSecondary": "Lokale Unterstützung anfragen"
+    },
+    "aboutPage": {
+        "crumbSection": "Über uns",
+        "crumbPlace": "Nuwara Insider",
+        "headingLead": "Ehrliche Empfehlungen für",
+        "headingAccent": "das Hochland.",
+        "subheading": "Nuwara Insider ist ein digitaler lokaler Reiseberater für Nuwara Eliya. Wir helfen Individualreisenden dabei, zu entscheiden, welche Orte sie besuchen, in welcher Reihenfolge sie diese erkunden und wann der beste Zeitpunkt dafür ist – ohne ihnen Hotels oder Touren zu verkaufen.",
+        "mosaic": {
+            "label": "Nuwara Eliya",
+            "place": "Sri Lankas zentrales Hochland"
+        },
+        "principles": {
+            "eyebrow": "Unsere Denkweise",
+            "heading": "Vier Grundsätze hinter jeder Empfehlung",
+            "items": {
+                "pacing": {
+                    "title": "Bergstraßen kosten Zeit",
+                    "text": "Entfernungen sehen auf der Karte kurz aus, dauern auf den kurvenreichen Bergstraßen aber deutlich länger. Deshalb enthalten unsere Reisepläne weniger Zwischenstopps und mehr Zeit dazwischen."
+                },
+                "mornings": {
+                    "title": "Der Morgen hat Vorrang",
+                    "text": "Die Morgenstunden bieten meist die klarste Sicht, während später häufig Nebel aufzieht. Jeder Ort hat seine ideale Besuchszeit, und unser Reiseplaner stimmt die Tagesplanung darauf ab. Auch regenreichere Monate werden berücksichtigt."
+                },
+                "advice": {
+                    "title": "Empfehlungen statt Verkauf",
+                    "text": "Auf dieser Website gibt es nichts zu buchen, zu reservieren oder zu bezahlen. Hier kannst du dich informieren und deine Reise planen – und anschließend einfach losziehen."
+                },
+                "estimates": {
+                    "title": "Ehrliche Zeitangaben",
+                    "text": "Fahrzeiten und Besuchsdauern sind Schätzwerte, keine Garantien. Wir weisen in jedem Reiseplan darauf hin und verbessern unsere Angaben kontinuierlich."
+                }
+            }
+        },
+        "numbers": {
+            "eyebrow": "Unsere Website in Zahlen",
+            "heading": "Gemessen in Höhenmetern und ehrlichen Details",
+            "caption": "Basierend auf den eigenen Daten der Website",
+            "items": {
+                "elevation": {
+                    "value": "{min, number}–{max, number} m",
+                    "label": "Höhenbereich",
+                    "text": "Die Höhendifferenz zwischen dem niedrigsten und dem höchstgelegenen Ort auf unserer Website."
+                },
+                "experiences": {
+                    "label": "Erlebnisse",
+                    "text": "Orte und Aktivitäten, jeweils mit der besten Besuchszeit, dem Anstrengungsgrad und einem Link zum Öffnen in Karten."
+                },
+                "tripIdeas": {
+                    "label": "Reiseideen",
+                    "text": "Fertig geplante Routen, die du im Reiseplaner öffnen und individuell anpassen kannst."
+                },
+                "guides": {
+                    "label": "Reiseführer",
+                    "text": "Praktische Informationen zu Wetter, Anreise, Packtipps und vielem mehr."
+                }
+            }
+        },
+        "planner": {
+            "eyebrow": "So funktioniert der Reiseplaner",
+            "heading": "Ein Reiseplan auf Basis fester Regeln",
+            "intro": "Beantworte ein paar Fragen und unser Reiseplaner erstellt eine individuelle Tagesplanung. Er folgt festgelegten Regeln statt künstlicher Intelligenz. Deshalb führen dieselben Antworten immer zum selben Reiseplan, und ein geteilter Link zeigt genau dieselbe Planung, die du gesehen hast.",
+            "cta": "Reiseplaner ausprobieren",
+            "rules": {
+                "pace": {
+                    "title": "Dein Reisetempo bestimmt den Tagesablauf",
+                    "text": "Bei einem entspannten Reisetempo gibt es weniger Zwischenstopps und spätere Starts. Ein aktiver Reisestil ermöglicht mehr Aktivitäten und kann bereits im Morgengrauen beginnen."
+                },
+                "party": {
+                    "title": "Deine Reisebegleitung macht einen Unterschied",
+                    "text": "Anspruchsvolle Aktivitäten werden für Familien und Reisende mit einem entspannten Reisetempo ausgeschlossen. Der Reiseplan erklärt dir außerdem, welche Aktivitäten ausgelassen wurden und warum."
+                },
+                "transit": {
+                    "title": "Dein Transportmittel beeinflusst die Route",
+                    "text": "Entfernt gelegene Orte wie Horton Plains erfordern ein Auto. Deshalb werden sie nicht eingeplant, wenn du ausschließlich mit dem Zug und öffentlichen Verkehrsmitteln unterwegs bist. Die Fahrzeiten fallen auf dieser Route und bei selbst gefahrenen Strecken entsprechend länger aus."
+                },
+                "month": {
+                    "title": "Auch der Reisemonat spielt eine Rolle",
+                    "text": "Mai bis September gelten als regenreichere Monate. Deshalb werden wetterabhängige Aktivitäten niedriger priorisiert und im Reiseplan entsprechend gekennzeichnet."
+                },
+                "saved": {
+                    "title": "Gespeicherte Orte bleiben Bestandteil deiner Reise",
+                    "text": "Alle Orte, die du speicherst, werden in deinen Reiseplan aufgenommen. Sollte ein Ort nicht in den verfügbaren Zeitrahmen passen, weisen wir dich darauf hin, anstatt ihn stillschweigend zu entfernen."
+                }
+            }
+        },
+        "cta": {
+            "eyebrow": "Dein nächster Schritt",
+            "heading": "Beginne mit einem Reiseplan oder stelle uns einfach eine Frage.",
+            "text": "Beantworte ein paar Fragen und erhalte eine individuelle Tagesplanung oder wende dich zuerst mit deiner Frage an einen Einheimischen.",
+            "plan": "Meine Reise planen",
+            "ask": "Frag einen Einheimischen",
+            "ideas": "Reiseideen entdecken"
+        }
+    },
+    "tripIdeasPage": {
+        "eyebrow": "Reiseideen",
+        "heading": "Alle Reiseideen",
+        "subheading": "Komplett geplante Reiserouten statt einer Liste von Dingen, die du selbst organisieren musst. Wähle die Route, die deiner Reise am nächsten kommt, und passe sie anschließend individuell an.",
+        "viewItinerary": "Reiseroute ansehen",
+        "crumbSection": "Ausgewählte Reiserouten",
+        "crumbPlace": "Nuwara Eliya & Hochland",
+        "count": "{count, plural, one {# Reiseidee} other {# Reiseideen}}",
+        "headingLead": "Wähle eine Reise, die",
+        "headingAccent": "bereits perfekt durchdacht ist.",
+        "ctaHeading": "Möchtest du eine Reise an deine Reisedaten und Wünsche anpassen?",
+        "ctaText": "Wähle eine der oben vorgestellten Reiseideen und gestalte sie im Reiseplaner passend zu deinen Reisedaten, deinem Tempo und deinen Interessen.",
+        "ctaPrimary": "Im Reiseplaner individuell gestalten",
+        "ctaSecondary": "Erlebnisse entdecken"
+    },
+    "tripIdeaDetail": {
+        "backToTripIdeas": "Zurück zu allen Reiseideen",
+        "day": "Tag",
+        "highlightsLabel": "Das erwartet dich auf dieser Reise",
+        "breadcrumb": "Brotkrumennavigation",
+        "home": "Startseite",
+        "tripIdeas": "Reiseideen",
+        "quickFacts": "Deine Reise auf einen Blick",
+        "facts": {
+            "duration": "Reisedauer",
+            "days": "Tagesplanung",
+            "experiences": "Enthaltene Erlebnisse"
+        },
+        "daysValue": "{count, plural, one {# Tag} other {# Tage}}",
+        "experiencesValue": "{count, plural, one {# Erlebnis} other {# Erlebnisse}}",
+        "about": {
+            "eyebrow": "Überblick",
+            "heading": "Über diese Reise"
+        },
+        "itinerary": {
+            "eyebrow": "Die Reiseroute",
+            "heading": "Tag für Tag"
+        },
+        "plan": {
+            "cta": "Im Reiseplaner individuell gestalten",
+            "note": "Die Zeitangaben im Reiseplaner sind Vorschläge und keine Reservierungen."
+        },
+        "pack": {
+            "heading": "Was du einpacken solltest",
+            "text": "Das Wetter im Hochland kann sich schnell ändern. Erfahre, was du wirklich dabei haben solltest.",
+            "cta": "Packtipps lesen"
+        },
+        "cta": {
+            "heading": "Möchtest du diese Reise an deine Reisedaten und deinen Reisestil anpassen?",
+            "text": "Nutze diese Reiseroute als Ausgangspunkt und passe sie im Reiseplaner individuell an oder hole dir Unterstützung von Einheimischen.",
+            "primary": "Im Reiseplaner individuell gestalten",
+            "secondary": "Lokale Unterstützung anfragen"
+        }
+    },
+    "planner": {
+        "progress": {
+            "label": "Fortschritt der Reiseplanung",
+            "stepOf": "Schritt {current} von {total}"
+        },
+        "selections": {
+            "label": "Deine bisherigen Angaben",
+            "edit": "{step} bearbeiten"
+        },
+        "nav": {
+            "back": "Vorheriger Schritt",
+            "backTo": "Zurück zu {step}",
+            "exit": "Reiseplaner verlassen",
+            "continue": "Weiter",
+            "continueTo": "Weiter zu {step}",
+            "finish": "Meinen Reiseplan erstellen",
+            "nextUp": "Als Nächstes: Schritt {number} – {step}",
+            "lastStep": "Letzter Schritt",
+            "startOver": "Von vorne beginnen"
+        },
+        "tipTitle": "Planungstipp",
+        "interestsSelected": "{count} von {total} ausgewählt",
+        "chips": {
+            "format": "{step}: {value}",
+            "interests": "{count, plural, one {# Interesse} other {# Interessen}}"
+        },
+        "reassurance": "Keine Registrierung und keine Zahlung erforderlich. Du kannst deine Angaben jederzeit ändern und deinen Reiseplan neu erstellen.",
+        "savedNote": "{count, plural, one {Dein # gespeichertes Erlebnis wird in den Reiseplan aufgenommen.} other {Deine # gespeicherten Erlebnisse werden in den Reiseplan aufgenommen.}}",
+        "steps": {
+            "days": {
+                "label": "Dauer",
+                "eyebrow": "Reisedauer",
+                "title": "Wie viele Tage möchtest du in Nuwara Eliya verbringen?",
+                "text": "Wähle aus, wie viele Tage du mit Erlebnissen füllen möchtest."
+            },
+            "party": {
+                "label": "Reisebegleitung",
+                "eyebrow": "Wer reist mit?",
+                "title": "Wer kommt mit dir?",
+                "text": "Für Familien planen wir entspanntere Tage ohne anspruchsvolle Aktivitäten und frühe Starts im Morgengrauen."
+            },
+            "month": {
+                "label": "Reisezeit",
+                "eyebrow": "Jahreszeit",
+                "title": "Wann möchtest du Nuwara Eliya besuchen?",
+                "text": "In den regenreicheren Monaten bevorzugen wir Erlebnisse, die sich auch bei Regen gut genießen lassen."
+            },
+            "interests": {
+                "label": "Interessen",
+                "eyebrow": "Was dich begeistert",
+                "title": "Was möchtest du in Nuwara Eliya erleben?",
+                "text": "Wähle alles aus, was dich interessiert. Wir verteilen deine Wünsche sinnvoll auf die einzelnen Tage."
+            },
+            "pace": {
+                "label": "Reisetempo",
+                "eyebrow": "Täglicher Rhythmus",
+                "title": "Welches Reisetempo passt zu dir?",
+                "text": "Damit bestimmst du, wie viele Zwischenstopps dein Tag enthält und wie früh du startest."
+            },
+            "transit": {
+                "label": "Transport",
+                "eyebrow": "Fortbewegung",
+                "title": "Wie möchtest du dich fortbewegen?",
+                "text": "Entfernungen im Hochland sind oft größer, als sie auf der Karte erscheinen."
+            }
+        },
+        "tips": {
+            "month": "Von Dezember bis März hast du die besten Chancen auf klare Morgenstunden.",
+            "interests": "Fahrten durch das Hochland dauern länger, als die Entfernungen auf der Karte vermuten lassen. Deshalb gruppieren wir Erlebnisse, die nahe beieinanderliegen.",
+            "pace": "Frühe Starts im Morgengrauen können eine Reise anstrengend machen. Deshalb verzichten wir bei entspannten Reiseplänen darauf.",
+            "transit": "Horton Plains und Ramboda Falls liegen weit außerhalb des Stadtzentrums und sind nur mit einem Fahrzeug gut erreichbar."
+        },
+        "options": {
+            "days": {
+                "1": {
+                    "title": "1 Tag",
+                    "text": "Ein einzelner Ausflug"
+                },
+                "2": {
+                    "title": "2 Tage",
+                    "text": "Ein kurzer Aufenthalt"
+                },
+                "3": {
+                    "title": "3 Tage",
+                    "text": "Ein abwechslungsreicher Aufenthalt"
+                },
+                "4": {
+                    "title": "4 oder mehr Tage",
+                    "text": "Genug Zeit zum Entspannen"
+                }
+            },
+            "party": {
+                "solo": {
+                    "title": "Allein",
+                    "text": "Nur du"
+                },
+                "couple": {
+                    "title": "Als Paar",
+                    "text": "Ihr seid zu zweit"
+                },
+                "family": {
+                    "title": "Familie mit Kindern",
+                    "text": "Keine anspruchsvollen Aktivitäten und keine frühen Starts"
+                },
+                "friends": {
+                    "title": "Mit Freunden",
+                    "text": "Eine Gruppe von Freunden"
+                }
+            },
+            "month": {
+                "1": {
+                    "title": "Januar"
+                },
+                "2": {
+                    "title": "Februar"
+                },
+                "3": {
+                    "title": "März"
+                },
+                "4": {
+                    "title": "April"
+                },
+                "5": {
+                    "title": "Mai"
+                },
+                "6": {
+                    "title": "Juni"
+                },
+                "7": {
+                    "title": "Juli"
+                },
+                "8": {
+                    "title": "August"
+                },
+                "9": {
+                    "title": "September"
+                },
+                "10": {
+                    "title": "Oktober"
+                },
+                "11": {
+                    "title": "November"
+                },
+                "12": {
+                    "title": "Dezember"
+                },
+                "unsure": {
+                    "title": "Noch nicht sicher",
+                    "text": "Wir erstellen deinen Reiseplan ohne Berücksichtigung einer bestimmten Jahreszeit."
+                }
+            },
+            "pace": {
+                "relaxed": {
+                    "title": "Entspannt",
+                    "text": "Zwei Zwischenstopps pro Tag, spätere Starts und keine Wanderungen im Morgengrauen"
+                },
+                "balanced": {
+                    "title": "Ausgewogen",
+                    "text": "Drei Zwischenstopps pro Tag und gelegentlich ein früher Start"
+                },
+                "active": {
+                    "title": "Aktiv",
+                    "text": "Vier Zwischenstopps pro Tag. Frühe Starts sind kein Problem."
+                }
+            },
+            "transit": {
+                "private-driver": {
+                    "title": "Privater Fahrer",
+                    "text": "Keine Einschränkungen: Alle Erlebnisse sind erreichbar."
+                },
+                "train-local": {
+                    "title": "Zug und lokale Tuk-Tuks",
+                    "text": "Orte, die ein eigenes Fahrzeug erfordern, wie Horton Plains und Ramboda Falls, werden nicht berücksichtigt."
+                },
+                "self-drive": {
+                    "title": "Mietwagen (Selbstfahrer)",
+                    "text": "Berücksichtigt längere Fahrzeiten und vermeidet Starts vor Sonnenaufgang."
+                }
+            }
+        },
+        "experiencesCount": "{count, plural, one {# Erlebnis} other {# Erlebnisse}}"
+    },
+    "result": {
+        "minutes": "{count} Min.",
+        "hours": "{count, plural, one {# Std.} other {# Std.}}",
+        "hoursMinutes": "{hours} Std. {minutes} Min.",
+        "savedBadge": "Von dir gespeichert",
+        "invalid": {
+            "title": "Dieser Reiseplan-Link ist unvollständig",
+            "text": "Einige Angaben fehlen im Link, sodass der Reiseplan nicht erneut erstellt werden kann. Starte den Reiseplaner, um einen neuen Reiseplan zu erstellen.",
+            "cta": "Reiseplaner starten"
+        },
+        "view": {
+            "edit": "Einstellungen bearbeiten",
+            "eyebrow": "Dein Reiseplan",
+            "title": "Dein {count}-Tage-Reiseplan",
+            "intro": "Erstellt anhand deiner Antworten und einfacher, transparenter Regeln. Ändere beliebige Angaben und dein Reiseplan wird entsprechend aktualisiert.",
+            "summary": "Deine Angaben",
+            "interests": "Deine Interessen",
+            "facts": {
+                "length": "Reisedauer",
+                "party": "Reisebegleitung",
+                "month": "Reisezeit",
+                "pace": "Reisetempo",
+                "transit": "Fortbewegung"
+            },
+            "subtitleMore": "{first} +{count} weitere",
+            "daySummary": "{count, plural, one {# Zwischenstopp} other {# Zwischenstopps}}, {from} bis {to}"
+        },
+        "notice": {
+            "title": "Hinweise zu deinem Reiseplan",
+            "fewerStops": "Wir haben {planned} Zwischenstopps gefunden, die zu deinen Angaben, den Öffnungszeiten und einem realistischen Tagesablauf passen. Dein Reisetempo erlaubt bis zu {wanted} Zwischenstopps.",
+            "uncovered": "Für dein Interesse an {interests} haben wir in Kombination mit deinen anderen Angaben nichts Passendes gefunden. Versuche es mit mehr Tagen, einem anderen Reisetempo oder einer anderen Fortbewegungsart.",
+            "fewMatches": "Nur {matched} von {total} Zwischenstopps entsprechen deinen Interessen. Die übrigen ergänzen deinen Tagesplan sinnvoll.",
+            "pinned": "{count, plural, one {# deiner gespeicherten Erlebnisse} other {# deiner gespeicherten Erlebnisse}} konnten nicht eingeplant werden: {titles}. Versuche es mit mehr Tagen oder einem anderen Reisetempo.",
+            "wet": "Der Monat {month} gehört zu den regenreicheren Monaten. Deshalb werden wetterabhängige Zwischenstopps niedriger priorisiert und entsprechend gekennzeichnet.",
+            "leftOut": {
+                "needs-vehicle": "{titles} passen zu deinen Interessen, {count, plural, one {erfordert jedoch} other {erfordern jedoch}} ein Fahrzeug und {count, plural, one {wurde deshalb} other {wurden deshalb}} ausgelassen. Wähle einen privaten Fahrer oder einen Mietwagen, um {count, plural, one {dieses Erlebnis} other {diese Erlebnisse}} einzuplanen.",
+                "early-start": "{titles} passen zu deinen Interessen, {count, plural, one {erfordert jedoch} other {erfordern jedoch}} einen sehr frühen Start. Deshalb {count, plural, one {wurde es bei einem entspannten Reisetempo, einer Familienreise oder einer Selbstfahrerreise ausgelassen} other {wurden sie bei einem entspannten Reisetempo, einer Familienreise oder einer Selbstfahrerreise ausgelassen}}.",
+                "too-demanding": "{titles} passen zu deinen Interessen, {count, plural, one {ist jedoch} other {sind jedoch}} für eine Familienreise oder ein entspanntes Reisetempo zu anspruchsvoll."
+            }
+        },
+        "empty": {
+            "title": "Mit diesen Angaben konnten wir keinen Reiseplan erstellen",
+            "text": "Diese Kombination aus deinen Angaben lässt sich leider nicht sinnvoll planen. Versuche es mit mehr Tagen, einem anderen Reisetempo oder einer anderen Fortbewegungsart."
+        },
+        "places": {
+            "title": "Orte auf deinem Reiseplan",
+            "text": "Öffne einen beliebigen Ort in Google Maps, um die Route vor deiner Abfahrt zu überprüfen."
+        },
+        "help": {
+            "title": "Möchtest du deinen Reiseplan von einem Einheimischen überprüfen lassen?",
+            "text": "Du bist dir nicht sicher, ob dein Reiseplan zu dir passt? Hol dir lokale Unterstützung.",
+            "cta": "Lokale Unterstützung anfragen"
+        },
+        "actions": {
+            "print": "Drucken / Als PDF speichern",
+            "share": "Link teilen",
+            "copied": "Link kopiert",
+            "copiedNote": "Jeder, der diesen Link öffnet, sieht denselben Reiseplan.",
+            "failedNote": "Der Link konnte nicht automatisch kopiert werden. Kopiere ihn stattdessen aus der Adressleiste deines Browsers.",
+            "ask": "Lokale Unterstützung anfragen"
+        },
+        "tabs": {
+            "label": "Tage deiner Reise"
+        },
+        "outline": {
+            "eyebrow": "Deine gesamte Reise",
+            "heading": "Vollständiger Überblick über {count} Tage",
+            "hint": "Wähle einen Tag aus, um die Zwischenstopps zu sehen.",
+            "view": "Tag {number} ansehen",
+            "showing": "Aktuell angezeigt"
+        },
+        "day": {
+            "label": "Tag {number}",
+            "stats": {
+                "leave": "Abfahrt aus der Stadt",
+                "stops": "Zwischenstopps",
+                "driving": "Fahrzeit, Hin- und Rückfahrt",
+                "active": "Aufenthaltszeit vor Ort"
+            },
+            "pacing": "Zwischen den Stopps sind jeweils etwa 15 Minuten Puffer eingeplant. Alle Fahrzeiten sind ungefähre Angaben und gehen davon aus, dass du in oder in der Nähe des Stadtzentrums von Nuwara Eliya übernachtest.",
+            "drive": "Etwa {duration} Fahrt",
+            "return": "Zurück in der Stadt: etwa {duration} Fahrt vom letzten Zwischenstopp",
+            "break": {
+                "title": "Mittagspause",
+                "text": "Zeit zum Essen und Ausruhen. Hier ist nichts für dich reserviert."
+            }
+        },
+        "practical": "Praktischer Hinweis",
+        "why": {
+            "label": "Warum dieser Ort eingeplant wurde",
+            "matched": "Ausgewählt aufgrund deines Interesses an {interests}.",
+            "filler": "Ergänzt den Tagesplan sinnvoll und liegt in der Nähe deiner anderen Zwischenstopps.",
+            "saved": "Du hast dieses Erlebnis gespeichert, deshalb ist es Teil deines Reiseplans."
+        },
+        "note": {
+            "dawn": "Hierfür ist ein früher Start erforderlich.",
+            "dawnAt": "Hierfür ist ein früher Start erforderlich: Die Abfahrt aus der Stadt erfolgt gegen {time}.",
+            "vehicle": "Dieser Ort liegt weit außerhalb der Stadt und ist nur mit einem Fahrzeug erreichbar. Organisiere dafür einen Fahrer oder ein Taxi.",
+            "wet": "Am besten bei trockenem Wetter. Dein Reisemonat gehört jedoch zu den regenreicheren Monaten."
+        }
+    },
+    "savedDrawer": {
+        "open": "{count, plural, =0 {Gespeicherte Orte öffnen} one {Gespeicherte Orte öffnen, 1 Ort gespeichert} other {Gespeicherte Orte öffnen, # Orte gespeichert}}",
+        "title": "Gespeicherte Orte",
+        "countLine": "{count, plural, =0 {Noch nichts gespeichert} one {1 Ort} other {# Orte}}",
+        "close": "Gespeicherte Orte schließen",
+        "remove": "{title} entfernen",
+        "planCta": "Meine Reise damit planen",
+        "planNote": "Gespeicherte Orte werden automatisch in deinen Reiseplan aufgenommen.",
+        "clear": "Alle entfernen",
+        "clearConfirm": "Alle gespeicherten Orte entfernen?",
+        "clearYes": "Ja, alle entfernen",
+        "clearNo": "Behalten",
+        "emptyTitle": "Noch nichts gespeichert",
+        "emptyText": "Wähle bei einem beliebigen Erlebnis „Zur Reise hinzufügen“, damit es hier angezeigt wird.",
+        "browse": "Erlebnisse entdecken"
+    },
+    "notFound": {
+        "code": "404",
+        "eyebrow": "Seite nicht gefunden",
+        "heading": "Im Nebel verirrt",
+        "text": "Die gesuchte Seite ist leider nicht verfügbar. Vielleicht wurde sie verschoben oder der Link ist fehlerhaft. Diese Seiten helfen dir, wieder auf den richtigen Weg zu finden.",
+        "popularLabel": "Beliebte Orte",
+        "waypoints": {
+            "home": {
+                "title": "Zurück zur Startseite",
+                "text": "Entdecke ausgewählte Erlebnisse, Reiseideen und Reiseführer.",
+                "cta": "Zur Startseite"
+            },
+            "guides": {
+                "title": "Reiseführer",
+                "text": "Praktische Tipps zu Wetter, Anreise und allem, was du einpacken solltest.",
+                "cta": "Reiseführer lesen"
+            },
+            "planner": {
+                "title": "Meine Reise planen",
+                "text": "Beantworte ein paar Fragen und erhalte einen individuellen Tagesplan.",
+                "cta": "Reiseplanung starten"
+            },
+            "ask": {
+                "title": "Frag einen Einheimischen",
+                "text": "Du bist dir nicht sicher, wohin du reisen sollst? Frag einen Einheimischen, bevor du planst.",
+                "cta": "Frage stellen"
+            }
+        },
+        "report": {
+            "eyebrow": "Einen fehlerhaften Link gefunden?",
+            "heading": "Gib uns Bescheid",
+            "text": "Wenn dich ein Link auf dieser Website hierher geführt hat, teile uns bitte mit, welche Seite betroffen ist. Wir kümmern uns darum.",
+            "cta": "Fehlerhaften Link melden",
+            "secondary": "Reiseideen entdecken"
+        }
     }
 }

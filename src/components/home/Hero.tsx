@@ -101,7 +101,7 @@ export default function Hero() {
             <div
                 className={cn(
                     enter,
-                    "border-t border-on-primary/10 bg-primary-container/80 backdrop-blur-xl"
+                    "border-t border-on-primary/10 bg-primary-container-dark backdrop-blur-xl"
                 )}
                 style={{ animationDelay: "0.9s" }}
             >
