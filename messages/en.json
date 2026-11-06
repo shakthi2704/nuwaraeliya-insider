@@ -1,0 +1,364 @@
+{
+    "navigation": {
+        "logoTitle": "Nuwara Eliya",
+        "logoSubtitle": "Guide",
+        "primaryNav": "Primary navigation",
+        "experiences": "Experiences",
+        "tripIdeas": "Trip Ideas",
+        "guides": "Travel Guides",
+        "about": "About",
+        "planTrip": "Plan My Trip",
+        "openMenu": "Open menu",
+        "closeMenu": "Close menu",
+        "language": "Language"
+    },
+    "hero": {
+        "locationTag": "Sri Lanka · Hill Country · Est. 1846",
+        "welcomeTo": "Welcome to",
+        "tagline": "Misty tea hills, colonial charm, and cool mountain air. Honest guidance from locals — completely free.",
+        "ctaPlanTrip": "Plan My Trip — Free",
+        "ctaExplorePlaces": "Explore Places",
+        "stats": [
+            {
+                "value": "1,868m",
+                "label": "Above Sea Level"
+            },
+            {
+                "value": "16°C",
+                "label": "Year-Round Climate"
+            },
+            {
+                "value": "20+",
+                "label": "Experiences"
+            },
+            {
+                "value": "Free",
+                "label": "Local Advice"
+            }
+        ]
+    },
+    "whyTrustUs": {
+        "eyebrow": "The Resident Perspective",
+        "heading": "Travel designed for the high country.",
+        "intro": "Highland Sri Lanka rewards deliberate travelers who know when the mist falls and how mountain distances actually feel.",
+        "pillars": [
+            {
+                "mark": "01 / Terrain Dynamics",
+                "title": "Elevation & Pacing",
+                "description": "At nearly 1,900 meters, mountain roads turn 20 kilometers into a 60-minute journey. We structure schedules to protect you from car fatigue."
+            },
+            {
+                "mark": "02 / Meteorology",
+                "title": "Microclimate Timing",
+                "description": "Nuwara Eliya shifts from sparkling blue morning skies to drifting mist by early afternoon. We orient walks to catch panoramic views before the cloud rolls in."
+            },
+            {
+                "mark": "03 / Provenance",
+                "title": "Authentic Artisanry",
+                "description": "Skip the souvenir-factory gift halls. We point you to working tea estates, gardens and heritage places run by people who know them well."
+            },
+            {
+                "mark": "04 / Clarity",
+                "title": "Curation Over Quantity",
+                "description": "No generic lists of 100 roadside stalls. Every recommendation is handpicked, regularly reviewed, and matched to how you like to travel."
+            }
+        ]
+    },
+    "featuredExperiences": {
+        "eyebrow": "Experiences",
+        "heading": "Things worth doing here",
+        "subheading": "Not a checklist. A considered set of ways to spend your time in the hill country.",
+        "viewExperience": "View Experience",
+        "browseAll": "Browse all experiences",
+        "elevation": "{value} m elevation",
+        "bestFor": "Best for",
+        "effortLabel": "Effort",
+        "explore": "Explore",
+        "items": [
+            {
+                "slug": "horton-plains-worlds-end",
+                "category": "Nature",
+                "title": "Horton Plains & World's End",
+                "description": "Walk the plateau at dawn and reach the escarpment edge where the land drops 880 metres into the valley below. Best in the dry season when the mist clears by mid-morning.",
+                "duration": "Half day",
+                "alt": "Open plateau of Horton Plains at first light"
+            },
+            {
+                "slug": "pedro-tea-estate",
+                "category": "Tea & Plantation",
+                "title": "Pedro Tea Estate",
+                "description": "Follow the leaf from bush to cup inside one of the oldest working estates in the hill country. The factory tour is unhurried and the people who run it have been here for generations.",
+                "duration": "2 – 3 hours",
+                "alt": "Terraced tea rows on a hill-country estate"
+            },
+            {
+                "slug": "gregory-lake-morning",
+                "category": "Relaxation",
+                "title": "Gregory Lake at First Light",
+                "description": "A quiet walk along the colonial-era bund before the town wakes. The lake sits perfectly still in the early morning, the surrounding hills reflected in it without distortion.",
+                "duration": "1 – 2 hours",
+                "alt": "Still lake surrounded by green hills at dawn"
+            }
+        ]
+    },
+    "categories": {
+        "nature": "Nature & Waterfalls",
+        "tea-plantation": "Tea & Plantations",
+        "photography": "Photography & Viewpoints",
+        "adventure": "Adventure & Hiking",
+        "relaxation": "Relaxation",
+        "food-local": "Food & Local Culture",
+        "wildlife": "Wildlife & Gardens",
+        "culture": "Culture & Heritage"
+    },
+    "effort": {
+        "easy": "Easy",
+        "moderate": "Moderate",
+        "demanding": "Demanding"
+    },
+    "popularTripIdeas": {
+        "eyebrow": "Trip Ideas",
+        "heading": "Trips that already make sense",
+        "subheading": "Whole itineraries, not a list of things to sort through yourself. Pick the one closest to your trip and adjust from there.",
+        "viewItinerary": "View Itinerary →",
+        "customItinerary": "Create a custom itinerary",
+        "customize": "Customize in planner",
+        "moreDays": "+{count} more days",
+        "experiencesCount": "{count, plural, one {# experience} other {# experiences}}",
+        "items": [
+            {
+                "slug": "week-in-the-hills",
+                "duration": "7 Days",
+                "title": "A Week in the Hills",
+                "description": "The unhurried version. Enough time to actually settle into the pace of the hill country — tea estates in the morning, the plateau at dawn, long lunches, and evenings that end early because the air turns cold. Built for people who would rather do four things well than ten things quickly.",
+                "highlights": [
+                    "Horton Plains & World's End",
+                    "Pedro Tea Estate",
+                    "Gregory Lake at First Light"
+                ],
+                "alt": "Winding road through misty tea plantation hills",
+                "featured": true
+            },
+            {
+                "slug": "three-days-as-a-couple",
+                "duration": "3 Days",
+                "title": "3 Days as a Couple",
+                "description": "A short, quiet trip built around slow mornings and one good view. Less itinerary, more mood.",
+                "highlights": [
+                    "Gregory Lake at First Light",
+                    "Pedro Tea Estate"
+                ],
+                "alt": "Couple silhouetted together at sunset"
+            },
+            {
+                "slug": "the-long-weekend",
+                "duration": "2 Days",
+                "title": "The Long Weekend",
+                "description": "For when you can only get away for two days but still want it to feel like a proper trip, not a rushed detour.",
+                "highlights": [
+                    "Horton Plains & World's End",
+                    "Gregory Lake at First Light"
+                ],
+                "alt": "Aerial view of rolling green hills under a cloudy sky"
+            }
+        ]
+    },
+    "seasonalGuide": {
+        "eyebrow": "When to Visit",
+        "heading": "Best Time to Visit",
+        "intro": "Nuwara Eliya sits at 1,868m — it stays cool year-round, but the dry season (December to March) is when the hills are at their most magical.",
+        "nowBadge": "Now",
+        "currentlyLabel": "Currently — {month}",
+        "cta": "Plan around these months",
+        "ratings": {
+            "best": "Best",
+            "good": "Good",
+            "ok": "Shoulder",
+            "wet": "Rainy"
+        },
+        "months": [
+            {
+                "short": "Jan",
+                "full": "January",
+                "rating": "good",
+                "note": "Cool and dry. Peak season."
+            },
+            {
+                "short": "Feb",
+                "full": "February",
+                "rating": "best",
+                "note": "Best weather. Mild days."
+            },
+            {
+                "short": "Mar",
+                "full": "March",
+                "rating": "best",
+                "note": "Clear skies, warm afternoons."
+            },
+            {
+                "short": "Apr",
+                "full": "April",
+                "rating": "ok",
+                "note": "Occasional showers begin."
+            },
+            {
+                "short": "May",
+                "full": "May",
+                "rating": "wet",
+                "note": "South-west monsoon arrives."
+            },
+            {
+                "short": "Jun",
+                "full": "June",
+                "rating": "wet",
+                "note": "Heavy rain, misty hills."
+            },
+            {
+                "short": "Jul",
+                "full": "July",
+                "rating": "wet",
+                "note": "Peak monsoon. Lush green."
+            },
+            {
+                "short": "Aug",
+                "full": "August",
+                "rating": "wet",
+                "note": "Wet but dramatic scenery."
+            },
+            {
+                "short": "Sep",
+                "full": "September",
+                "rating": "ok",
+                "note": "Rain easing. Waterfalls peak."
+            },
+            {
+                "short": "Oct",
+                "full": "October",
+                "rating": "ok",
+                "note": "Inter-monsoon showers."
+            },
+            {
+                "short": "Nov",
+                "full": "November",
+                "rating": "good",
+                "note": "Cooling down. Good visits."
+            },
+            {
+                "short": "Dec",
+                "full": "December",
+                "rating": "best",
+                "note": "Cool, festive, and clear."
+            }
+        ],
+        "seasons": [
+            {
+                "range": "April",
+                "title": "The April Season",
+                "description": "Nuwara Eliya at its fullest — horse racing, motor racing, and the town in bloom."
+            },
+            {
+                "range": "Dec — Mar",
+                "title": "Dry Season",
+                "description": "The clearest skies of the year. Best odds for uninterrupted views from Horton Plains."
+            },
+            {
+                "range": "Jun — Sep",
+                "title": "Misty Mornings",
+                "description": "Fog rolls through the tea hills before sunrise. Quieter, slower, and photogenic."
+            },
+            {
+                "range": "Oct — Nov, May",
+                "title": "Shoulder Season",
+                "description": "Fewer travelers, lower rates, and still good weather for getting around."
+            }
+        ]
+    },
+    "planMyTripCTA": {
+        "badge": "Free trip planner",
+        "heading": "Let’s build an itinerary tailored to your rhythm.",
+        "description": "Answer a few questions about your pace, who you are traveling with, and what you want from the highlands. We will build a realistic day-by-day plan around real mountain driving times.",
+        "points": [
+            "No rigid schedules",
+            "Realistic mountain driving times",
+            "Free, with no sign-up"
+        ],
+        "cta": "Start the trip planner",
+        "note": "No account or credit card needed."
+    },
+    "essentialAdvices": {
+        "eyebrow": "Field Notes & Intelligence",
+        "heading": "Essential advice before you arrive.",
+        "intro": "Practical notes from someone who lives here, to help you pack properly and handle the highland roads comfortably.",
+        "items": {
+            "weather": {
+                "title": "The Weather Reality: Mist, Showers & Sunshine Windows",
+                "description": "Mornings are often bright, then cloud drifts in by midday and showers can follow in the afternoon. Do the important thing early and keep a waterproof layer in your bag.",
+                "cta": "Read Weather Patterns"
+            },
+            "transport": {
+                "title": "Getting Up the Hill: Train, Car or Bus",
+                "description": "The hill-country train is the scenic way up to Nanu Oya, a private car is the most flexible, and the public bus is the cheapest. Each suits a different kind of traveler.",
+                "cta": "Compare Transport Options"
+            },
+            "seasons": {
+                "title": "Best Seasons: Horton Plains and the Dry Months",
+                "description": "December to March is the most reliable window for clear mornings at World's End. April is the busiest month, and mid-year is quieter, wetter and very green.",
+                "cta": "View Seasonality Guide"
+            }
+        }
+    },
+    "latestGuides": {
+        "eyebrow": "From the Journal",
+        "heading": "Latest Highland Stories & Guides",
+        "allGuides": "Browse All Stories",
+        "readGuide": "Read Guide"
+    },
+    "experiencesPage": {
+        "eyebrow": "Experiences",
+        "heading": "All Experiences",
+        "subheading": "Every experience we recommend in the hill country, in one place.",
+        "viewExperience": "View Experience",
+        "savedCount": "{count} saved to your trip",
+        "openPlanner": "Open Planner",
+        "filtersLabel": "Filter experiences",
+        "allExperiences": "All experiences",
+        "effortLabel": "Filter by effort:",
+        "emptyHeading": "No experiences match these filters",
+        "emptyText": "Try a different category or effort level.",
+        "clearFilters": "Clear filters",
+        "crumbSection": "Field Guide",
+        "crumbPlace": "Nuwara Eliya & Highlands",
+        "count": "{count, plural, one {# experience} other {# experiences}}",
+        "headingLead": "Find your kind of",
+        "headingAccent": "highland experience.",
+        "lead": "Every experience here comes with realistic pacing, timing and effort, so you can see what a day actually looks like before you plan it.",
+        "ctaHeading": "Planning a trip around these experiences?",
+        "ctaText": "Combine your favourites into a sensible day-by-day plan that respects hill-country distances.",
+        "ctaPrimary": "Start customizing in the Trip Planner",
+        "ctaSecondary": "Browse trip ideas"
+    },
+    "footer": {
+        "logoTitle": "Nuwara Insider",
+        "tagline": "Discover Nuwara Eliya like a local. Plan a trip that feels like yours.",
+        "description": "Curated journeys through misty tea country, high-elevation botanical trails and quiet colonial architecture in Sri Lanka’s historic hill station.",
+        "exploreHeading": "Explore",
+        "practicalInfoHeading": "Practical Information",
+        "connectHeading": "Local Assistance & Connect",
+        "experiences": "Experiences",
+        "tripIdeas": "Trip Ideas",
+        "guides": "Travel Guides",
+        "planTrip": "Plan My Trip",
+        "about": "About",
+        "gettingThere": "Getting There",
+        "weatherGuide": "Weather & Seasons",
+        "bestTimeToVisit": "Best Time to Visit",
+        "localTips": "Local Tips",
+        "askInsider": "Ask an Insider",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "copyright": "© {year} Nuwara Insider. Dedicated to authentic Ceylon highland exploration.",
+        "region": "Little England, Sri Lanka",
+        "followHeading": "Follow Us",
+        "followOn": "Nuwara Insider on {platform} (opens in a new tab)"
+    }
+}

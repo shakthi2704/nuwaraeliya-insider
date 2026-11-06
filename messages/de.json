@@ -1,0 +1,364 @@
+{
+    "navigation": {
+        "logoTitle": "Nuwara Eliya",
+        "logoSubtitle": "Reiseführer",
+        "primaryNav": "Hauptnavigation",
+        "experiences": "Erlebnisse",
+        "tripIdeas": "Reiseideen",
+        "guides": "Reiseführer",
+        "about": "Über uns",
+        "planTrip": "Meine Reise planen",
+        "openMenu": "Menü öffnen",
+        "closeMenu": "Menü schließen",
+        "language": "Sprache"
+    },
+    "hero": {
+        "locationTag": "Sri Lanka · Hochland · Gegründet 1846",
+        "welcomeTo": "Willkommen in",
+        "tagline": "Nebelverhangene Teeplantagen, kolonialer Charme und kühle Bergluft. Ehrliche Tipps von Einheimischen – völlig kostenlos.",
+        "ctaPlanTrip": "Meine Reise planen – Kostenlos",
+        "ctaExplorePlaces": "Orte entdecken",
+        "stats": [
+            {
+                "value": "1.868 m",
+                "label": "Über dem Meeresspiegel"
+            },
+            {
+                "value": "16 °C",
+                "label": "Ganzjähriges Klima"
+            },
+            {
+                "value": "20+",
+                "label": "Erlebnisse"
+            },
+            {
+                "value": "Kostenlos",
+                "label": "Lokale Empfehlungen"
+            }
+        ]
+    },
+    "whyTrustUs": {
+        "eyebrow": "Die Perspektive der Einheimischen",
+        "heading": "Reisen, abgestimmt auf das Hochland.",
+        "intro": "Sri Lankas Hochland belohnt Reisende, die bewusst unterwegs sind und wissen, wann der Nebel aufzieht und wie sich Entfernungen in den Bergen tatsächlich anfühlen.",
+        "pillars": [
+            {
+                "mark": "01 / Geländedynamik",
+                "title": "Höhenlage & Reisetempo",
+                "description": "Auf fast 1.900 Metern werden 20 Kilometer auf kurvenreichen Bergstraßen schnell zu einer einstündigen Fahrt. Wir gestalten deine Reiseplanung so, dass lange Autofahrten nicht zur Belastung werden."
+            },
+            {
+                "mark": "02 / Wetterkunde",
+                "title": "Das richtige Timing fürs Mikroklima",
+                "description": "In Nuwara Eliya verwandelt sich der strahlend blaue Morgenhimmel oft schon am frühen Nachmittag in aufziehenden Nebel. Wir planen Spaziergänge so, dass du die spektakulären Panoramablicke genießen kannst, bevor die Wolken aufziehen."
+            },
+            {
+                "mark": "03 / Authentizität",
+                "title": "Echtes lokales Handwerk",
+                "description": "Lass die Souvenirläden mit Massenware links liegen. Wir zeigen dir aktive Teeplantagen, Gärten und historische Orte, die von Menschen geführt werden, die ihre Arbeit und ihre Geschichte wirklich kennen."
+            },
+            {
+                "mark": "04 / Transparenz",
+                "title": "Qualität statt Quantität",
+                "description": "Keine beliebigen Listen mit 100 Straßenständen. Jede Empfehlung wird sorgfältig ausgewählt, regelmäßig überprüft und darauf abgestimmt, wie du am liebsten reist."
+            }
+        ]
+    },
+    "featuredExperiences": {
+        "eyebrow": "Erlebnisse",
+        "heading": "Erlebnisse, die sich wirklich lohnen",
+        "subheading": "Keine gewöhnliche To-do-Liste, sondern sorgfältig ausgewählte Möglichkeiten, deine Zeit im Hochland zu genießen.",
+        "viewExperience": "Erlebnis ansehen",
+        "browseAll": "Alle Erlebnisse entdecken",
+        "elevation": "{value} m Höhenlage",
+        "bestFor": "Ideal für",
+        "effortLabel": "Anstrengungsgrad",
+        "explore": "Entdecken",
+        "items": [
+            {
+                "slug": "horton-plains-worlds-end",
+                "category": "Natur",
+                "title": "Horton Plains & World's End",
+                "description": "Wandere im Morgengrauen über das Hochplateau bis zur Abbruchkante, wo das Gelände 880 Meter tief ins Tal abfällt. Besonders empfehlenswert während der Trockenzeit, wenn sich der Nebel bis zum Vormittag lichtet.",
+                "duration": "Halber Tag",
+                "alt": "Weite Hochebene von Horton Plains im ersten Morgenlicht"
+            },
+            {
+                "slug": "pedro-tea-estate",
+                "category": "Tee & Plantagen",
+                "title": "Pedro Tea Estate",
+                "description": "Verfolge den Weg des Teeblatts vom Strauch bis in die Tasse auf einer der ältesten noch aktiven Teeplantagen des Hochlands. Die Fabrikführung findet in entspannter Atmosphäre statt und wird von Menschen begleitet, deren Familien hier seit Generationen arbeiten.",
+                "duration": "2–3 Stunden",
+                "alt": "Terrassenförmig angelegte Teereihen auf einer Plantage im Hochland"
+            },
+            {
+                "slug": "gregory-lake-morning",
+                "category": "Entspannung",
+                "title": "Gregory Lake im ersten Morgenlicht",
+                "description": "Genieße einen ruhigen Spaziergang entlang des historischen Ufers aus der Kolonialzeit, bevor die Stadt erwacht. Am frühen Morgen liegt der See spiegelglatt da und reflektiert die umliegenden grünen Hügel in ihrer ganzen Schönheit.",
+                "duration": "1–2 Stunden",
+                "alt": "Ruhiger See, umgeben von grünen Hügeln im Morgengrauen"
+            }
+        ]
+    },
+    "categories": {
+        "nature": "Natur & Wasserfälle",
+        "tea-plantation": "Tee & Plantagen",
+        "photography": "Fotografie & Aussichtspunkte",
+        "adventure": "Abenteuer & Wandern",
+        "relaxation": "Entspannung",
+        "food-local": "Kulinarik & lokale Kultur",
+        "wildlife": "Tierwelt & Gärten",
+        "culture": "Kultur & Kulturerbe"
+    },
+    "effort": {
+        "easy": "Einfach",
+        "moderate": "Mittel",
+        "demanding": "Anspruchsvoll"
+    },
+    "popularTripIdeas": {
+        "eyebrow": "Reiseideen",
+        "heading": "Reiserouten, die bereits durchdacht sind",
+        "subheading": "Komplett geplante Reiserouten statt einer endlosen Liste von Dingen, die du selbst organisieren musst. Wähle die Route, die deiner Reise am nächsten kommt, und passe sie nach deinen Wünschen an.",
+        "viewItinerary": "Reiseroute ansehen →",
+        "customItinerary": "Individuelle Reiseroute erstellen",
+        "customize": "Im Reiseplaner anpassen",
+        "moreDays": "+{count} weitere Tage",
+        "experiencesCount": "{count, plural, one {# Erlebnis} other {# Erlebnisse}}",
+        "items": [
+            {
+                "slug": "week-in-the-hills",
+                "duration": "7 Tage",
+                "title": "Eine Woche im Hochland",
+                "description": "Die entspannte Variante. Genug Zeit, um wirklich im gemächlichen Rhythmus des Hochlands anzukommen – Teeplantagen am Morgen, das Hochplateau im Morgengrauen, ausgedehnte Mittagessen und Abende, die früh enden, wenn die Luft kühl wird. Ideal für alle, die lieber vier Dinge richtig genießen, statt zehn Dinge schnell abzuhaken.",
+                "highlights": [
+                    "Horton Plains & World's End",
+                    "Pedro Tea Estate",
+                    "Gregory Lake im ersten Morgenlicht"
+                ],
+                "alt": "Geschwungene Straße durch nebelverhangene Teeplantagen im Hochland",
+                "featured": true
+            },
+            {
+                "slug": "three-days-as-a-couple",
+                "duration": "3 Tage",
+                "title": "3 Tage zu zweit",
+                "description": "Ein kurzer, ruhiger Ausflug mit entspannten Morgenstunden und einem unvergesslichen Ausblick. Weniger Programm, mehr gemeinsame Momente.",
+                "highlights": [
+                    "Gregory Lake im ersten Morgenlicht",
+                    "Pedro Tea Estate"
+                ],
+                "alt": "Paar, das gemeinsam den Sonnenuntergang genießt"
+            },
+            {
+                "slug": "the-long-weekend",
+                "duration": "2 Tage",
+                "title": "Das verlängerte Wochenende",
+                "description": "Für alle, die nur zwei Tage Zeit haben, aber trotzdem eine richtige Reise erleben möchten – statt eines hektischen Zwischenstopps.",
+                "highlights": [
+                    "Horton Plains & World's End",
+                    "Gregory Lake im ersten Morgenlicht"
+                ],
+                "alt": "Luftaufnahme sanfter grüner Hügel unter einem bewölkten Himmel"
+            }
+        ]
+    },
+    "seasonalGuide": {
+        "eyebrow": "Wann ist die beste Reisezeit?",
+        "heading": "Die beste Reisezeit",
+        "intro": "Nuwara Eliya liegt auf 1.868 m Höhe und bleibt das ganze Jahr über angenehm kühl. Doch während der Trockenzeit von Dezember bis März zeigt sich das Hochland von seiner schönsten Seite.",
+        "nowBadge": "Jetzt",
+        "currentlyLabel": "Aktuell — {month}",
+        "cta": "Reise nach diesen Monaten planen",
+        "ratings": {
+            "best": "Ideal",
+            "good": "Gut",
+            "ok": "Übergangszeit",
+            "wet": "Regenzeit"
+        },
+        "months": [
+            {
+                "short": "Jan",
+                "full": "Januar",
+                "rating": "good",
+                "note": "Kühl und trocken. Hauptreisezeit."
+            },
+            {
+                "short": "Feb",
+                "full": "Februar",
+                "rating": "best",
+                "note": "Bestes Wetter. Angenehm milde Tage."
+            },
+            {
+                "short": "Mär",
+                "full": "März",
+                "rating": "best",
+                "note": "Klarer Himmel und warme Nachmittage."
+            },
+            {
+                "short": "Apr",
+                "full": "April",
+                "rating": "ok",
+                "note": "Erste gelegentliche Regenschauer."
+            },
+            {
+                "short": "Mai",
+                "full": "Mai",
+                "rating": "wet",
+                "note": "Der Südwestmonsun setzt ein."
+            },
+            {
+                "short": "Jun",
+                "full": "Juni",
+                "rating": "wet",
+                "note": "Starke Regenfälle und nebelverhangene Hügel."
+            },
+            {
+                "short": "Jul",
+                "full": "Juli",
+                "rating": "wet",
+                "note": "Höhepunkt des Monsuns. Üppiges Grün."
+            },
+            {
+                "short": "Aug",
+                "full": "August",
+                "rating": "wet",
+                "note": "Regenreich, aber mit beeindruckender Landschaft."
+            },
+            {
+                "short": "Sep",
+                "full": "September",
+                "rating": "ok",
+                "note": "Regen lässt nach. Wasserfälle führen viel Wasser."
+            },
+            {
+                "short": "Okt",
+                "full": "Oktober",
+                "rating": "ok",
+                "note": "Wechselhafte Schauer zwischen den Monsunzeiten."
+            },
+            {
+                "short": "Nov",
+                "full": "November",
+                "rating": "good",
+                "note": "Die Temperaturen sinken. Gute Reisebedingungen."
+            },
+            {
+                "short": "Dez",
+                "full": "Dezember",
+                "rating": "best",
+                "note": "Kühl, festlich und meist klar."
+            }
+        ],
+        "seasons": [
+            {
+                "range": "April",
+                "title": "Die April-Festsaison",
+                "description": "Nuwara Eliya zeigt sich von seiner lebhaftesten Seite – mit Pferderennen, Motorsportveranstaltungen und einer Stadt in voller Blütenpracht."
+            },
+            {
+                "range": "Dez — Mär",
+                "title": "Trockenzeit",
+                "description": "Der klarste Himmel des Jahres. Die besten Chancen auf ungestörte Panoramablicke von Horton Plains."
+            },
+            {
+                "range": "Jun — Sep",
+                "title": "Nebelige Morgenstunden",
+                "description": "Vor Sonnenaufgang zieht Nebel durch die Teeplantagen und über die Hügel. Ruhiger, entspannter und besonders fotogen."
+            },
+            {
+                "range": "Okt — Nov, Mai",
+                "title": "Übergangszeit",
+                "description": "Weniger Reisende, günstigere Preise und dennoch gute Bedingungen, um die Region zu erkunden."
+            }
+        ]
+    },
+    "planMyTripCTA": {
+        "badge": "Kostenloser Reiseplaner",
+        "heading": "Lass uns eine Reiseroute ganz nach deinem Rhythmus gestalten.",
+        "description": "Beantworte ein paar Fragen zu deinem Reisetempo, deinen Mitreisenden und deinen Wünschen für das Hochland. Wir erstellen einen realistischen Tagesplan, der auch die tatsächlichen Fahrzeiten auf den Bergstraßen berücksichtigt.",
+        "points": [
+            "Keine starren Zeitpläne",
+            "Realistische Fahrzeiten auf Bergstraßen",
+            "Kostenlos und ohne Registrierung"
+        ],
+        "cta": "Reiseplanung starten",
+        "note": "Kein Konto und keine Kreditkarte erforderlich."
+    },
+    "essentialAdvices": {
+        "eyebrow": "Insider-Tipps & Hintergrundwissen",
+        "heading": "Wichtige Tipps vor deiner Anreise.",
+        "intro": "Praktische Hinweise von jemandem, der hier lebt – damit du richtig packst und die Bergstraßen des Hochlands entspannt erkunden kannst.",
+        "items": {
+            "weather": {
+                "title": "Das Wetter im Hochland: Nebel, Regenschauer & sonnige Stunden",
+                "description": "Die Morgenstunden sind oft sonnig, bevor sich gegen Mittag Wolken bilden und am Nachmittag Regenschauer einsetzen können. Plane wichtige Aktivitäten möglichst früh und habe immer eine wasserdichte Jacke dabei.",
+                "cta": "Wetterbedingungen entdecken"
+            },
+            "transport": {
+                "title": "Die Anreise ins Hochland: Zug, Auto oder Bus",
+                "description": "Die Zugfahrt durch das Hochland nach Nanu Oya bietet besonders schöne Ausblicke, ein privater Mietwagen sorgt für maximale Flexibilität und der öffentliche Bus ist die günstigste Option. Jede Möglichkeit eignet sich für unterschiedliche Reisetypen.",
+                "cta": "Transportmöglichkeiten vergleichen"
+            },
+            "seasons": {
+                "title": "Die beste Reisezeit: Horton Plains und die Trockenmonate",
+                "description": "Von Dezember bis März hast du die besten Chancen auf klare Morgenstunden am World's End. Der April ist der geschäftigste Monat, während es zur Jahresmitte ruhiger, regenreicher und besonders grün ist.",
+                "cta": "Reisezeiten entdecken"
+            }
+        }
+    },
+    "latestGuides": {
+        "eyebrow": "Aus unserem Journal",
+        "heading": "Aktuelle Geschichten & Reiseführer aus dem Hochland",
+        "allGuides": "Alle Beiträge entdecken",
+        "readGuide": "Reiseführer lesen"
+    },
+    "experiencesPage": {
+        "eyebrow": "Erlebnisse",
+        "heading": "Alle Erlebnisse",
+        "subheading": "Alle unsere Empfehlungen für Erlebnisse im Hochland an einem Ort.",
+        "viewExperience": "Erlebnis ansehen",
+        "savedCount": "{count} für deine Reise gespeichert",
+        "openPlanner": "Reiseplaner öffnen",
+        "filtersLabel": "Erlebnisse filtern",
+        "allExperiences": "Alle Erlebnisse",
+        "effortLabel": "Nach Aktivitätsniveau filtern:",
+        "emptyHeading": "Keine Erlebnisse entsprechen diesen Filtern",
+        "emptyText": "Probiere eine andere Kategorie oder ein anderes Aktivitätsniveau.",
+        "clearFilters": "Filter zurücksetzen",
+        "crumbSection": "Reiseführer",
+        "crumbPlace": "Nuwara Eliya & Hochland",
+        "count": "{count, plural, one {# Erlebnis} other {# Erlebnisse}}",
+        "headingLead": "Finde dein persönliches",
+        "headingAccent": "Hochlanderlebnis.",
+        "lead": "Jedes Erlebnis enthält realistische Angaben zu Dauer, Zeitplanung und Anstrengungsgrad. So weißt du schon vor der Planung, was dich an einem Tag erwartet.",
+        "ctaHeading": "Planst du eine Reise rund um diese Erlebnisse?",
+        "ctaText": "Kombiniere deine Favoriten zu einem durchdachten Tagesplan, der die Entfernungen im Hochland berücksichtigt.",
+        "ctaPrimary": "Reise im Reiseplaner individuell gestalten",
+        "ctaSecondary": "Reiseideen entdecken"
+    },
+    "footer": {
+        "logoTitle": "Nuwara Insider",
+        "tagline": "Entdecke Nuwara Eliya wie ein Einheimischer. Plane eine Reise ganz nach deinem Geschmack.",
+        "description": "Sorgfältig zusammengestellte Reisen durch nebelverhangene Teeanbaugebiete, botanische Wanderwege in luftiger Höhe und die stille Kolonialarchitektur der historischen Bergstadt Sri Lankas.",
+        "exploreHeading": "Entdecken",
+        "practicalInfoHeading": "Praktische Informationen",
+        "connectHeading": "Lokale Unterstützung & Kontakt",
+        "experiences": "Erlebnisse",
+        "tripIdeas": "Reiseideen",
+        "guides": "Reiseführer",
+        "planTrip": "Meine Reise planen",
+        "about": "Über uns",
+        "gettingThere": "Anreise",
+        "weatherGuide": "Wetter & Jahreszeiten",
+        "bestTimeToVisit": "Beste Reisezeit",
+        "localTips": "Insider-Tipps",
+        "askInsider": "Frage einen Insider",
+        "privacy": "Datenschutzerklärung",
+        "terms": "Nutzungsbedingungen",
+        "copyright": "© {year} Nuwara Insider. Gewidmet der authentischen Erkundung des ceylonesischen Hochlands.",
+        "region": "Klein-England, Sri Lanka",
+        "followHeading": "Folge uns",
+        "followOn": "Nuwara Insider auf {platform} (öffnet in einem neuen Tab)"
+    }
+}
