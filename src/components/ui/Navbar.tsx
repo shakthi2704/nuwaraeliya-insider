@@ -9,6 +9,7 @@ import SavedTripDrawer, {
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { ButtonLink } from "./Button";
+import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 
 const NAV_LINKS = [
     { key: "experiences", href: "/experiences" },
@@ -66,6 +67,10 @@ export default function Navbar({
             link: "text-on-primary/85 hover:bg-surface-container-lowest/10 hover:text-on-primary",
             linkActive: "bg-surface-container-lowest/20 text-on-primary",
             toggle: "text-on-primary hover:bg-surface-container-lowest/10",
+            langText: "text-on-primary",
+            langActive: "bg-surface-container-lowest/25 text-on-primary",
+            langIdle:
+                "text-on-primary/75 hover:bg-surface-container-lowest/10 hover:text-on-primary",
         }
         : {
             tile: "bg-primary-container text-on-primary",
@@ -74,6 +79,10 @@ export default function Navbar({
             link: "text-on-surface-variant hover:bg-surface-container hover:text-on-surface",
             linkActive: "bg-primary-container text-on-primary-container",
             toggle: "text-on-surface hover:bg-surface-container",
+            langText: "text-on-surface-variant",
+            langActive: "bg-primary-container text-on-primary-container",
+            langIdle:
+                "text-on-surface-variant hover:bg-surface-container hover:text-on-surface",
         };
 
     return (
@@ -86,6 +95,22 @@ export default function Navbar({
                         : "bg-surface/90 shadow-nav backdrop-blur-xl"
                 )}
             >
+
+                {/* Top bar: language switcher */}
+                <div
+                    className={cn(
+                        "border-b transition-colors duration-300",
+                        overHero ? "border-on-primary/15" : "border-outline-variant/30"
+                    )}
+                >
+                    <div className="mx-auto flex h-9 max-w-[90rem] items-center justify-end px-margin md:px-margin-md lg:px-margin-lg">
+                        <LanguageSwitcher
+                            className={tone.langText}
+                            activeClassName={tone.langActive}
+                            idleClassName={tone.langIdle}
+                        />
+                    </div>
+                </div>
                 <div className="mx-auto flex h-20 max-w-[90rem] items-center justify-between px-margin md:px-margin-md lg:px-margin-lg">
                     {/* Wordmark. The leaf tile is a placeholder until the real logo exists. */}
                     <Link
@@ -188,7 +213,7 @@ export default function Navbar({
             <div
                 id="mobile-menu"
                 className={cn(
-                    "fixed inset-x-0 top-20 z-40 border-t border-outline-variant/40 bg-surface/95 px-margin pb-6 pt-3 shadow-float backdrop-blur-xl lg:hidden",
+                    "fixed inset-x-0 top-[7.25rem] z-40 border-t border-outline-variant/40 bg-surface/95 px-margin pb-6 pt-3 shadow-float backdrop-blur-xl lg:hidden",
                     "transition-[opacity,transform,visibility] duration-200 ease-out",
                     menuOpen
                         ? "visible translate-y-0 opacity-100"
