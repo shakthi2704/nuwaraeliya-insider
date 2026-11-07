@@ -80,7 +80,7 @@ export default function ExperienceDetail({
         <>
             <article>
                 {/* Hero: bleeds under the fixed header (main has pt-20) */}
-                <header className="relative isolate -mt-20 flex h-[36rem] flex-col justify-end overflow-hidden bg-primary-container text-on-primary md:h-[620px]">
+                <header className="relative isolate mt-[7.25rem] flex h-[36rem] flex-col justify-end overflow-hidden bg-primary-container text-on-primary md:h-[620px]">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                         src={experience.image}

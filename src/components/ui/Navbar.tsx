@@ -9,7 +9,7 @@ import SavedTripDrawer, {
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { ButtonLink } from "./Button";
-import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const NAV_LINKS = [
     { key: "experiences", href: "/experiences" },
@@ -95,22 +95,16 @@ export default function Navbar({
                         : "bg-surface/90 shadow-nav backdrop-blur-xl"
                 )}
             >
-
-                {/* Top bar: language switcher */}
-                <div
-                    className={cn(
-                        "border-b transition-colors duration-300",
-                        overHero ? "border-on-primary/15" : "border-outline-variant/30"
-                    )}
-                >
-                    <div className="mx-auto flex h-9 max-w-[90rem] items-center justify-end px-margin md:px-margin-md lg:px-margin-lg">
-                        <LanguageSwitcher
-                            className={tone.langText}
-                            activeClassName={tone.langActive}
-                            idleClassName={tone.langIdle}
-                        />
-                    </div>
+                {/* Top bar: language switcher. No background of its own, so it
+                    shows the same surface as the header (transparent over the hero). */}
+                <div className="mx-auto flex h-9 max-w-[90rem] items-end justify-end px-margin md:px-margin-md lg:px-margin-lg">
+                    <LanguageSwitcher
+                        className={tone.langText}
+                        activeClassName={tone.langActive}
+                        idleClassName={tone.langIdle}
+                    />
                 </div>
+
                 <div className="mx-auto flex h-20 max-w-[90rem] items-center justify-between px-margin md:px-margin-md lg:px-margin-lg">
                     {/* Wordmark. The leaf tile is a placeholder until the real logo exists. */}
                     <Link
