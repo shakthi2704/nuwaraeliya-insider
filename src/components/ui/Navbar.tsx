@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ArrowRight, Leaf, Menu, X } from "lucide-react";
+import { ArrowRight, Globe, Leaf, Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import SavedTripDrawer, {
     type SavedTripItem,
@@ -12,10 +12,11 @@ import { ButtonLink } from "./Button";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const NAV_LINKS = [
+    // { key: "about", href: "/about" },
     { key: "experiences", href: "/experiences" },
     { key: "tripIdeas", href: "/trip-ideas" },
     { key: "guides", href: "/guides" },
-    { key: "about", href: "/about" },
+    { key: "Ask an Insider", href: "/ask-an-insider" },
 ] as const;
 
 /* Pages whose hero photo runs underneath the header. */
@@ -64,8 +65,8 @@ export default function Navbar({
             tile: "bg-surface-container-lowest/15 text-on-primary",
             title: "text-on-primary group-hover:text-primary-fixed",
             subtitle: "text-primary-fixed-dim",
-            link: "text-on-primary/85 hover:bg-surface-container-lowest/10 hover:text-on-primary",
-            linkActive: "bg-surface-container-lowest/20 text-on-primary",
+            link: "text-on-primary/85 hover:text-tertiary-container",
+            linkActive: "text-tertiary-container",
             toggle: "text-on-primary hover:bg-surface-container-lowest/10",
             langText: "text-on-primary",
             langActive: "bg-surface-container-lowest/25 text-on-primary",
@@ -73,16 +74,16 @@ export default function Navbar({
                 "text-on-primary/75 hover:bg-surface-container-lowest/10 hover:text-on-primary",
         }
         : {
-            tile: "bg-primary-container text-on-primary",
-            title: "text-primary group-hover:text-secondary",
-            subtitle: "text-on-surface-variant",
-            link: "text-on-surface-variant hover:bg-surface-container hover:text-on-surface",
-            linkActive: "bg-primary-container text-on-primary-container",
-            toggle: "text-on-surface hover:bg-surface-container",
-            langText: "text-on-surface-variant",
+            tile: "bg-surface-container-lowest/15 text-on-primary",
+            title: "text-on-primary group-hover:text-primary-fixed",
+            subtitle: "text-primary-fixed-dim",
+            link: "text-on-primary/85 hover:text-tertiary-container",
+            linkActive: "text-tertiary-container",
+            toggle: "text-on-primary hover:bg-surface-container-lowest/10",
+            langText: "text-on-primary",
             langActive: "bg-primary-container text-on-primary-container",
             langIdle:
-                "text-on-surface-variant hover:bg-surface-container hover:text-on-surface",
+                "text-on-primary/75 hover:bg-surface-container-lowest/10 hover:text-on-primary",
         };
 
     return (
@@ -91,13 +92,18 @@ export default function Navbar({
                 className={cn(
                     "fixed inset-x-0 top-0 z-50 transition-[background-color,box-shadow,backdrop-filter] duration-300",
                     overHero
-                        ? "bg-transparent"
-                        : "bg-surface/90 shadow-nav backdrop-blur-xl"
+                        ? "bg-primary-container-darkest border-b border-[rgba(184,146,74,0.2)] shadow-[0_8px_32px_rgba(0,0,0,0.22)] backdrop-blur-xl"
+                        : "bg-[color-mix(in_srgb,var(--color-primary-container-darkest)_90%,transparent)] border-b border-transparent backdrop-blur-sm"
                 )}
             >
-                {/* Top bar: language switcher. No background of its own, so it
-                    shows the same surface as the header (transparent over the hero). */}
-                <div className="mx-auto flex h-9 max-w-[90rem] items-end justify-end px-margin md:px-margin-md lg:px-margin-lg">
+                {/* Top bar: globe + language switcher. No background of its own,
+                    so it shows the same surface as the header. */}
+                <div className="mx-auto flex h-9 max-w-[90rem] items-center justify-end gap-1.5 px-margin md:px-margin-md lg:px-margin-lg">
+                    <Globe
+                        aria-hidden="true"
+                        className={cn("size-4", tone.langText)}
+                        strokeWidth={1.75}
+                    />
                     <LanguageSwitcher
                         className={tone.langText}
                         activeClassName={tone.langActive}
@@ -105,7 +111,7 @@ export default function Navbar({
                     />
                 </div>
 
-                <div className="mx-auto flex h-20 max-w-[90rem] items-center justify-between px-margin md:px-margin-md lg:px-margin-lg">
+                <div className="mx-auto flex h-16 max-w-[90rem] items-center justify-between px-margin md:px-margin-md lg:px-margin-lg">
                     {/* Wordmark. The leaf tile is a placeholder until the real logo exists. */}
                     <Link
                         href="/"
@@ -115,7 +121,7 @@ export default function Navbar({
                         <span
                             aria-hidden="true"
                             className={cn(
-                                "flex size-9 items-center justify-center rounded-lg transition-colors duration-300",
+                                "flex size-9 items-center justify-center rounded-md transition-colors duration-300",
                                 tone.tile
                             )}
                         >
@@ -141,7 +147,7 @@ export default function Navbar({
                         </span>
                     </Link>
 
-                    {/* Desktop navigation */}
+                    {/* Desktop navigation: underline on hover */}
                     <nav
                         className="hidden items-center gap-2 lg:flex"
                         aria-label={t("primaryNav")}
@@ -154,8 +160,10 @@ export default function Navbar({
                                     href={href}
                                     aria-current={active ? "page" : undefined}
                                     className={cn(
-                                        "rounded-lg px-4 py-2 font-sans text-label-lg transition-all",
-                                        active ? tone.linkActive : tone.link
+                                        "bg-linear-to-r from-tertiary-container to-tertiary-container bg-size-[0%_2px] bg-position-[0_100%] bg-no-repeat px-3 py-2 font-sans text-label-lg transition-[background-size,color] duration-300 ease-out hover:bg-size-[100%_2px]",
+                                        active
+                                            ? cn(tone.linkActive, "bg-size-[100%_2px]")
+                                            : tone.link
                                     )}
                                 >
                                     {t(key)}
@@ -170,14 +178,15 @@ export default function Navbar({
                             triggerClassName={tone.toggle}
                         />
 
+                        {/* Plan My Trip: lifts on hover, arrow slides right */}
                         <ButtonLink
                             href="/plan-my-trip"
-                            size="md"
-                            variant={overHero ? "light" : "primary"}
-                            className="hidden sm:inline-flex"
+                            size="sm"
+                            variant={overHero ? "accent" : "light"}
+                            className="group hidden sm:inline-flex hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0"
                         >
                             {t("planTrip")}
-                            <ArrowRight className="size-[18px]" />
+                            <ArrowRight className="size-[18px] transition-transform duration-200 group-hover:translate-x-1" />
                         </ButtonLink>
 
                         {/* Mobile menu toggle */}
@@ -188,7 +197,7 @@ export default function Navbar({
                             aria-expanded={menuOpen}
                             aria-controls="mobile-menu"
                             className={cn(
-                                "inline-flex size-10 items-center justify-center rounded-lg transition-colors lg:hidden",
+                                "inline-flex size-10 items-center justify-center rounded-md transition-colors lg:hidden",
                                 tone.toggle
                             )}
                         >
@@ -203,11 +212,11 @@ export default function Navbar({
             </header>
 
             {/* Mobile menu. `invisible` when closed also removes its links
-                from the keyboard tab order. */}
+                from the keyboard tab order. Header = 2.25rem bar + 4rem row. */}
             <div
                 id="mobile-menu"
                 className={cn(
-                    "fixed inset-x-0 top-[7.25rem] z-40 border-t border-outline-variant/40 bg-surface/95 px-margin pb-6 pt-3 shadow-float backdrop-blur-xl lg:hidden",
+                    "fixed inset-x-0 top-[6.25rem] z-40 border-t border-outline-variant/40 bg-surface/95 px-margin pb-6 pt-3 shadow-float backdrop-blur-xl lg:hidden",
                     "transition-[opacity,transform,visibility] duration-200 ease-out",
                     menuOpen
                         ? "visible translate-y-0 opacity-100"

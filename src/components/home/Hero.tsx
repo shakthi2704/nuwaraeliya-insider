@@ -28,7 +28,7 @@ export default function Hero() {
             />
 
             {/* Scrim: forest green, heavier at the bottom where the stats sit */}
-            <div className="absolute inset-0 -z-10 bg-linear-to-b from-primary-container/70 via-primary-container/40 to-primary-container/95" />
+            <div className="absolute inset-0 -z-10 bg-linear-to-b from-primary-container/70 via-primary-container/40 to-black/95" />
 
             {/* Centered content */}
             <div className="flex flex-1 items-center justify-center px-margin pb-12 pt-32 md:px-margin-md lg:px-margin-lg">
@@ -85,11 +85,11 @@ export default function Hero() {
                         )}
                         style={{ animationDelay: "0.7s" }}
                     >
-                        <ButtonLink href="/plan-my-trip" variant="accent" size="lg">
+                        <ButtonLink href="/plan-my-trip" variant="accent" size="md">
                             {t("ctaPlanTrip")}
                             <CalendarDays className="size-[18px]" />
                         </ButtonLink>
-                        <ButtonLink href="/experiences" variant="light" size="lg">
+                        <ButtonLink href="/experiences" variant="light" size="md">
                             {t("ctaExplorePlaces")}
                             <ArrowDown className="size-[18px] text-secondary" />
                         </ButtonLink>

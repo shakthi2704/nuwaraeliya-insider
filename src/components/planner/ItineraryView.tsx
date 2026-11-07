@@ -184,9 +184,9 @@ export default function ItineraryView({ itinerary }: { itinerary: Itinerary }) {
             {notices.length > 0 ? (
                 <section
                     aria-label={t("notice.title")}
-                    className="flex items-start gap-4 rounded-2xl bg-surface-container p-5"
+                    className="flex items-start gap-4 rounded-2xl bg-warning-container p-5"
                 >
-                    <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary text-on-primary">
+                    <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-on-warning-container text-on-primary">
                         <Info className="size-5" aria-hidden="true" />
                     </span>
                     <div className="flex flex-col gap-2">
@@ -281,6 +281,8 @@ export default function ItineraryView({ itinerary }: { itinerary: Itinerary }) {
                             </p>
                             <Link
                                 href="/ask-an-insider"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="font-sans text-label-lg text-secondary underline underline-offset-4 transition-colors hover:text-primary"
                             >
                                 {t("help.cta")}

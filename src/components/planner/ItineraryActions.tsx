@@ -46,7 +46,11 @@ export default function ItineraryActions() {
                     {copy === "copied" ? t("actions.copied") : t("actions.share")}
                 </Button>
 
-                <ButtonLink href="/ask-an-insider">
+                <ButtonLink
+                    href="/ask-an-insider"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <Headset className="size-[18px]" aria-hidden="true" />
                     {t("actions.ask")}
                 </ButtonLink>

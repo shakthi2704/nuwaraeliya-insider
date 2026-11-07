@@ -30,7 +30,7 @@ export default function GuideDetail({ guide }: { guide: Guide }) {
                         fetchPriority="high"
                         className="absolute inset-0 -z-20 h-full w-full object-cover"
                     />
-                    <div className="absolute inset-0 -z-10 bg-linear-to-t from-primary-container/90 via-primary-container/45 to-primary-container/35" />
+                    <div className="absolute inset-0 -z-10 bg-linear-to-t from-black/50 via-black/45 to-black/35" />
 
                     <div className="mx-auto w-full max-w-[90rem] px-margin pb-14 pt-28 md:px-margin-md lg:px-margin-lg">
                         <div className="flex max-w-4xl flex-col gap-4">

@@ -47,7 +47,7 @@ export default function LanguageSwitcher({
     const router = useRouter();
 
     const itemClass =
-        "inline-flex h-8 min-w-9 items-center justify-center rounded-md px-2 font-sans text-label-md font-semibold tracking-wider transition-colors";
+        "inline-flex h-6 min-w-2 items-center justify-center rounded-md px-2 font-sans text-label-md font-semibold tracking-wider transition-colors";
 
     return (
         <nav

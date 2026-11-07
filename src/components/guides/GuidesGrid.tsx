@@ -93,7 +93,8 @@ export default function GuidesGrid({ topic }: { topic?: string }) {
                                     loading="eager"
                                     className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                                 />
-                                <div className="absolute inset-0 bg-linear-to-t from-primary/70 via-primary/10 to-transparent lg:bg-linear-to-r lg:from-transparent lg:via-transparent lg:to-surface-container-lowest" />
+                                {/* <div className="absolute inset-0 bg-linear-to-t from-black/70 via-bloack/10 to-transparent lg:bg-linear-to-r lg:from-transparent lg:via-transparent lg:to-surface-container-lowest" /> */}
+                                <div className="absolute inset-0 bg-linear-to-t from-black/20 via-black/10 to-transparent" />
                             </div>
 
                             {/* Story */}
@@ -126,7 +127,7 @@ export default function GuidesGrid({ topic }: { topic?: string }) {
                                 </div>
 
                                 {/* Looks like a button; the title link above covers the whole card */}
-                                <span className="inline-flex w-fit items-center gap-2 rounded-xl bg-primary px-5 py-2.5 font-sans text-label-md text-on-primary shadow-sm transition-colors group-hover:bg-secondary">
+                                <span className="inline-flex w-fit items-center gap-2 rounded-md bg-primary px-5 py-2.5 font-sans text-label-md text-on-primary shadow-sm transition-colors group-hover:bg-secondary">
                                     {t("readGuide")}
                                     <ArrowRight className="size-[17px]" aria-hidden="true" />
                                 </span>

@@ -71,7 +71,7 @@ export default function Footer() {
                     {/* Explore */}
                     <nav aria-label={t("exploreHeading")} className="flex flex-col gap-3">
                         <h3 className={headingClass}>{t("exploreHeading")}</h3>
-                        <ul className="flex flex-col gap-2.5">
+                        <ul className="flex flex-col gap-2.5 ">
                             {EXPLORE.map(({ key, href }) => (
                                 <li key={href}>
                                     <Link href={href} className={linkClass}>

@@ -84,6 +84,11 @@
   --color-error-container: #ffdad6;
   --color-on-error-container: #93000a;
 
+  --color-warning: #8c5000;
+  --color-on-warning: #ffffff;
+  --color-warning-container: #ffddb3;
+  --color-on-warning-container: #2d1600;
+
   /* ---- Font sizes (rem, converted from Stitch px) ----
      Each size carries its own line-height, tracking and weight,
      so `text-headline-sm` alone sets all four. */

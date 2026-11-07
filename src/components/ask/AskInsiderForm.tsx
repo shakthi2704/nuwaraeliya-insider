@@ -333,13 +333,14 @@ export default function AskInsiderForm({
             </Field>
 
             {/* How to reply: at least one of email or WhatsApp */}
-            <fieldset className="flex flex-col gap-4">
+            <fieldset className="flex flex-col gap-4" aria-describedby={id("contact-msg")}>
                 <legend className="font-sans text-label-lg text-primary">
                     {t("contact.legend")}
                 </legend>
                 <p
+                    id={id("contact-msg")}
                     className={cn(
-                        "-mt-2 font-sans text-caption",
+                        "mt-2 font-sans text-caption",
                         contactError ? "text-error" : "text-on-surface-variant"
                     )}
                 >
@@ -390,7 +391,6 @@ export default function AskInsiderForm({
                     </Field>
                 </div>
             </fieldset>
-
             {/* Things to plan around */}
             <fieldset className="flex flex-col gap-4 rounded-lg bg-surface-container p-5">
                 <legend className="font-sans text-label-md font-semibold uppercase tracking-wider text-secondary">

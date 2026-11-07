@@ -1,5 +1,6 @@
 {
     "navigation": {
+        "Ask an Insider": "Ask an Insider",
         "logoTitle": "Nuwara Eliya",
         "logoSubtitle": "Guide",
         "primaryNav": "Primary navigation",
@@ -403,7 +404,7 @@
         "tripIdeas": "Trip Ideas",
         "guides": "Travel Guides",
         "planTrip": "Plan My Trip",
-        "about": "About",
+        "about": "About Us",
         "gettingThere": "Getting There",
         "weatherGuide": "Weather & Seasons",
         "bestTimeToVisit": "Best Time to Visit",

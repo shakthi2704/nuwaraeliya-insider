@@ -29,7 +29,7 @@ export default function TripIdeaCard({ idea }: { idea: TripIdea }) {
                     decoding="async"
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-primary/75 via-primary/20 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/20 via-black/10 to-transparent" />
                 <span
                     className={cn(
                         "absolute bottom-4 left-4 rounded px-3 py-1 font-sans text-label-md",
@@ -82,7 +82,7 @@ export default function TripIdeaCard({ idea }: { idea: TripIdea }) {
                     </span>
                     <ButtonLink
                         href={`/plan-my-trip?idea=${idea.slug}`}
-                        size="sm"
+                        size="md"
                         className="relative z-10"
                     >
                         {t("customize")}
