@@ -80,7 +80,7 @@ export default function ExperienceDetail({
         <>
             <article>
                 {/* Hero: bleeds under the fixed header (main has pt-20) */}
-                <header className="relative isolate mt-[7.25rem] flex h-[36rem] flex-col justify-end overflow-hidden bg-primary-container text-on-primary md:h-[620px]">
+                <header className="relative isolate  flex h-[36rem] flex-col justify-end overflow-hidden bg-primary-container text-on-primary md:h-[620px]">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                         src={experience.image}
@@ -256,8 +256,8 @@ export default function ExperienceDetail({
 
                             {/* Insider tip: only when a tip exists */}
                             {experience.insiderTip ? (
-                                <section className="flex flex-col gap-4 rounded-2xl bg-primary-container p-8 text-on-primary shadow-md md:p-10">
-                                    <span className="font-sans text-caption font-semibold uppercase tracking-widest text-primary-fixed-dim">
+                                <section className="flex flex-col gap-4 rounded-2xl border-l-4 border-tertiary-container bg-primary-container p-8 text-on-primary shadow-md md:p-10">
+                                    <span className="font-sans text-caption font-semibold uppercase tracking-widest text-tertiary-fixed-dim">
                                         {t("tip.eyebrow")}
                                     </span>
                                     <p className="font-display text-headline-md italic">

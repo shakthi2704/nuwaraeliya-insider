@@ -22,12 +22,17 @@ export default function WhyTrustUs() {
                         <span className="mb-2 block font-sans text-caption font-semibold uppercase tracking-widest text-secondary">
                             {t("eyebrow")}
                         </span>
+
                         <h2
                             id="principles-heading"
                             className="font-display text-headline-xl-mobile tracking-tight text-primary md:text-headline-xl"
                         >
                             {t("heading")}
                         </h2>
+                        <span
+                            aria-hidden="true"
+                            className="mt-4 block h-0.5 w-12 bg-tertiary-container"
+                        />
                     </div>
                     <p className="max-w-md font-sans text-body-md text-on-surface-variant">
                         {t("intro")}
@@ -39,7 +44,7 @@ export default function WhyTrustUs() {
                     {principles.map((item) => (
                         <li
                             key={item.mark}
-                            className="flex flex-col border-t-2 border-secondary pt-6"
+                            className="flex flex-col border-t-2 border-tertiary-container pt-6"
                         >
                             <span className="mb-2 font-sans text-caption font-semibold uppercase tracking-wider text-secondary">
                                 {item.mark}

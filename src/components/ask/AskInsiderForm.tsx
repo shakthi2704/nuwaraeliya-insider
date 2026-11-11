@@ -45,7 +45,7 @@ const ERROR_KEY: Record<
 };
 
 const FIELD =
-    "w-full rounded-lg bg-surface-container-low px-4 py-3 font-sans text-body-md text-on-surface placeholder:text-outline transition-colors focus:bg-surface-container-lowest focus:outline-2 focus:outline-secondary";
+    "w-full rounded-lg bg-surface-container-low px-4 py-3 font-sans text-body-md text-on-surface placeholder:text-outline transition-colors focus:bg-surface-container-lowest focus:outline-2 focus:outline-tertiary-container";
 const FIELD_INVALID = "outline-1 outline-error focus:outline-error";
 
 const emptyValues = (topic: InquiryTopic | ""): Values => ({

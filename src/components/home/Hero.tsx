@@ -15,7 +15,7 @@ export default function Hero() {
 
     return (
         /* -mt-20 slides the hero under the fixed 5rem header (main has pt-20) */
-        <section className="relative isolate -mt-[7.25rem] flex min-h-[max(100svh,40rem)] w-full flex-col overflow-hidden bg-primary-container text-on-primary">
+        <section className="relative isolate flex min-h-[max(100svh,40rem)] w-full flex-col overflow-hidden bg-primary-container text-on-primary">
             {/* Photograph */}
             <Image
                 src="/images/03.jpg"
@@ -101,7 +101,7 @@ export default function Hero() {
             <div
                 className={cn(
                     enter,
-                    "border-t border-on-primary/10 bg-primary-container-dark backdrop-blur-xl"
+                    "border-t border-on-primary/10 bg-primary-container-darkest backdrop-blur-xl"
                 )}
                 style={{ animationDelay: "0.9s" }}
             >

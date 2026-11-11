@@ -27,7 +27,7 @@ export default function ChromeLayout({
     return (
         <>
             <Navbar savedItems={SAVED_TRIP_ITEMS} />
-            <main className="pt-[7.25rem]">{children}</main>
+            <main className="pt-[6.25rem]">{children}</main>
             <Footer />
         </>
     );

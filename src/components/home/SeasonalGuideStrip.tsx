@@ -24,7 +24,7 @@ type Season = {
 /* swatch: legend dot and bar color. fill: bar height inside its track.
    Classes are written out in full so Tailwind can see them. */
 const RATING: Record<Rating, { swatch: string; fill: string }> = {
-    best: { swatch: "bg-primary-container", fill: "h-full" },
+    best: { swatch: "bg-tertiary-container", fill: "h-full" },
     good: { swatch: "bg-secondary", fill: "h-[72%]" },
     ok: { swatch: "bg-secondary-fixed-dim", fill: "h-[48%]" },
     wet: { swatch: "bg-outline-variant", fill: "h-[22%]" },
@@ -97,12 +97,12 @@ export default function SeasonalGuideStrip() {
                                 className={cn(
                                     "relative flex flex-col items-center gap-2 rounded-xl border px-1 py-4 transition-all duration-200 hover:-translate-y-1",
                                     isCurrent
-                                        ? "border-transparent bg-primary-container text-on-primary shadow-float"
+                                        ? "border-tertiary-container bg-primary-container text-on-primary shadow-float"
                                         : "border-outline-variant/40 bg-surface-container-lowest text-on-surface"
                                 )}
                             >
                                 {isCurrent && (
-                                    <span className="absolute -top-2.5 whitespace-nowrap rounded-full bg-tertiary-fixed px-2 py-0.5 font-sans text-caption font-semibold uppercase tracking-wider text-on-tertiary-fixed">
+                                    <span className="absolute -top-2.5 whitespace-nowrap rounded-full bg-tertiary-container px-2 py-0.5 font-sans text-caption font-semibold uppercase tracking-wider text-on-tertiary-container">
                                         {t("nowBadge")}
                                     </span>
                                 )}

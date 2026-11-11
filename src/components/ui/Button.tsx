@@ -34,7 +34,7 @@ const variants: Record<ButtonVariant, string> = {
     primary:
         "bg-primary-container text-on-primary shadow-cta hover:bg-secondary",
     accent:
-        "bg-tertiary-container text-on-tertiary shadow-md hover:bg-tertiary hover:-translate-y-0.5",
+        "bg-tertiary-container text-on-tertiary-container shadow-md hover:bg-tertiary hover:-translate-y-0.5",
     secondary:
         "bg-secondary text-on-secondary shadow-md hover:bg-secondary-container hover:text-on-secondary-fixed",
     light:

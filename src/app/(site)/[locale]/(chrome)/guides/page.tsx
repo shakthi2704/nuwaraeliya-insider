@@ -166,7 +166,7 @@ export default async function GuidesPage({
                             </ButtonLink>
                             <Link
                                 href="/ask-an-insider"
-                                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-on-primary/10 px-6 py-3 text-center font-sans text-label-md text-on-primary transition-colors hover:bg-on-primary/20"
+                                className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-on-primary/10 px-6 py-3 text-center font-sans text-label-md text-on-primary transition-colors hover:bg-on-primary/20"
                             >
                                 <Headset className="size-[18px]" aria-hidden="true" />
                                 {t("ctaSecondary")}

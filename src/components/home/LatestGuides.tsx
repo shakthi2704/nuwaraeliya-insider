@@ -27,11 +27,15 @@ export default function LatestGuides() {
                             {t("eyebrow")}
                         </span>
                         <h2
-                            id="latest-guides-heading"
+                            id="trip-ideas-heading"
                             className="font-display text-headline-xl-mobile tracking-tight text-primary md:text-headline-xl"
                         >
                             {t("heading")}
                         </h2>
+                        <span
+                            aria-hidden="true"
+                            className="mb-3 mt-4 block h-0.5 w-12 bg-tertiary-container"
+                        />
                     </div>
                     <Link
                         href="/guides"
@@ -64,7 +68,7 @@ export default function LatestGuides() {
                                 </span>
                             </div>
 
-                            <p className="font-sans text-caption uppercase text-on-surface-variant">
+                            <p className="font-sans text-body-lg text-on-surface-variant">
                                 {guide.readTime}
                             </p>
 

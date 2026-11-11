@@ -50,6 +50,17 @@ export default function FeaturedExperiences() {
                         >
                             {t("heading")}
                         </h2>
+                        <h2
+                            id="featured-experiences-heading"
+                            className="font-display text-headline-xl-mobile tracking-tight text-primary md:text-headline-xl"
+                        >
+                            {t("heading")}
+                        </h2>
+                        <span
+                            aria-hidden="true"
+                            className="mt-4 block h-0.5 w-12 bg-tertiary-container"
+                        />
+
                     </div>
                     <p className="max-w-md font-sans text-body-lg text-on-surface-variant">
                         {t("subheading")}

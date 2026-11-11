@@ -12,7 +12,6 @@ import { ButtonLink } from "./Button";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const NAV_LINKS = [
-    // { key: "about", href: "/about" },
     { key: "experiences", href: "/experiences" },
     { key: "tripIdeas", href: "/trip-ideas" },
     { key: "guides", href: "/guides" },
@@ -92,7 +91,7 @@ export default function Navbar({
                 className={cn(
                     "fixed inset-x-0 top-0 z-50 transition-[background-color,box-shadow,backdrop-filter] duration-300",
                     overHero
-                        ? "bg-primary-container-darkest border-b border-[rgba(184,146,74,0.2)] shadow-[0_8px_32px_rgba(0,0,0,0.22)] backdrop-blur-xl"
+                        ? "bg-primary-container-darkest border-b border-tertiary-container shadow-[0_8px_32px_rgba(0,0,0,0.22)] backdrop-blur-xl"
                         : "bg-[color-mix(in_srgb,var(--color-primary-container-darkest)_90%,transparent)] border-b border-transparent backdrop-blur-sm"
                 )}
             >

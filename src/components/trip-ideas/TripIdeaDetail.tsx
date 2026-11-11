@@ -56,7 +56,7 @@ export default function TripIdeaDetail({ idea }: { idea: TripIdea }) {
         <>
             <article>
                 {/* Hero: bleeds under the fixed header (main has pt-20) */}
-                <header className="relative isolate -mt-[7.25rem] flex h-[30rem] flex-col justify-end overflow-hidden bg-primary-container text-on-primary md:h-[520px]">
+                <header className="relative isolate  flex h-[30rem] flex-col justify-end overflow-hidden bg-primary-container text-on-primary md:h-[520px]">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                         src={idea.image}

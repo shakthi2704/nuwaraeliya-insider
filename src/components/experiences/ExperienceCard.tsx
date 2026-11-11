@@ -27,7 +27,7 @@ export default function ExperienceCard({
     ];
 
     return (
-        <article className="group relative flex flex-col overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-float has-[.card-link:focus-visible]:outline-2 has-[.card-link:focus-visible]:outline-offset-2 has-[.card-link:focus-visible]:outline-secondary">
+        <article className="group relative flex flex-col overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:ring-2 hover:ring-tertiary-container hover:shadow-float has-[.card-link:focus-visible]:outline-2 has-[.card-link:focus-visible]:outline-offset-2 has-[.card-link:focus-visible]:outline-secondary">
             {/* Photo, category chip, elevation */}
             <div className="relative aspect-4/3 w-full overflow-hidden bg-surface-container">
                 {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -314,11 +314,12 @@ export default async function AboutPage() {
                 <div className="relative mx-auto max-w-7xl overflow-hidden rounded-3xl bg-primary p-8 text-on-primary shadow-xl sm:p-12">
                     <div
                         className="pointer-events-none absolute -bottom-20 -right-20 size-80 rounded-full bg-secondary/30 blur-3xl"
+                        // className="pointer-events-none absolute -bottom-20 -right-20 size-80 rounded-full bg-tertiary-container/20 blur-3xl"
                         aria-hidden="true"
                     />
                     <div className="relative z-10 grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
                         <div className="lg:col-span-7">
-                            <span className="mb-2 block font-sans text-label-md font-semibold uppercase tracking-widest text-secondary-container">
+                            <span className="mb-2 block font-sans text-label-md font-semibold uppercase tracking-widest text-tertiary-fixed-dim">
                                 {t("cta.eyebrow")}
                             </span>
                             <h2 className="mb-3 font-display text-headline-xl-mobile leading-tight text-on-primary md:text-headline-xl">

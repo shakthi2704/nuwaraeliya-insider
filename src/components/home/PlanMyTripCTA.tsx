@@ -11,7 +11,7 @@ export default function PlanMyTripCTA() {
             aria-labelledby="plan-cta-heading"
             className="w-full bg-surface-container-high px-margin py-20 md:px-margin-md lg:px-margin-lg"
         >
-            <div className="relative mx-auto max-w-7xl overflow-hidden rounded-xl border border-primary/20 bg-primary-container text-on-primary shadow-xl">
+            <div className="relative mx-auto max-w-7xl overflow-hidden rounded-xl border border-tertiary-container/40 bg-primary-container text-on-primary shadow-xl">
                 {/* Texture: the hero photograph, blended into the green */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -25,7 +25,7 @@ export default function PlanMyTripCTA() {
 
                 <div className="relative z-10 flex flex-col items-center justify-between gap-12 p-8 md:p-16 lg:flex-row">
                     <div className="flex max-w-2xl flex-col">
-                        <div className="mb-4 inline-flex items-center gap-2 self-start rounded bg-secondary px-3 py-1 font-sans text-label-md text-on-secondary">
+                        <div className="mb-4 inline-flex items-center gap-2 self-start rounded bg-tertiary-container px-3 py-1 font-sans text-label-md text-on-tertiary-container">
                             <CalendarClock className="size-4" />
                             <span>{t("badge")}</span>
                         </div>
@@ -42,7 +42,7 @@ export default function PlanMyTripCTA() {
                             {points.map((point) => (
                                 <li key={point} className="flex items-center gap-2">
                                     <Check
-                                        className="size-4 text-secondary-fixed"
+                                        className="size-4 text-tertiary-fixed-dim"
                                         strokeWidth={2.25}
                                     />
                                     <span>{point}</span>
@@ -61,7 +61,7 @@ export default function PlanMyTripCTA() {
                             {t("cta")}
                             <ArrowRight className="size-[18px]" />
                         </ButtonLink>
-                        <span className="font-sans text-caption text-primary-fixed-dim">
+                        <span className="font-sans text-caption text-tertiary-fixed-dim">
                             {t("note")}
                         </span>
                     </div>

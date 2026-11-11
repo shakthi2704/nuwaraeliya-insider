@@ -32,10 +32,10 @@ const CONNECT = [
 ] as const;
 
 const linkClass =
-    "font-sans text-body-md text-primary-fixed-dim transition-colors hover:text-on-primary";
+    "font-sans text-body-md text-primary-fixed-dim transition-colors hover:text-tertiary-container";
 
 const headingClass =
-    "mb-1 font-sans text-label-lg font-semibold uppercase tracking-wider text-secondary-fixed-dim";
+    "mb-1 font-sans text-label-lg font-semibold uppercase tracking-wider text-tertiary-fixed-dim";
 
 
 export default function Footer() {
@@ -43,7 +43,7 @@ export default function Footer() {
     const t = useTranslations("footer");
     const year = new Date().getFullYear();
     return (
-        <footer className="w-full bg-primary-container-darkest text-on-primary [&_a:focus-visible]:outline-primary-fixed">
+        <footer className="w-full border-t-2 border-tertiary-container bg-primary-container-darkest text-on-primary [&_a:focus-visible]:outline-primary-fixed">
             <div className="mx-auto max-w-[90rem] px-margin py-16 md:px-margin-md lg:px-margin-lg">
                 <div className="grid grid-cols-1 gap-gutter-lg md:grid-cols-2 lg:grid-cols-4">
                     {/* Brand */}

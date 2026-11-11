@@ -100,7 +100,7 @@ export default function SavedTripDrawer({
                 {count > 0 ? (
                     <span
                         aria-hidden="true"
-                        className="absolute -right-0.5 -top-0.5 flex size-[1.125rem] items-center justify-center rounded-full bg-tertiary-container font-sans text-caption font-semibold leading-none text-on-tertiary"
+                        className="absolute -right-0.5 -top-0.5 flex size-[1.125rem] items-center justify-center rounded-full bg-tertiary-container font-sans text-caption font-semibold leading-none text-on-tertiary-container"
                     >
                         {count}
                     </span>

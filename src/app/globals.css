@@ -57,16 +57,6 @@
   --color-on-secondary-fixed: #002113;
   --color-on-secondary-fixed-variant: #105137;
 
-  /* --color-tertiary: #AC9368;
-  --color-on-tertiary: #ffffff;
-  --color-tertiary-container: #b8924a;
-  --color-on-tertiary-container: #dc8b65;
-  --color-tertiary-fixed: #ffdbcc;
-  --color-tertiary-fixed-dim: #ffb694;
-  --color-on-tertiary-fixed: #351000;
-  --color-on-tertiary-fixed-variant: #723616; */
-
-
 
 
   --color-tertiary: #AC9368;
@@ -171,29 +161,6 @@
   --animate-fade-up: fadeUp 0.7s ease both;
   --animate-hero-zoom: heroZoom 10s ease-out forwards;
 
-  /* ============================================================
-     LEGACY ALIASES - TEMPORARY
-     Old component classes (text-ink, bg-forest, text-gold ...) keep
-     rendering with the new palette while we migrate file by file.
-     DELETE this whole block once the last old component is rebuilt.
-     Note: the old `bg-surface` was white; it is now minty #f4fbf5.
-     ============================================================ */
-  --color-ink: #161d19;
-  --color-forest: #00271d;
-  --color-green: #183d32;
-  --color-sage: #2d694d;
-  --color-base: #f4fbf5;
-  --color-muted: #414845;
-  --color-border: #c1c8c4;
-  --color-gold: #5d2607;
-  --color-gold-mid: #b59147;
-  --color-gold-pale: #ffdbcc;
-  --color-success: #2d694d;
-  --color-warning: #dc8b65;
-  --color-focus: #2d694d;
-  --text-hero: clamp(3.5rem, 7.5vw, 7.5rem);
-  --section-gap: clamp(5rem, 9vw, 8.5rem);
-  --section-gap-sm: clamp(3rem, 5vw, 5rem);
 }
 
 /* Font families. `inline` because the values point at CSS variables
