@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import { ButtonLink } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
 import type { TripIdea } from "@/lib/data/trip-ideas";
-import { cn } from "@/lib/utils";
+
 
 /* A card shows this many days, then "+N more days". */
 const MAX_DAYS_SHOWN = 3;
@@ -29,15 +29,12 @@ export default function TripIdeaCard({ idea }: { idea: TripIdea }) {
                     decoding="async"
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-black/20 via-black/10 to-transparent" />
-                <span
-                    className={cn(
-                        "absolute bottom-4 left-4 rounded px-3 py-1 font-sans text-label-md",
-                        idea.featured
-                            ? "bg-secondary text-on-secondary"
-                            : "bg-surface-container-lowest/90 text-primary"
-                    )}
-                >
+                {idea.featured ? (
+                    <span className="absolute left-4 top-4 rounded-full bg-tertiary-fixed px-3 py-1 font-sans text-caption font-semibold uppercase tracking-wider text-on-tertiary-fixed">
+                        {t("featuredTag")}
+                    </span>
+                ) : null}
+                <span className="absolute bottom-4 left-4 rounded bg-surface-container-lowest/90 px-3 py-1 font-sans text-label-md text-primary">
                     {idea.duration}
                 </span>
             </div>

@@ -1,4 +1,4 @@
-import { CloudRain, Car, Lightbulb, Sparkles, Sunrise } from "lucide-react";
+import { Bookmark, CloudRain, Car, Lightbulb, Sparkles, Sunrise } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Experience } from "@/lib/data/experiences";
@@ -79,7 +79,8 @@ export default function StopCard({
                     {duration}
                 </p>
                 {stop.pinned ? (
-                    <span className="rounded-full bg-secondary-container px-2.5 py-0.5 font-sans text-caption font-semibold text-on-secondary-container">
+                    <span className="inline-flex items-center gap-1 rounded-full bg-tertiary-fixed px-2.5 py-0.5 font-sans text-caption font-semibold text-on-tertiary-fixed">
+                        <Bookmark className="size-3" aria-hidden="true" />
                         {t("savedBadge")}
                     </span>
                 ) : null}

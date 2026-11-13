@@ -102,10 +102,7 @@ export default function NotFoundPage() {
             {/* Report a broken link */}
             <section className="w-full bg-surface px-margin pb-20 md:px-margin-md lg:px-margin-lg">
                 <div className="relative mx-auto max-w-7xl overflow-hidden rounded-3xl bg-primary p-8 text-on-primary shadow-xl sm:p-12">
-                    <div
-                        className="pointer-events-none absolute -bottom-20 -right-20 size-80 rounded-full bg-secondary/30 blur-3xl"
-                        aria-hidden="true"
-                    />
+
                     <div className="relative z-10 grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
                         <div className="lg:col-span-8">
                             <span className="mb-2 flex items-center gap-2 font-sans text-label-md font-semibold uppercase tracking-widest text-secondary-container">

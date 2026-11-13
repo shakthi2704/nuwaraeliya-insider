@@ -37,14 +37,14 @@ export default function ExperienceCard({
                     loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-primary/60 via-transparent to-transparent" />
+
 
                 <span className="absolute left-4 top-4 rounded-full bg-surface-container-lowest/90 px-2.5 py-1 font-sans text-caption font-semibold uppercase tracking-wider text-primary backdrop-blur-sm">
                     {tCategory(experience.categories[0])}
                 </span>
 
                 {experience.elevationM ? (
-                    <span className="absolute bottom-3 left-4 font-sans text-caption uppercase tracking-widest text-on-primary">
+                    <span className="absolute bottom-4 left-4 rounded-full bg-primary-container-darkest/85 px-2.5 py-1 font-sans text-caption uppercase tracking-widest text-on-primary backdrop-blur-sm">
                         {tFeatured("elevation", {
                             value: formatMetres(experience.elevationM),
                         })}

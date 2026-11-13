@@ -46,6 +46,9 @@ export default function LanguageSwitcher({
     const pathname = usePathname();
     const router = useRouter();
 
+    /* With a single language there is nothing to switch to. */
+    if (routing.locales.length < 2) return null;
+
     const itemClass =
         "inline-flex h-6 min-w-2 items-center justify-center rounded-md px-2 font-sans text-label-md font-semibold tracking-wider transition-colors";
 

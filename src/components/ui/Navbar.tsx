@@ -7,6 +7,7 @@ import SavedTripDrawer, {
     type SavedTripItem,
 } from "@/components/saved/SavedTripDrawer";
 import { Link, usePathname } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 import { ButtonLink } from "./Button";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -15,8 +16,12 @@ const NAV_LINKS = [
     { key: "experiences", href: "/experiences" },
     { key: "tripIdeas", href: "/trip-ideas" },
     { key: "guides", href: "/guides" },
-    { key: "Ask an Insider", href: "/ask-an-insider" },
+    { key: "askInsider", href: "/ask-an-insider" },
 ] as const;
+
+/* The language bar above the main row exists only while there is more than
+   one language. Keep in step with html[data-lang-bar] in globals.css. */
+const HAS_LANGUAGE_BAR = routing.locales.length > 1;
 
 /* Pages whose hero photo runs underneath the header. */
 const TRANSPARENT_PAGES = ["/"];
@@ -97,18 +102,20 @@ export default function Navbar({
             >
                 {/* Top bar: globe + language switcher. No background of its own,
                     so it shows the same surface as the header. */}
-                <div className="mx-auto flex h-9 max-w-[90rem] items-center justify-end gap-1.5 px-margin md:px-margin-md lg:px-margin-lg">
-                    <Globe
-                        aria-hidden="true"
-                        className={cn("size-4", tone.langText)}
-                        strokeWidth={1.75}
-                    />
-                    <LanguageSwitcher
-                        className={tone.langText}
-                        activeClassName={tone.langActive}
-                        idleClassName={tone.langIdle}
-                    />
-                </div>
+                {HAS_LANGUAGE_BAR ? (
+                    <div className="mx-auto flex h-9 max-w-[90rem] items-center justify-end gap-1.5 px-margin md:px-margin-md lg:px-margin-lg">
+                        <Globe
+                            aria-hidden="true"
+                            className={cn("size-4", tone.langText)}
+                            strokeWidth={1.75}
+                        />
+                        <LanguageSwitcher
+                            className={tone.langText}
+                            activeClassName={tone.langActive}
+                            idleClassName={tone.langIdle}
+                        />
+                    </div>
+                ) : null}
 
                 <div className="mx-auto flex h-16 max-w-[90rem] items-center justify-between px-margin md:px-margin-md lg:px-margin-lg">
                     {/* Wordmark. The leaf tile is a placeholder until the real logo exists. */}
@@ -215,7 +222,7 @@ export default function Navbar({
             <div
                 id="mobile-menu"
                 className={cn(
-                    "fixed inset-x-0 top-[6.25rem] z-40 border-t border-outline-variant/40 bg-surface/95 px-margin pb-6 pt-3 shadow-float backdrop-blur-xl lg:hidden",
+                    "fixed inset-x-0 top-[var(--header-h)] z-40 border-t border-outline-variant/40 bg-surface/95 px-margin pb-6 pt-3 shadow-float backdrop-blur-xl lg:hidden",
                     "transition-[opacity,transform,visibility] duration-200 ease-out",
                     menuOpen
                         ? "visible translate-y-0 opacity-100"

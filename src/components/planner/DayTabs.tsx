@@ -77,7 +77,7 @@ export default function DayTabs({ items }: { items: DayTabItem[] }) {
                                     tabIndex={selected ? 0 : -1}
                                     onClick={() => setActive(i)}
                                     className={
-                                        "flex min-w-44 shrink-0 flex-col gap-0.5 rounded-xl px-4 py-3 text-left transition-all " +
+                                        "relative flex min-w-44 shrink-0 flex-col gap-0.5 overflow-hidden rounded-xl px-4 py-3 text-left transition-all " +
                                         (selected
                                             ? "bg-primary text-on-primary shadow-md"
                                             : "bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container")
@@ -96,6 +96,12 @@ export default function DayTabs({ items }: { items: DayTabItem[] }) {
                                     >
                                         {item.subtitle}
                                     </span>
+                                    {selected ? (
+                                        <span
+                                            aria-hidden="true"
+                                            className="absolute inset-x-0 bottom-0 h-1 bg-tertiary-container"
+                                        />
+                                    ) : null}
                                 </button>
                             );
                         })}

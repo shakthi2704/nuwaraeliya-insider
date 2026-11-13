@@ -195,12 +195,21 @@
    ============================================================ */
 @layer base {
   html {
+    /* Height of the fixed header: the 4rem main row. Everything that sits
+       under or beside the header reads this variable. */
+    --header-h: 4rem;
     scroll-behavior: smooth;
-    /* Clears the fixed 5rem (h-20) header on anchor jumps */
-    scroll-padding-top: 5rem;
+    /* Clears the fixed header on anchor jumps */
+    scroll-padding-top: calc(var(--header-h) + 1rem);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+  }
+
+  /* The language bar (2.25rem) sits above the main row only while more
+     than one language is enabled. The root layout sets this attribute. */
+  html[data-lang-bar] {
+    --header-h: 6.25rem;
   }
 
   body {
@@ -234,8 +243,8 @@
   }
 
   ::selection {
-    background-color: var(--color-secondary-container);
-    color: var(--color-on-secondary-container);
+    background-color: var(--color-tertiary-fixed-dim);
+    color: var(--color-on-tertiary-fixed);
   }
 }
 

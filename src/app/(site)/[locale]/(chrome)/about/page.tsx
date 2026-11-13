@@ -94,10 +94,7 @@ export default async function AboutPage() {
         <>
             {/* Header: headline, intro, then a photo mosaic */}
             <section className="relative w-full overflow-hidden bg-surface px-margin pb-12 pt-12 md:px-margin-md lg:px-margin-lg">
-                <div
-                    className="pointer-events-none absolute -top-40 right-1/4 size-96 rounded-full bg-secondary/10 blur-3xl"
-                    aria-hidden="true"
-                />
+
 
                 <div className="relative mx-auto flex max-w-7xl flex-col gap-10">
                     <p className="flex items-center gap-2 font-sans text-caption uppercase tracking-widest">
@@ -136,7 +133,7 @@ export default async function AboutPage() {
                                 sizes="(min-width: 768px) 66vw, 100vw"
                                 className="object-cover object-[center_55%] transition-transform duration-700 group-hover:scale-105"
                             />
-                            <div className="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-primary/80 via-primary/20 to-transparent p-6 text-on-primary sm:p-8">
+                            <div className="absolute inset-x-0 bottom-0 flex flex-col bg-primary-container-darkest/85 p-6 text-on-primary sm:p-8">
                                 <span className="font-sans text-label-md font-semibold uppercase tracking-wider text-secondary-container">
                                     {t("mosaic.label")}
                                 </span>
@@ -160,7 +157,7 @@ export default async function AboutPage() {
                                         loading="lazy"
                                         className="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
-                                    <div className="absolute inset-0 flex flex-col justify-end gap-0.5 bg-linear-to-t from-primary/80 via-primary/10 to-transparent p-5 text-on-primary">
+                                    <div className="absolute inset-x-0 bottom-0 flex flex-col gap-0.5 bg-primary-container-darkest/85 p-4 text-on-primary">
                                         <span className="font-sans text-caption uppercase tracking-wider text-secondary-container">
                                             {experience.area}
                                         </span>
@@ -312,11 +309,6 @@ export default async function AboutPage() {
             {/* Closing banner */}
             <section className="w-full bg-surface px-margin pb-20 md:px-margin-md lg:px-margin-lg">
                 <div className="relative mx-auto max-w-7xl overflow-hidden rounded-3xl bg-primary p-8 text-on-primary shadow-xl sm:p-12">
-                    <div
-                        className="pointer-events-none absolute -bottom-20 -right-20 size-80 rounded-full bg-secondary/30 blur-3xl"
-                        // className="pointer-events-none absolute -bottom-20 -right-20 size-80 rounded-full bg-tertiary-container/20 blur-3xl"
-                        aria-hidden="true"
-                    />
                     <div className="relative z-10 grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
                         <div className="lg:col-span-7">
                             <span className="mb-2 block font-sans text-label-md font-semibold uppercase tracking-widest text-tertiary-fixed-dim">

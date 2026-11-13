@@ -32,7 +32,7 @@ const CONNECT = [
 ] as const;
 
 const linkClass =
-    "font-sans text-body-md text-primary-fixed-dim transition-colors hover:text-tertiary-container";
+    "font-sans text-body-md text-primary-fixed-dim transition-colors hover:text-tertiary-fixed";
 
 const headingClass =
     "mb-1 font-sans text-label-lg font-semibold uppercase tracking-wider text-tertiary-fixed-dim";

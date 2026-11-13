@@ -1,6 +1,6 @@
 {
     "navigation": {
-        "Ask an Insider": "Ask an Insider",
+        "askInsider": "Ask an Insider",
         "logoTitle": "Nuwara Eliya",
         "logoSubtitle": "Guide",
         "primaryNav": "Primary navigation",
@@ -16,8 +16,8 @@
     "hero": {
         "locationTag": "Sri Lanka · Hill Country · Est. 1846",
         "welcomeTo": "Welcome to",
-        "tagline": "Misty tea hills, colonial charm, and cool mountain air. Honest guidance from locals — completely free.",
-        "ctaPlanTrip": "Plan My Trip — Free",
+        "tagline": "Misty tea hills, colonial charm, and cool mountain air. Honest guidance from someone who lives here.",
+        "ctaPlanTrip": "Plan My Trip",
         "ctaExplorePlaces": "Explore Places",
         "stats": [
             {
@@ -29,12 +29,12 @@
                 "label": "Year-Round Climate"
             },
             {
-                "value": "20+",
+                "value": "9+",
                 "label": "Experiences"
             },
             {
-                "value": "Free",
-                "label": "Local Advice"
+                "value": "1 local",
+                "label": "Behind every tip"
             }
         ]
     },
@@ -125,6 +125,7 @@
         "customItinerary": "Create a custom itinerary",
         "customize": "Customize in planner",
         "moreDays": "+{count} more days",
+        "featuredTag": "Featured",
         "experiencesCount": "{count, plural, one {# experience} other {# experiences}}",
         "items": [
             {
@@ -275,13 +276,13 @@
         ]
     },
     "planMyTripCTA": {
-        "badge": "Free trip planner",
+        "badge": "Trip planner",
         "heading": "Let’s build an itinerary tailored to your rhythm.",
         "description": "Answer a few questions about your pace, who you are traveling with, and what you want from the highlands. We will build a realistic day-by-day plan around real mountain driving times.",
         "points": [
             "No rigid schedules",
             "Realistic mountain driving times",
-            "Free, with no sign-up"
+            "No sign-up needed"
         ],
         "cta": "Start the trip planner",
         "note": "No account or credit card needed."

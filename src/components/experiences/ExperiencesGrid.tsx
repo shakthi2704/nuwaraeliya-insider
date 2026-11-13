@@ -65,7 +65,7 @@ export default function ExperiencesGrid({
             {/* Sticky filter bar, sits just under the fixed header */}
             <section
                 aria-label={t("filtersLabel")}
-                className="sticky top-20 z-40 w-full bg-surface/95 px-margin py-4 shadow-sm backdrop-blur-md md:px-margin-md lg:px-margin-lg"
+                className="sticky top-[var(--header-h)] z-40 w-full bg-surface/95 px-margin py-4 shadow-sm backdrop-blur-md md:px-margin-md lg:px-margin-lg"
             >
                 <div className="mx-auto flex max-w-7xl flex-col gap-3">
                     {/* Categories */}

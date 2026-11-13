@@ -90,8 +90,8 @@ export default function ExperienceDetail({
                         className="absolute inset-0 -z-20 h-full w-full object-cover"
                     />
 
-                    {/* Scrim: forest green, heavier at the bottom for legible text */}
-                    <div className="absolute inset-0 -z-10 bg-linear-to-t from-primary-container/90 via-primary-container/45 to-primary-container/35" />
+                    {/* Scrim: one flat dark-green layer so the text stays readable */}
+                    <div className="absolute inset-0 -z-10 bg-primary-container-darkest/65" />
 
                     <div className="mx-auto w-full max-w-[90rem] px-margin pb-14 pt-28 md:px-margin-md lg:px-margin-lg">
                         <div className="flex max-w-4xl flex-col gap-4">
@@ -256,8 +256,8 @@ export default function ExperienceDetail({
 
                             {/* Insider tip: only when a tip exists */}
                             {experience.insiderTip ? (
-                                <section className="flex flex-col gap-4 rounded-2xl border-l-4 border-tertiary-container bg-primary-container p-8 text-on-primary shadow-md md:p-10">
-                                    <span className="font-sans text-caption font-semibold uppercase tracking-widest text-tertiary-fixed-dim">
+                                <section className="flex flex-col gap-4 rounded-2xl border-l-4 border-tertiary-container bg-tertiary-fixed p-8 text-on-tertiary-fixed md:p-10">
+                                    <span className="font-sans text-caption font-semibold uppercase tracking-widest text-on-tertiary-fixed-variant">
                                         {t("tip.eyebrow")}
                                     </span>
                                     <p className="font-display text-headline-md italic">
@@ -319,7 +319,7 @@ export default function ExperienceDetail({
                             {/* Ask an Insider */}
                             <div className="flex flex-col gap-4 rounded-2xl bg-surface-container p-6 shadow-sm">
                                 <div className="flex items-center gap-3">
-                                    <span className="flex size-10 items-center justify-center rounded-full bg-surface-container-lowest text-secondary shadow-sm">
+                                    <span className="flex size-10 items-center justify-center rounded-full bg-tertiary-fixed text-on-tertiary-fixed">
                                         <Headset className="size-[22px]" aria-hidden="true" />
                                     </span>
                                     <h2 className="font-sans text-label-lg text-primary">

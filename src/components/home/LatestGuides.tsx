@@ -62,7 +62,7 @@ export default function LatestGuides() {
                                     loading="lazy"
                                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
-                                <div className="absolute inset-0 bg-linear-to-t from-black/20 via-black/10 to-transparent" />
+
                                 <span className="absolute left-3 top-3 rounded bg-surface-container-lowest/90 px-2.5 py-1 font-sans text-label-md text-on-surface backdrop-blur">
                                     {guide.category}
                                 </span>

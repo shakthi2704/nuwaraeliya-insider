@@ -20,7 +20,7 @@ export default function SocialLinks() {
 
     return (
         <div className="flex flex-col gap-3">
-            <p className="font-sans text-label-md font-semibold uppercase tracking-wider text-secondary-fixed-dim">
+            <p className="font-sans text-label-md font-semibold uppercase tracking-wider text-tertiary-fixed-dim">
                 {t("followHeading")}
             </p>
             <ul className="flex items-center gap-3">

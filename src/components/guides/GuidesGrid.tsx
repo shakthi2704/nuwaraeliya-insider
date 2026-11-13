@@ -49,7 +49,7 @@ export default function GuidesGrid({ topic }: { topic?: string }) {
                 <div
                     role="navigation"
                     aria-label={t("filtersLabel")}
-                    className="sticky top-24 z-40 mb-8 rounded-2xl bg-surface/90 px-3 py-3 shadow-sm backdrop-blur-md sm:px-4"
+                    className="sticky top-[calc(var(--header-h)+1rem)] z-40 mb-8 rounded-2xl bg-surface/90 px-3 py-3 shadow-sm backdrop-blur-md sm:px-4"
                 >
                     <ul className="flex items-center gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                         <li className="shrink-0">
@@ -93,8 +93,7 @@ export default function GuidesGrid({ topic }: { topic?: string }) {
                                     loading="eager"
                                     className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                                 />
-                                {/* <div className="absolute inset-0 bg-linear-to-t from-black/70 via-bloack/10 to-transparent lg:bg-linear-to-r lg:from-transparent lg:via-transparent lg:to-surface-container-lowest" /> */}
-                                <div className="absolute inset-0 bg-linear-to-t from-black/20 via-black/10 to-transparent" />
+
                             </div>
 
                             {/* Story */}

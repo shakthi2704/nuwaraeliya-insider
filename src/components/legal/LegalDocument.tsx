@@ -32,10 +32,7 @@ export default async function LegalDocument({
         <>
             {/* Header */}
             <section className="relative w-full overflow-hidden bg-surface px-margin pb-10 pt-12 md:px-margin-md lg:px-margin-lg">
-                <div
-                    className="pointer-events-none absolute -top-40 right-1/4 size-96 rounded-full bg-secondary/10 blur-3xl"
-                    aria-hidden="true"
-                />
+
                 <div className="relative mx-auto flex max-w-7xl flex-col gap-6">
                     <p className="flex items-center gap-2 font-sans text-caption uppercase tracking-widest">
                         <span className="font-semibold text-secondary">
@@ -68,7 +65,7 @@ export default async function LegalDocument({
                         aria-label={t("contentsLabel")}
                         className="lg:col-span-3"
                     >
-                        <div className="flex flex-col gap-4 rounded-2xl bg-surface-container-low p-6 lg:sticky lg:top-28">
+                        <div className="flex flex-col gap-4 rounded-2xl bg-surface-container-low p-6 lg:sticky lg:top-[calc(var(--header-h)+2rem)] lg:col-span-4">
                             <p className="font-sans text-label-md font-semibold uppercase tracking-widest text-secondary">
                                 {t("contentsLabel")}
                             </p>
@@ -115,7 +112,7 @@ export default async function LegalDocument({
                             <section
                                 key={section.id}
                                 id={section.id}
-                                className="flex scroll-mt-28 flex-col gap-4"
+                                className="flex scroll-mt-[calc(var(--header-h)+2rem)] flex-col gap-4"
                             >
                                 <h2 className="flex items-baseline gap-4 font-display text-headline-md text-primary">
                                     <span

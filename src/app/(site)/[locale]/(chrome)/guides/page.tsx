@@ -51,15 +51,7 @@ export default async function GuidesPage({
         <>
             {/* Header */}
             <section className="relative w-full overflow-hidden bg-surface px-margin pb-10 pt-12 md:px-margin-md lg:px-margin-lg">
-                {/* Soft decorative glows, as in Stitch */}
-                <div
-                    className="pointer-events-none absolute -top-40 right-1/4 size-96 rounded-full bg-secondary/10 blur-3xl"
-                    aria-hidden="true"
-                />
-                <div
-                    className="pointer-events-none absolute top-96 -left-20 size-80 rounded-full bg-primary/5 blur-3xl"
-                    aria-hidden="true"
-                />
+
 
                 <div className="relative mx-auto flex max-w-7xl flex-col gap-8">
                     {/* Crumb + count */}
@@ -137,13 +129,10 @@ export default async function GuidesPage({
             {/* Closing banner */}
             <section className="w-full bg-surface px-margin pb-20 md:px-margin-md lg:px-margin-lg">
                 <div className="relative mx-auto max-w-7xl overflow-hidden rounded-3xl bg-primary p-8 text-on-primary shadow-xl sm:p-12">
-                    <div
-                        className="pointer-events-none absolute -bottom-20 -right-20 size-80 rounded-full bg-secondary/30 blur-3xl"
-                        aria-hidden="true"
-                    />
+
                     <div className="relative z-10 grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
                         <div className="lg:col-span-8">
-                            <span className="mb-2 block font-sans text-label-md font-semibold uppercase tracking-widest text-secondary-container">
+                            <span className="mb-2 block font-sans text-label-md font-semibold uppercase tracking-widest text-tertiary-fixed-dim">
                                 {t("ctaEyebrow")}
                             </span>
                             <h2 className="mb-4 font-display text-headline-xl-mobile leading-tight text-on-primary md:text-headline-xl">

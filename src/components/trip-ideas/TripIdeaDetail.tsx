@@ -65,7 +65,8 @@ export default function TripIdeaDetail({ idea }: { idea: TripIdea }) {
                         fetchPriority="high"
                         className="absolute inset-0 -z-20 h-full w-full object-cover"
                     />
-                    <div className="absolute inset-0 -z-10 bg-linear-to-t from-black/50 via-black/45 to-black/35" />
+                    {/* Scrim: one flat dark-green layer so the text stays readable */}
+                    <div className="absolute inset-0 -z-10 bg-primary-container-darkest/60" />
 
                     <div className="mx-auto w-full max-w-[90rem] px-margin pb-14 pt-28 md:px-margin-md lg:px-margin-lg">
                         <div className="flex max-w-4xl flex-col gap-4">
@@ -185,7 +186,7 @@ export default function TripIdeaDetail({ idea }: { idea: TripIdea }) {
                         </div>
 
                         {/* Right: sticky sidebar */}
-                        <aside className="flex flex-col gap-6 lg:sticky lg:top-28 lg:col-span-4">
+                        <aside className="flex flex-col gap-6 lg:sticky lg:top-[calc(var(--header-h)+2rem)] lg:col-span-4">
                             {/* What this trip covers + planner button */}
                             <div className="flex flex-col gap-6 rounded-2xl bg-surface-container-lowest p-7 shadow-md">
                                 <div className="flex flex-col gap-4">
@@ -279,7 +280,7 @@ export default function TripIdeaDetail({ idea }: { idea: TripIdea }) {
                     <div className="mt-2 flex flex-col items-center gap-4 sm:flex-row">
                         <ButtonLink
                             href={`/plan-my-trip?idea=${idea.slug}`}
-                            variant="secondary"
+                            variant="accent"
                             size="lg"
                             className="w-full sm:w-auto"
                         >

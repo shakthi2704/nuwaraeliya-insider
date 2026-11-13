@@ -32,14 +32,7 @@ export default async function AskAnInsiderPage({
         <>
             {/* Header */}
             <section className="relative w-full overflow-hidden bg-surface px-margin pb-10 pt-12 md:px-margin-md lg:px-margin-lg">
-                <div
-                    className="pointer-events-none absolute -top-40 right-1/4 size-96 rounded-full bg-secondary/10 blur-3xl"
-                    aria-hidden="true"
-                />
-                <div
-                    className="pointer-events-none absolute top-72 -left-20 size-80 rounded-full bg-primary/5 blur-3xl"
-                    aria-hidden="true"
-                />
+
 
                 <div className="relative mx-auto flex max-w-7xl flex-col gap-6">
                     <p className="flex items-center gap-2 font-sans text-caption uppercase tracking-widest">

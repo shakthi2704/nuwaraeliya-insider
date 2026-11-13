@@ -1,6 +1,6 @@
 {
     "navigation": {
-        "Ask an Insider": "Frag einen Insider",
+        "askInsider": "Frag einen Insider",
         "logoTitle": "Nuwara Eliya",
         "logoSubtitle": "Reiseführer",
         "primaryNav": "Hauptnavigation",
@@ -16,8 +16,8 @@
     "hero": {
         "locationTag": "Sri Lanka · Hochland · Gegründet 1846",
         "welcomeTo": "Willkommen in",
-        "tagline": "Nebelverhangene Teeplantagen, kolonialer Charme und kühle Bergluft. Ehrliche Tipps von Einheimischen – völlig kostenlos.",
-        "ctaPlanTrip": "Meine Reise planen – Kostenlos",
+        "tagline": "Nebelverhangene Teeplantagen, kolonialer Charme und kühle Bergluft. Ehrliche Tipps von einem Einheimischen.",
+        "ctaPlanTrip": "Meine Reise planen",
         "ctaExplorePlaces": "Orte entdecken",
         "stats": [
             {
@@ -29,12 +29,12 @@
                 "label": "Ganzjähriges Klima"
             },
             {
-                "value": "20+",
+                "value": "9+",
                 "label": "Erlebnisse"
             },
             {
-                "value": "Kostenlos",
-                "label": "Lokale Empfehlungen"
+                "value": "1 Einheimischer",
+                "label": "Hinter jedem Tipp"
             }
         ]
     },
@@ -125,6 +125,7 @@
         "customItinerary": "Individuelle Reiseroute erstellen",
         "customize": "Im Reiseplaner anpassen",
         "moreDays": "+{count} weitere Tage",
+        "featuredTag": "Empfohlen",
         "experiencesCount": "{count, plural, one {# Erlebnis} other {# Erlebnisse}}",
         "items": [
             {
@@ -275,13 +276,13 @@
         ]
     },
     "planMyTripCTA": {
-        "badge": "Kostenloser Reiseplaner",
+        "badge": "Reiseplaner",
         "heading": "Lass uns eine Reiseroute ganz nach deinem Rhythmus gestalten.",
         "description": "Beantworte ein paar Fragen zu deinem Reisetempo, deinen Mitreisenden und deinen Wünschen für das Hochland. Wir erstellen einen realistischen Tagesplan, der auch die tatsächlichen Fahrzeiten auf den Bergstraßen berücksichtigt.",
         "points": [
             "Keine starren Zeitpläne",
             "Realistische Fahrzeiten auf Bergstraßen",
-            "Kostenlos und ohne Registrierung"
+            "Ohne Registrierung"
         ],
         "cta": "Reiseplanung starten",
         "note": "Kein Konto und keine Kreditkarte erforderlich."

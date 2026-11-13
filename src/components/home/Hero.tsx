@@ -27,8 +27,8 @@ export default function Hero() {
                 className="-z-20 object-cover object-[center_55%]"
             />
 
-            {/* Scrim: forest green, heavier at the bottom where the stats sit */}
-            <div className="absolute inset-0 -z-10 bg-linear-to-b from-primary-container/70 via-primary-container/40 to-black/95" />
+            {/* Scrim: one flat dark-green layer so the text stays readable */}
+            <div className="absolute inset-0 -z-10 bg-primary-container-darkest/60" />
 
             {/* Centered content */}
             <div className="flex flex-1 items-center justify-center px-margin pb-12 pt-32 md:px-margin-md lg:px-margin-lg">
@@ -49,7 +49,7 @@ export default function Hero() {
                     <p
                         className={cn(
                             enter,
-                            "font-display text-body-xl italic text-tertiary-fixed-dim"
+                            "font-display text-body-xl italic text-tertiary-fixed"
                         )}
                         style={{ animationDelay: "0.3s" }}
                     >

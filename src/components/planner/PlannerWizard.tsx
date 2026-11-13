@@ -229,7 +229,7 @@ export default function PlannerWizard({
 
                     <p className="flex items-center gap-3 font-sans text-caption uppercase tracking-wider text-on-surface-variant">
                         <span className="hidden sm:inline">{t("progress.label")}</span>
-                        <span className="rounded-full bg-secondary-container px-3 py-1 font-semibold text-on-secondary-container">
+                        <span className="rounded-full bg-tertiary-fixed px-3 py-1 font-semibold text-on-tertiary-fixed">
                             {t("progress.stepOf", {
                                 current: index + 1,
                                 total: STEP_IDS.length,

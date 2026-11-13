@@ -1,4 +1,4 @@
-import { ArrowRight, Clock } from "lucide-react";
+import { ArrowRight, Clock, Headset } from "lucide-react";
 import { useTranslations } from "next-intl";
 import GuideCard from "@/components/guides/GuideCard";
 import { ButtonLink } from "@/components/ui/Button";
@@ -122,8 +122,11 @@ export default function GuideDetail({ guide }: { guide: Guide }) {
                                 </ButtonLink>
                                 <Link
                                     href="/ask-an-insider"
-                                    className="font-sans text-label-lg text-secondary transition-colors hover:text-primary"
+                                    className="inline-flex items-center gap-2 font-sans text-label-lg text-secondary transition-colors hover:text-primary"
                                 >
+                                    <span className="flex size-7 items-center justify-center rounded-full bg-tertiary-fixed text-on-tertiary-fixed">
+                                        <Headset className="size-4" aria-hidden="true" />
+                                    </span>
                                     {t("plan.ask")}
                                 </Link>
                             </div>

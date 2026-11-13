@@ -83,6 +83,7 @@ export default async function RootLayout({
     <html
       lang={locale}
       className={`${newsreader.variable} ${jakarta.variable}`}
+      data-lang-bar={routing.locales.length > 1 ? "true" : undefined}
       suppressHydrationWarning
     >
       <body>
