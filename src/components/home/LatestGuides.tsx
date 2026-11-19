@@ -1,19 +1,20 @@
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { GUIDES, type Guide } from "@/lib/data/guides";
+import type { Guide } from "@/lib/content/types";
+
 
 /* Which guides the homepage shows, in this order. Chosen to avoid
    repeating the three guides already linked from Essential advice. */
 const HOME_GUIDE_SLUGS = ["where-to-stay", "what-to-pack", "local-tips"];
 
-const HOME_GUIDES = HOME_GUIDE_SLUGS.map((slug) =>
-    GUIDES.find((guide) => guide.slug === slug)
-).filter((guide): guide is Guide => Boolean(guide));
-
-export default function LatestGuides() {
+export default function LatestGuides({ guides }: { guides: Guide[] }) {
     const t = useTranslations("latestGuides");
+    const tMeta = useTranslations("guideMeta");
 
+    const homeGuides = HOME_GUIDE_SLUGS.map((slug) =>
+        guides.find((guide) => guide.slug === slug)
+    ).filter((guide): guide is Guide => Boolean(guide));
     return (
         <section
             aria-labelledby="latest-guides-heading"
@@ -48,7 +49,7 @@ export default function LatestGuides() {
 
                 {/* Cards */}
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-                    {HOME_GUIDES.map((guide) => (
+                    {homeGuides.map((guide) => (
                         <article
                             key={guide.slug}
                             className="group relative flex flex-col gap-4 rounded-xl border border-primary/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-float has-[.card-link:focus-visible]:outline-2 has-[.card-link:focus-visible]:outline-offset-2 has-[.card-link:focus-visible]:outline-secondary"
@@ -69,7 +70,7 @@ export default function LatestGuides() {
                             </div>
 
                             <p className="font-sans text-body-lg text-on-surface-variant">
-                                {guide.readTime}
+                                {tMeta("readTime", { minutes: guide.readMinutes })}
                             </p>
 
                             {/* Stretched link: the whole card is clickable */}

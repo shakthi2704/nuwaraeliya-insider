@@ -31,9 +31,9 @@ import { Button } from "@/components/ui/Button";
 import { Link, useRouter } from "@/i18n/navigation";
 import {
     CATEGORY_IDS,
-    EXPERIENCES,
     type CategoryId,
-} from "@/lib/data/experiences";
+    type ExperienceSummary,
+} from "@/lib/content/types";
 import { encodeAnswers, type PartialAnswers } from "@/lib/planner/answers";
 import { clearDraft, saveDraft, useDraft } from "@/lib/planner/draft";
 import {
@@ -76,10 +76,14 @@ const LAST = STEP_IDS.length - 1;
 
 export default function PlannerWizard({
     initial,
+    experiences,
 }: {
     /* Answers already known from the URL: a trip-idea deep link, or an
        "Edit preferences" link from a result page. */
     initial: PartialAnswers;
+    /* Just enough of each experience to count them per interest and show a
+       photo on each interest option. */
+    experiences: ExperienceSummary[];
 }) {
     const t = useTranslations("planner");
     const tCategory = useTranslations("categories");
@@ -150,11 +154,11 @@ export default function PlannerWizard({
         const key = `options.${step}.${value}`;
         const isInterest = step === "interests";
         const count = isInterest
-            ? EXPERIENCES.filter((e) => e.categories.includes(value as CategoryId)).length
+            ? experiences.filter((e) => e.categories.includes(value as CategoryId)).length
             : 0;
         const experience = isInterest
-            ? (EXPERIENCES.find((e) => e.categories[0] === value) ??
-                EXPERIENCES.find((e) => e.categories.includes(value as CategoryId)))
+            ? (experiences.find((e) => e.categories[0] === value) ??
+                experiences.find((e) => e.categories.includes(value as CategoryId)))
             : undefined;
 
         return {
@@ -362,7 +366,7 @@ export default function PlannerWizard({
 
             {/* Planning note */}
             {TIP_STEPS.includes(step) ? (
-                <aside className="flex items-start gap-4 rounded-2xl bg-surface-container p-5">
+                <aside className="flex items-start gap-4 rounded-2xl bg-warning-container p-5">
                     <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary text-on-primary">
                         <Compass className="size-5" aria-hidden="true" />
                     </span>

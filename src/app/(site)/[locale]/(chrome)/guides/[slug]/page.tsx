@@ -1,22 +1,28 @@
 import { notFound } from "next/navigation";
-import { GUIDES } from "@/lib/data/guides";
 import GuideDetail from "@/components/guides/GuideDetail";
+import { routing } from "@/i18n/routing";
+import { getGuide, getGuides } from "@/lib/content";
 
-export function generateStaticParams() {
-    return GUIDES.map((guide) => ({ slug: guide.slug }));
+export async function generateStaticParams() {
+    /* Slugs are the same in every language. */
+    const guides = await getGuides(routing.defaultLocale);
+    return guides.map((guide) => ({ slug: guide.slug }));
 }
 
 export default async function GuideDetailPage({
     params,
 }: {
-    params: Promise<{ slug: string }>;
+    params: Promise<{ locale: string; slug: string }>;
 }) {
-    const { slug } = await params;
-    const guide = GUIDES.find((g) => g.slug === slug);
+    const { locale, slug } = await params;
+    const [guide, guides] = await Promise.all([
+        getGuide(slug, locale),
+        getGuides(locale),
+    ]);
 
     if (!guide) {
         notFound();
     }
 
-    return <GuideDetail guide={guide} />;
+    return <GuideDetail guide={guide} guides={guides} />;
 }

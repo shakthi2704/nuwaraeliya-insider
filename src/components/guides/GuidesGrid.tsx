@@ -2,25 +2,10 @@ import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import GuideCard from "@/components/guides/GuideCard";
 import { Link } from "@/i18n/navigation";
-import { GUIDES } from "@/lib/data/guides";
+import type { Guide } from "@/lib/content/types";
 import { cn } from "@/lib/utils";
 
-/* Guide categories are free text in the data, so a topic id is just the
-   category lowercased and hyphenated ("Getting There" -> "getting-there"). */
-const topicId = (category: string) =>
-    category
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-+|-+$/g, "");
 
-/* One entry per distinct category, in data order. */
-const TOPICS = GUIDES.reduce<{ id: string; label: string }[]>((list, guide) => {
-    const id = topicId(guide.category);
-    if (!list.some((topic) => topic.id === id)) {
-        list.push({ id, label: guide.category });
-    }
-    return list;
-}, []);
 
 const pill =
     "inline-block shrink-0 whitespace-nowrap rounded-full px-4 py-2 font-sans text-label-md transition-all";
@@ -30,17 +15,29 @@ const pillOff =
 
 /* The filter lives in the URL (?topic=...), so a filtered view is shareable
    and the back button works. An unknown topic is ignored (shows everything). */
-export default function GuidesGrid({ topic }: { topic?: string }) {
+export default function GuidesGrid({
+    guides,
+    topic,
+}: {
+    guides: Guide[];
+    topic?: string;
+}) {
     const t = useTranslations("guidesPage");
+    const tMeta = useTranslations("guideMeta");
 
-    const active = TOPICS.find((entry) => entry.id === topic);
+    /* One entry per distinct category, in data order. The category is already
+       a key such as "getting-there", so it doubles as the topic id in
+       ?topic=... */
+    const topics = Array.from(new Set(guides.map((guide) => guide.category)));
+
+    const active = topics.find((entry) => entry === topic);
     const visible = active
-        ? GUIDES.filter((guide) => topicId(guide.category) === active.id)
-        : GUIDES;
+        ? guides.filter((guide) => guide.category === active)
+        : guides;
 
     /* The cover story shows on the unfiltered view only. */
-    const lead = active ? undefined : GUIDES[0];
-    const rest = active ? visible : GUIDES.slice(1);
+    const lead = active ? undefined : guides[0];
+    const rest = active ? visible : guides.slice(1);
 
     return (
         <section className="w-full bg-surface px-margin pb-20 md:px-margin-md lg:px-margin-lg">
@@ -59,11 +56,11 @@ export default function GuidesGrid({ topic }: { topic?: string }) {
                                 aria-current={!active ? "true" : undefined}
                                 className={cn(pill, !active ? pillOn : pillOff)}
                             >
-                                {t("allTopics", { count: GUIDES.length })}
+                                {t("allTopics", { count: guides.length })}
                             </Link>
                         </li>
-                        {TOPICS.map(({ id, label }) => {
-                            const isActive = active?.id === id;
+                        {topics.map((id) => {
+                            const isActive = active === id;
                             return (
                                 <li key={id} className="shrink-0">
                                     <Link
@@ -72,7 +69,7 @@ export default function GuidesGrid({ topic }: { topic?: string }) {
                                         aria-current={isActive ? "true" : undefined}
                                         className={cn(pill, isActive ? pillOn : pillOff)}
                                     >
-                                        {label}
+                                        {tMeta(`category.${id}`)}
                                     </Link>
                                 </li>
                             );
@@ -101,13 +98,13 @@ export default function GuidesGrid({ topic }: { topic?: string }) {
                                 <div className="flex flex-col gap-4">
                                     <div className="flex flex-wrap items-center gap-2 font-sans">
                                         <span className="rounded bg-secondary/10 px-2.5 py-0.5 text-label-md font-semibold uppercase tracking-wider text-secondary">
-                                            {lead.category}
+                                            {tMeta(`category.${lead.category}`)}
                                         </span>
                                         <span className="text-outline" aria-hidden="true">
                                             &bull;
                                         </span>
                                         <span className="text-caption text-on-surface-variant">
-                                            {lead.readTime}
+                                            {tMeta("readTime", { minutes: lead.readMinutes })}
                                         </span>
                                     </div>
 
@@ -142,7 +139,7 @@ export default function GuidesGrid({ topic }: { topic?: string }) {
                             {t("moreEyebrow")}
                         </span>
                         <h2 className="font-display text-headline-md text-primary">
-                            {active ? active.label : t("moreHeading")}
+                            {active ? tMeta(`category.${active}`) : t("moreHeading")}
                         </h2>
                     </div>
                     <p className="font-sans text-body-md text-on-surface-variant">

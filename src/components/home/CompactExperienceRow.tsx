@@ -1,17 +1,21 @@
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { EXPERIENCES } from "@/lib/data/experiences";
+import type { Experience } from "@/lib/content/types";
 
 /* The row shows the experiences after the three featured ones above it. */
 const FIRST_INDEX = 3;
 const COUNT = 3;
 
-export default function CompactExperienceRow() {
+export default function CompactExperienceRow({
+    experiences,
+}: {
+    experiences: Experience[];
+}) {
     const t = useTranslations("featuredExperiences");
     const tCategory = useTranslations("categories");
 
-    const items = EXPERIENCES.slice(FIRST_INDEX, FIRST_INDEX + COUNT);
+    const items = experiences.slice(FIRST_INDEX, FIRST_INDEX + COUNT);
     if (items.length === 0) return null;
 
     return (

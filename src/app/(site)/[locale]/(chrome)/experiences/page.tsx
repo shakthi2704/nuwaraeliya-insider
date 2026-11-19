@@ -3,11 +3,8 @@ import { ArrowRight, CalendarDays } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import ExperiencesGrid from "@/components/experiences/ExperiencesGrid";
 import { ButtonLink } from "@/components/ui/Button";
-import {
-    CATEGORY_IDS,
-    EXPERIENCES,
-    type Effort,
-} from "@/lib/data/experiences";
+import { CATEGORY_IDS, type Effort } from "@/lib/content/types";
+import { getExperiences } from "@/lib/content";
 
 export const metadata: Metadata = {
     title: "Experiences",
@@ -26,12 +23,16 @@ const first = (value?: string | string[]) =>
     Array.isArray(value) ? value[0] : value;
 
 export default async function ExperiencesPage({
+    params,
     searchParams,
 }: {
+    params: Promise<{ locale: string }>;
     searchParams: SearchParams;
 }) {
     const t = await getTranslations("experiencesPage");
+    const { locale } = await params;
     const sp = await searchParams;
+    const experiences = await getExperiences(locale);
 
     const category = CATEGORY_IDS.find((id) => id === first(sp.category));
     const effort = EFFORT_VALUES.find((value) => value === first(sp.effort));
@@ -59,7 +60,7 @@ export default async function ExperiencesPage({
                                 className="size-2 rounded-full bg-secondary"
                                 aria-hidden="true"
                             />
-                            {t("count", { count: EXPERIENCES.length })}
+                            {t("count", { count: experiences.length })}
                         </p>
                     </div>
 
@@ -79,7 +80,11 @@ export default async function ExperiencesPage({
             </section>
 
             {/* Filter bar + grid (filters come from the URL) */}
-            <ExperiencesGrid category={category} effort={effort} />
+            <ExperiencesGrid
+                experiences={experiences}
+                category={category}
+                effort={effort}
+            />
 
             {/* Planner CTA */}
             <section className="w-full bg-primary px-margin py-20 text-on-primary md:px-margin-md lg:px-margin-lg">

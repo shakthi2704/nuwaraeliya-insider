@@ -100,13 +100,13 @@ export default async function AskAnInsiderPage({
                             </ol>
                         </div>
 
-                        <div className="flex items-start gap-4 rounded-2xl bg-surface-container-low p-6">
+                        <div className="flex items-start gap-4 rounded-2xl bg-warning-container p-6">
                             <Info
-                                className="mt-0.5 size-5 shrink-0 text-secondary"
+                                className="mt-0.5 size-5 shrink-0 text-on-warning-container"
                                 aria-hidden="true"
                             />
                             <div className="flex flex-col gap-1">
-                                <h2 className="font-sans text-label-lg font-semibold text-primary">
+                                <h2 className="font-sans text-label-lg font-semibold text-on-warning-container">
                                     {t("scope.heading")}
                                 </h2>
                                 <p className="font-sans text-body-md text-on-surface-variant">

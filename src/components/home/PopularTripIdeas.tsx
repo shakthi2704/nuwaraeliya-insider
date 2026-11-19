@@ -2,11 +2,15 @@ import { ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import TripIdeaCard from "@/components/trip-ideas/TripIdeaCard";
 import { Link } from "@/i18n/navigation";
-import { TRIP_IDEAS } from "@/lib/data/trip-ideas";
+import type { TripIdea } from "@/lib/content/types";
 
-export default function PopularTripIdeas() {
+export default function PopularTripIdeas({
+    tripIdeas,
+}: {
+    tripIdeas: TripIdea[];
+}) {
     const t = useTranslations("popularTripIdeas");
-    const ideas = TRIP_IDEAS.slice(0, 3);
+    const ideas = tripIdeas.slice(0, 3);
 
     return (
         <section

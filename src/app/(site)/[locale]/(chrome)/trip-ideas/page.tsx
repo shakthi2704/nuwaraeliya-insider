@@ -3,14 +3,20 @@ import { ArrowRight, CalendarDays } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import TripIdeasGrid from "@/components/trip-ideas/TripIdeasGrid";
 import { ButtonLink } from "@/components/ui/Button";
-import { TRIP_IDEAS } from "@/lib/data/trip-ideas";
+import { getTripIdeas } from "@/lib/content";
 
 export const metadata: Metadata = {
     title: "Trip Ideas",
 };
 
-export default async function TripIdeasPage() {
+export default async function TripIdeasPage({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}) {
     const t = await getTranslations("tripIdeasPage");
+    const { locale } = await params;
+    const tripIdeas = await getTripIdeas(locale);
 
     return (
         <>
@@ -35,7 +41,7 @@ export default async function TripIdeasPage() {
                                 className="size-2 rounded-full bg-secondary"
                                 aria-hidden="true"
                             />
-                            {t("count", { count: TRIP_IDEAS.length })}
+                            {t("count", { count: tripIdeas.length })}
                         </p>
                     </div>
 
@@ -54,7 +60,7 @@ export default async function TripIdeasPage() {
                 </div>
             </section>
 
-            <TripIdeasGrid />
+            <TripIdeasGrid ideas={tripIdeas} />
 
             {/* Planner CTA */}
             <section className="w-full bg-primary px-margin py-20 text-on-primary md:px-margin-md lg:px-margin-lg">

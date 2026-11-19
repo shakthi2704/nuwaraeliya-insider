@@ -4,45 +4,47 @@ import { getTranslations } from "next-intl/server";
 import GuidesGrid from "@/components/guides/GuidesGrid";
 import { ButtonLink } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
-import { GUIDES } from "@/lib/data/guides";
+import { getGuides } from "@/lib/content";
 
 export const metadata: Metadata = {
     title: "Travel Guides",
 };
 
 /* Header numbers come from the data, so they never go stale. */
-const TOPIC_COUNT = new Set(GUIDES.map((guide) => guide.category)).size;
-const TOTAL_MINUTES = GUIDES.reduce(
-    (sum, guide) => sum + (parseInt(guide.readTime, 10) || 0),
-    0
-);
-
 export default async function GuidesPage({
+    params,
     searchParams,
 }: {
+    params: Promise<{ locale: string }>;
     searchParams: Promise<{ topic?: string | string[] }>;
 }) {
     const t = await getTranslations("guidesPage");
+    const { locale } = await params;
     const sp = await searchParams;
+    const guides = await getGuides(locale);
     const topic = Array.isArray(sp.topic) ? sp.topic[0] : sp.topic;
+
+    /* Header numbers come from the data, so they never go stale. */
+    const topicCount = new Set(guides.map((guide) => guide.category)).size;
+    const totalMinutes = guides.reduce((sum, guide) => sum + guide.readMinutes, 0);
 
     const stats = [
         {
             key: "guides",
             icon: BookOpen,
-            title: t("stats.guidesTitle", { count: GUIDES.length }),
+            title: t("stats.guidesTitle", { count: guides.length }),
             text: t("stats.guidesText"),
         },
         {
             key: "topics",
             icon: Tag,
-            title: t("stats.topicsTitle", { count: TOPIC_COUNT }),
+            title: t("stats.topicsTitle", { count: topicCount }),
             text: t("stats.topicsText"),
         },
         {
             key: "minutes",
             icon: Clock,
-            title: t("stats.minutesTitle", { count: TOTAL_MINUTES }),
+            title: t("stats.minutesTitle", { count: totalMinutes }),
             text: t("stats.minutesText"),
         },
     ];
@@ -74,7 +76,7 @@ export default async function GuidesPage({
                                 className="size-2 rounded-full bg-secondary"
                                 aria-hidden="true"
                             />
-                            {t("count", { count: GUIDES.length })}
+                            {t("count", { count: topicCount })}
                         </p>
                     </div>
 
@@ -124,7 +126,7 @@ export default async function GuidesPage({
             </section>
 
             {/* Topic bar, cover story and grid (topic comes from the URL) */}
-            <GuidesGrid topic={topic} />
+            <GuidesGrid guides={guides} topic={topic} />
 
             {/* Closing banner */}
             <section className="w-full bg-surface px-margin pb-20 md:px-margin-md lg:px-margin-lg">

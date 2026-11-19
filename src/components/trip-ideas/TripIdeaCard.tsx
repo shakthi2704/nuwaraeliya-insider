@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { ButtonLink } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
-import type { TripIdea } from "@/lib/data/trip-ideas";
+import type { TripIdea } from "@/lib/content/types";
 
 
 /* A card shows this many days, then "+N more days". */
@@ -35,7 +35,7 @@ export default function TripIdeaCard({ idea }: { idea: TripIdea }) {
                     </span>
                 ) : null}
                 <span className="absolute bottom-4 left-4 rounded bg-surface-container-lowest/90 px-3 py-1 font-sans text-label-md text-primary">
-                    {idea.duration}
+                    {t("duration", { count: idea.days.length })}
                 </span>
             </div>
 
@@ -75,7 +75,7 @@ export default function TripIdeaCard({ idea }: { idea: TripIdea }) {
 
                 <div className="flex items-center justify-between gap-3 border-t border-surface-container-high pt-4">
                     <span className="whitespace-nowrap font-sans text-caption font-semibold uppercase tracking-wider text-on-surface-variant">
-                        {t("experiencesCount", { count: idea.highlights.length })}
+                        {t("experiencesCount", { count: idea.experienceSlugs.length })}
                     </span>
                     <ButtonLink
                         href={`/plan-my-trip?idea=${idea.slug}`}

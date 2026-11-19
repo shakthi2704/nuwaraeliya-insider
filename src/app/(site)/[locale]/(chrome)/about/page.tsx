@@ -19,9 +19,7 @@ import {
 import { getTranslations } from "next-intl/server";
 import { ButtonLink } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
-import { EXPERIENCES } from "@/lib/data/experiences";
-import { GUIDES } from "@/lib/data/guides";
-import { TRIP_IDEAS } from "@/lib/data/trip-ideas";
+import { getExperiences, getGuides, getTripIdeas } from "@/lib/content";
 
 export const metadata: Metadata = {
     title: "About",
@@ -49,16 +47,27 @@ const PLANNER_RULES = [
    the experience images are replaced. */
 const MOSAIC_SLUGS = ["pedro-tea-estate", "horton-plains-worlds-end"];
 
-export default async function AboutPage() {
+export default async function AboutPage({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}) {
     const t = await getTranslations("aboutPage");
+    const { locale } = await params;
+    const [experiences, tripIdeas, guides] = await Promise.all([
+        getExperiences(locale),
+        getTripIdeas(locale),
+        getGuides(locale),
+    ]);
 
     const mosaic = MOSAIC_SLUGS.map((slug) =>
-        EXPERIENCES.find((experience) => experience.slug === slug)
+        experiences.find((experience) => experience.slug === slug)
+
     ).filter((e): e is NonNullable<typeof e> => Boolean(e));
 
     /* Counted from the data, so the numbers can never go stale. The heights
        are the same values shown on the experience cards. */
-    const heights = EXPERIENCES.map((e) => e.elevationM).filter(
+    const heights = experiences.map((e) => e.elevationM).filter(
         (n): n is number => typeof n === "number"
     );
     const lowest = Math.min(...heights);
@@ -76,17 +85,17 @@ export default async function AboutPage() {
         {
             key: "experiences",
             icon: MapPin,
-            value: String(EXPERIENCES.length),
+            value: String(experiences.length),
         },
         {
             key: "tripIdeas",
             icon: Route,
-            value: String(TRIP_IDEAS.length),
+            value: String(tripIdeas.length),
         },
         {
             key: "guides",
             icon: BookOpen,
-            value: String(GUIDES.length),
+            value: String(guides.length),
         },
     ] as const;
 

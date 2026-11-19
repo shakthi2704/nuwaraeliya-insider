@@ -11,8 +11,7 @@ import {
 import { useTranslations } from "next-intl";
 import { ButtonLink } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
-import { EXPERIENCES } from "@/lib/data/experiences";
-import type { TripIdea } from "@/lib/data/trip-ideas";
+import type { Experience, TripIdea } from "@/lib/content/types";
 
 type Fact = { key: string; icon: LucideIcon; value: string };
 
@@ -28,11 +27,28 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
     );
 }
 
-export default function TripIdeaDetail({ idea }: { idea: TripIdea }) {
+export default function TripIdeaDetail({
+    idea,
+    experiences,
+}: {
+    idea: TripIdea;
+    experiences: Experience[];
+}) {
     const t = useTranslations("tripIdeaDetail");
 
+    /* The experiences this trip includes. A slug that matches no experience
+       is skipped. */
+    const included = idea.experienceSlugs.flatMap((slug) => {
+        const experience = experiences.find((e) => e.slug === slug);
+        return experience ? [experience] : [];
+    });
+
     const facts: Fact[] = [
-        { key: "duration", icon: Clock, value: idea.duration },
+        {
+            key: "duration",
+            icon: Clock,
+            value: t("durationValue", { count: idea.days.length }),
+        },
         {
             key: "days",
             icon: CalendarDays,
@@ -41,16 +57,11 @@ export default function TripIdeaDetail({ idea }: { idea: TripIdea }) {
         {
             key: "experiences",
             icon: Compass,
-            value: t("experiencesValue", { count: idea.highlights.length }),
+            value: t("experiencesValue", { count: included.length }),
         },
     ];
 
-    /* A highlight links to its experience page when the title matches an
-       experience exactly; otherwise it stays plain text. */
-    const highlights = idea.highlights.map((title) => ({
-        title,
-        slug: EXPERIENCES.find((e) => e.title === title)?.slug,
-    }));
+
 
     return (
         <>
@@ -106,7 +117,7 @@ export default function TripIdeaDetail({ idea }: { idea: TripIdea }) {
 
                             <div>
                                 <span className="inline-block rounded-full bg-secondary-container/90 px-3 py-1 font-sans text-label-md uppercase tracking-wider text-on-secondary-fixed shadow-sm backdrop-blur-md">
-                                    {idea.duration}
+                                    {t("durationValue", { count: idea.days.length })}
                                 </span>
                             </div>
 
@@ -194,7 +205,7 @@ export default function TripIdeaDetail({ idea }: { idea: TripIdea }) {
                                         {t("highlightsLabel")}
                                     </h2>
                                     <ul className="flex flex-col gap-3">
-                                        {highlights.map(({ title, slug }) => (
+                                        {included.map(({ title, slug }) => (
                                             <li
                                                 key={title}
                                                 className="flex items-start gap-2.5 border-b border-surface-container-high pb-3 last:border-0 last:pb-0"

@@ -15,7 +15,7 @@ import { useTranslations } from "next-intl";
 import AddToTripButton from "@/components/experiences/AddToTripButton";
 import { ButtonLink } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
-import { EXPERIENCES, type Experience } from "@/lib/data/experiences";
+import type { Experience } from "@/lib/content/types";
 
 const formatMetres = (m: number) => m.toLocaleString("en-US");
 
@@ -32,11 +32,12 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
         </div>
     );
 }
-
 export default function ExperienceDetail({
     experience,
+    experiences,
 }: {
     experience: Experience;
+    experiences: Experience[];
 }) {
     const t = useTranslations("experienceDetail");
     const tCategory = useTranslations("categories");
@@ -62,7 +63,7 @@ export default function ExperienceDetail({
     ];
 
     /* Related experiences: most shared categories first, then data order. */
-    const related = EXPERIENCES.filter((e) => e.slug !== experience.slug)
+    const related = experiences.filter((e) => e.slug !== experience.slug)
         .map((e) => ({
             e,
             shared: e.categories.filter((c) => experience.categories.includes(c))

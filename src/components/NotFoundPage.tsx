@@ -2,7 +2,7 @@ import { ArrowRight, BookOpen, Flag, Headset, Mountain, Route } from "lucide-rea
 import { useTranslations } from "next-intl";
 import { ButtonLink } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
-import { EXPERIENCES } from "@/lib/data/experiences";
+import type { Experience } from "@/lib/content/types";
 
 const WAYPOINTS = [
     { key: "home", href: "/", icon: Mountain },
@@ -18,11 +18,16 @@ const POPULAR_SLUGS = [
     "horton-plains-worlds-end",
 ];
 
-export default function NotFoundPage() {
+export default function NotFoundPage({
+    experiences,
+}: {
+    experiences: Experience[];
+}) {
     const t = useTranslations("notFound");
 
     const popular = POPULAR_SLUGS.map((slug) =>
-        EXPERIENCES.find((e) => e.slug === slug)
+        experiences.find((e) => e.slug === slug)
+
     ).filter((e): e is NonNullable<typeof e> => Boolean(e));
 
     return (

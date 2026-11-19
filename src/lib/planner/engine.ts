@@ -1,8 +1,5 @@
-import {
-    EXPERIENCES,
-    type CategoryId,
-    type Experience,
-} from "@/lib/data/experiences";
+import type { CategoryId, Experience } from "@/lib/content/types";
+
 import type { Pace, PlannerAnswers, Transit } from "@/lib/planner/answers";
 import { driveMinutes } from "@/lib/planner/drive-times";
 import {
@@ -375,7 +372,7 @@ function scheduleDay(
 
 export function generateItinerary(
     answers: PlannerAnswers,
-    experiences: Experience[] = EXPERIENCES
+    experiences: Experience[]
 ): Itinerary {
     const rules = PACE_RULES[answers.pace];
     const factor = DRIVE_FACTOR[answers.transit];

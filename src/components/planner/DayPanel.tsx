@@ -1,7 +1,7 @@
 import { Car, Coffee } from "lucide-react";
 import { useTranslations } from "next-intl";
 import StopCard from "@/components/planner/StopCard";
-import { EXPERIENCES } from "@/lib/data/experiences";
+import type { Experience } from "@/lib/content/types";
 import type { PlanDay } from "@/lib/planner/engine";
 import { durationParts, formatClock } from "@/lib/planner/format";
 
@@ -13,7 +13,13 @@ const toMinutes = (hhmm: string) => {
 /* One day of the itinerary: a short summary, then the timeline of stops with
    drive connectors and the midday break. A server component, so it can be
    handed to the day tabs as ready-made content. */
-export default function DayPanel({ day }: { day: PlanDay }) {
+export default function DayPanel({
+    day,
+    experiences,
+}: {
+    day: PlanDay;
+    experiences: Experience[];
+}) {
     const t = useTranslations("result");
 
     const duration = (minutes: number) => {
@@ -38,7 +44,14 @@ export default function DayPanel({ day }: { day: PlanDay }) {
         { key: "active", value: duration(day.activeMinutes) },
     ];
 
-    let stopNumber = 0;
+    /* Stop numbers, worked out before rendering. A stop with no matching
+       experience is skipped and takes no number. */
+    const stopNumbers = new Map<string, number>();
+    for (const item of day.items) {
+        if (item.kind === "stop" && experiences.some((e) => e.slug === item.slug)) {
+            stopNumbers.set(item.slug, stopNumbers.size + 1);
+        }
+    }
 
     return (
         <section
@@ -105,10 +118,10 @@ export default function DayPanel({ day }: { day: PlanDay }) {
                         );
                     }
 
-                    const experience = EXPERIENCES.find((e) => e.slug === item.slug);
+                    const experience = experiences.find((e) => e.slug === item.slug);
                     if (!experience) return null;
 
-                    stopNumber += 1;
+                    const stopNumber = stopNumbers.get(item.slug) ?? 0;
                     const isFirst = stopNumber === 1;
 
                     return (

@@ -1,8 +1,5 @@
-import {
-    CATEGORY_IDS,
-    EXPERIENCES,
-    type CategoryId,
-} from "@/lib/data/experiences";
+import { CATEGORY_IDS, type CategoryId } from "@/lib/content/types";
+
 
 /* What the questionnaire collects, and how it travels in the URL.
    A finished plan is rebuilt from the URL alone, so a shared link always
@@ -54,8 +51,28 @@ const oneOf = <T extends string>(
 
 const unique = <T>(items: T[]) => [...new Set(items)];
 
-const KNOWN_SLUGS = new Set(EXPERIENCES.map((experience) => experience.slug));
 const MAX_PINNED = 12;
+/* parseDraft cannot tell which slugs still exist, so it keeps a generous
+   number and knownSlugs applies the real limit after dropping unknown ones. */
+const MAX_PINNED_RAW = MAX_PINNED * 4;
+
+/* A slug is lowercase words joined by hyphens. parseDraft can only check the
+   shape, because the browser does not have the list of experiences. The
+   server pages drop slugs that no longer exist with knownSlugs below. */
+const SLUG_SHAPE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const MAX_SLUG_LENGTH = 80;
+const looksLikeSlug = (slug: string) =>
+    slug.length <= MAX_SLUG_LENGTH && SLUG_SHAPE.test(slug);
+
+/* Keeps only the slugs that match an experience, in their original order,
+   up to the limit. */
+export function knownSlugs(
+    slugs: string[],
+    experiences: { slug: string }[]
+): string[] {
+    const known = new Set(experiences.map((experience) => experience.slug));
+    return slugs.filter((slug) => known.has(slug)).slice(0, MAX_PINNED);
+}
 
 /* Lenient: reads whatever valid parts are present and ignores the rest.
    Used to restore a draft or pre-fill the questionnaire. */
@@ -101,8 +118,8 @@ export function parseDraft(params: RawParams): PartialAnswers {
     const rawPinned = first(params[KEY.pinned]);
     if (rawPinned !== undefined) {
         const pinned = unique(
-            rawPinned.split(",").filter((slug) => KNOWN_SLUGS.has(slug))
-        ).slice(0, MAX_PINNED);
+            rawPinned.split(",").filter(looksLikeSlug)
+        ).slice(0, MAX_PINNED_RAW);
         if (pinned.length > 0) draft.pinned = pinned;
     }
 

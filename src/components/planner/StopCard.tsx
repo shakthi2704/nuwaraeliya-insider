@@ -1,7 +1,7 @@
 import { Bookmark, CloudRain, Car, Lightbulb, Sparkles, Sunrise } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import type { Experience } from "@/lib/data/experiences";
+import type { Experience } from "@/lib/content/types";
 import type { PlanStop, StopNote } from "@/lib/planner/engine";
 import { durationParts, formatClock } from "@/lib/planner/format";
 

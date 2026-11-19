@@ -1,4 +1,4 @@
-import { CATEGORY_IDS } from "@/lib/data/experiences";
+import { CATEGORY_IDS } from "@/lib/content/types";
 import {
     DAY_OPTIONS,
     PACE_IDS,

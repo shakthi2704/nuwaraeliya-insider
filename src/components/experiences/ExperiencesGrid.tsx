@@ -5,10 +5,10 @@ import { ButtonLink } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
 import {
     CATEGORY_IDS,
-    EXPERIENCES,
     type CategoryId,
     type Effort,
-} from "@/lib/data/experiences";
+    type Experience,
+} from "@/lib/content/types";
 import { cn } from "@/lib/utils";
 
 const EFFORT_ORDER: Effort[] = ["easy", "moderate", "demanding"];
@@ -36,9 +36,11 @@ const chipOff =
     "bg-surface-container-low text-on-surface-variant hover:bg-secondary-container";
 
 export default function ExperiencesGrid({
+    experiences,
     category,
     effort,
 }: {
+    experiences: Experience[];
     category?: CategoryId;
     effort?: Effort;
 }) {
@@ -48,13 +50,13 @@ export default function ExperiencesGrid({
 
     /* Only offer filters that match at least one experience. */
     const categoryOptions = CATEGORY_IDS.filter((id) =>
-        EXPERIENCES.some((e) => e.categories.includes(id))
+        experiences.some((e) => e.categories.includes(id))
     );
     const effortOptions = EFFORT_ORDER.filter((value) =>
-        EXPERIENCES.some((e) => e.effort === value)
+        experiences.some((e) => e.effort === value)
     );
 
-    const visible = EXPERIENCES.filter(
+    const visible = experiences.filter(
         (e) =>
             (!category || e.categories.includes(category)) &&
             (!effort || e.effort === effort)

@@ -7,6 +7,7 @@ import PopularTripIdeas from "@/components/home/PopularTripIdeas";
 import SeasonalGuideStrip from "@/components/home/SeasonalGuideStrip";
 import WhyTrustUs from "@/components/home/WhyTrustUs";
 import { setRequestLocale } from "next-intl/server";
+import { getExperiences, getGuides, getTripIdeas } from "@/lib/content";
 
 export default async function Home({
     params,
@@ -16,16 +17,22 @@ export default async function Home({
     const { locale } = await params;
     setRequestLocale(locale);
 
+    const [experiences, tripIdeas, guides] = await Promise.all([
+        getExperiences(locale),
+        getTripIdeas(locale),
+        getGuides(locale),
+    ]);
+
     return (
         <>
             <Hero />
             <WhyTrustUs />
-            <FeaturedExperiences />
-            <PopularTripIdeas />
+            <FeaturedExperiences experiences={experiences} />
+            <PopularTripIdeas tripIdeas={tripIdeas} />
             <SeasonalGuideStrip />
             <PlanMyTripCTA />
             <EssentialAdvice />
-            <LatestGuides />
+            <LatestGuides guides={guides} />
         </>
     );
 }

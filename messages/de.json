@@ -126,44 +126,8 @@
         "customize": "Im Reiseplaner anpassen",
         "moreDays": "+{count} weitere Tage",
         "featuredTag": "Empfohlen",
-        "experiencesCount": "{count, plural, one {# Erlebnis} other {# Erlebnisse}}",
-        "items": [
-            {
-                "slug": "week-in-the-hills",
-                "duration": "7 Tage",
-                "title": "Eine Woche im Hochland",
-                "description": "Die entspannte Variante. Genug Zeit, um wirklich im gemächlichen Rhythmus des Hochlands anzukommen – Teeplantagen am Morgen, das Hochplateau im Morgengrauen, ausgedehnte Mittagessen und Abende, die früh enden, wenn die Luft kühl wird. Ideal für alle, die lieber vier Dinge richtig genießen, statt zehn Dinge schnell abzuhaken.",
-                "highlights": [
-                    "Horton Plains & World's End",
-                    "Pedro Tea Estate",
-                    "Gregory Lake im ersten Morgenlicht"
-                ],
-                "alt": "Geschwungene Straße durch nebelverhangene Teeplantagen im Hochland",
-                "featured": true
-            },
-            {
-                "slug": "three-days-as-a-couple",
-                "duration": "3 Tage",
-                "title": "3 Tage zu zweit",
-                "description": "Ein kurzer, ruhiger Ausflug mit entspannten Morgenstunden und einem unvergesslichen Ausblick. Weniger Programm, mehr gemeinsame Momente.",
-                "highlights": [
-                    "Gregory Lake im ersten Morgenlicht",
-                    "Pedro Tea Estate"
-                ],
-                "alt": "Paar, das gemeinsam den Sonnenuntergang genießt"
-            },
-            {
-                "slug": "the-long-weekend",
-                "duration": "2 Tage",
-                "title": "Das verlängerte Wochenende",
-                "description": "Für alle, die nur zwei Tage Zeit haben, aber trotzdem eine richtige Reise erleben möchten – statt eines hektischen Zwischenstopps.",
-                "highlights": [
-                    "Horton Plains & World's End",
-                    "Gregory Lake im ersten Morgenlicht"
-                ],
-                "alt": "Luftaufnahme sanfter grüner Hügel unter einem bewölkten Himmel"
-            }
-        ]
+        "duration": "{count, plural, one {# Tag} other {# Tage}}",
+        "experiencesCount": "{count, plural, one {# Erlebnis} other {# Erlebnisse}}"
     },
     "seasonalGuide": {
         "eyebrow": "Wann ist die beste Reisezeit?",
@@ -684,6 +648,16 @@
             "guides": "Reiseführer lesen"
         }
     },
+    "guideMeta": {
+        "readTime": "{minutes} Min. Lesezeit",
+        "category": {
+            "getting-there": "Anreise",
+            "practical-info": "Praktische Infos",
+            "before-you-go": "Vor der Reise",
+            "planning": "Planung",
+            "local-advice": "Tipps von Einheimischen"
+        }
+    },
     "guideDetail": {
         "backToGuides": "Zurück zu den Reiseführern",
         "breadcrumb": "Brotkrumennavigation",
@@ -853,6 +827,7 @@
             "experiences": "Enthaltene Erlebnisse"
         },
         "daysValue": "{count, plural, one {# Tag} other {# Tage}}",
+        "durationValue": "{count, plural, one {# Tag} other {# Tage}}",
         "experiencesValue": "{count, plural, one {# Erlebnis} other {# Erlebnisse}}",
         "about": {
             "eyebrow": "Überblick",

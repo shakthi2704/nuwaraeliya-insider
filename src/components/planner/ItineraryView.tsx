@@ -4,7 +4,7 @@ import DayPanel from "@/components/planner/DayPanel";
 import DayTabs, { type DayTabItem } from "@/components/planner/DayTabs";
 import ItineraryActions from "@/components/planner/ItineraryActions";
 import { Link } from "@/i18n/navigation";
-import { EXPERIENCES } from "@/lib/data/experiences";
+import type { Experience } from "@/lib/content/types";
 import { encodeAnswers } from "@/lib/planner/answers";
 import type {
     Itinerary,
@@ -14,8 +14,7 @@ import type {
 } from "@/lib/planner/engine";
 import { formatClock } from "@/lib/planner/format";
 
-const titleOf = (slug: string) =>
-    EXPERIENCES.find((e) => e.slug === slug)?.title ?? slug;
+
 
 const mapsUrl = (title: string) =>
     `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
@@ -28,8 +27,17 @@ const listOf = (items: string[]) =>
 /* The whole result page body for a finished itinerary. A server component:
    it only reads the plan and lays it out. The interactive parts (day tabs,
    share and print) are small client components inside it. */
-export default function ItineraryView({ itinerary }: { itinerary: Itinerary }) {
+export default function ItineraryView({
+    itinerary,
+    experiences,
+}: {
+    itinerary: Itinerary;
+    experiences: Experience[];
+}) {
     const t = useTranslations("result");
+
+    const titleOf = (slug: string) =>
+        experiences.find((e) => e.slug === slug)?.title ?? slug;
     const tPlanner = useTranslations("planner");
     const tCategory = useTranslations("categories");
 
@@ -130,7 +138,7 @@ export default function ItineraryView({ itinerary }: { itinerary: Itinerary }) {
                 from: formatClock(day.startsAt),
                 to: formatClock(day.endsAt),
             }),
-            panel: <DayPanel day={day} />,
+            panel: <DayPanel day={day} experiences={experiences} />,
         };
     });
 
@@ -190,7 +198,7 @@ export default function ItineraryView({ itinerary }: { itinerary: Itinerary }) {
                         <Info className="size-5" aria-hidden="true" />
                     </span>
                     <div className="flex flex-col gap-2">
-                        <h2 className="font-sans text-label-lg text-primary">
+                        <h2 className="font-sans text-label-lg text-on-warning-container">
                             {t("notice.title")}
                         </h2>
                         <ul className="flex list-disc flex-col gap-1.5 pl-5 font-sans text-body-md text-on-surface-variant">

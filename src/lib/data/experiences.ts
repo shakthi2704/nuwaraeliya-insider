@@ -1,58 +1,12 @@
-// Data shape mirrors a future Supabase `experiences` table.
-// Single source of truth for the homepage teaser strip, the /experiences
-// index, and /experiences/[slug] detail pages. Replace with a fetch/query
-// when the DB is connected — consuming components stay identical.
-//
-// Display labels for categories and effort live in messages/*.json
-// (`categories.*`, `effort.*`), not here. Planner-specific fields (start
-// windows, season, travel clusters) are added in the planner step, once the
-// planner defines exactly what it needs.
+// Static content for experiences. Types live in @/lib/content/types.
+// Replaced by Sanity later; read it through @/lib/content, not directly.
 
-/** The 8 canonical categories from EXPERIENCE_SYSTEM.md. */
-export const CATEGORY_IDS = [
-    "nature",
-    "tea-plantation",
-    "photography",
-    "adventure",
-    "relaxation",
-    "food-local",
-    "wildlife",
-    "culture",
-] as const;
+import type { Experience } from "@/lib/content/types";
 
-export type CategoryId = (typeof CATEGORY_IDS)[number];
-
-export type Effort = "easy" | "moderate" | "demanding";
-
-export type Experience = {
-    slug: string;
-    /** Legacy display label. Still read by components not yet rebuilt;
-     *  remove once they use `categories` + the `categories.*` messages. */
-    category: string;
-    /** Planner and filter tags. The first entry is the primary category
-     *  shown on cards. */
-    categories: CategoryId[];
-    title: string;
-    description: string; // short teaser — homepage card, index card
-    body: string;        // full write-up — detail page
-    duration: string;
-    elevationM?: number; // metres above sea level, shown on cards
-    area: string;        // where it is, shown on cards
-    effort: Effort;
-    bestFor: string;     // short human phrase, shown on cards
-    image: string;
-    alt: string;
-
-    /* Optional editorial sections for the detail page. Each one renders
-       only when filled in, so only add content you have verified yourself. */
-    highlights?: { title: string; description: string }[]; // "What to expect"
-    practicalNotes?: { title: string; description: string }[]; // "Field notes"
-    insiderTip?: string; // one short tip in your own words
-};
 export const EXPERIENCES: Experience[] = [
     {
         slug: "horton-plains-worlds-end",
-        category: "Nature",
+
         categories: ["nature", "adventure", "photography"],
         title: "Horton Plains & World's End",
         description:
@@ -69,7 +23,7 @@ export const EXPERIENCES: Experience[] = [
     },
     {
         slug: "pedro-tea-estate",
-        category: "Tea & Plantation",
+
         categories: ["tea-plantation", "photography"],
         title: "Pedro Tea Estate",
         description:
@@ -86,7 +40,7 @@ export const EXPERIENCES: Experience[] = [
     },
     {
         slug: "gregory-lake-morning",
-        category: "Relaxation",
+
         categories: ["relaxation", "nature"],
         title: "Gregory Lake at First Light",
         description:
@@ -103,7 +57,7 @@ export const EXPERIENCES: Experience[] = [
     },
     {
         slug: "ramboda-falls",
-        category: "Nature",
+
         categories: ["nature", "photography"], // verify
         title: "Ramboda Falls & Valley Tea Viewpoint",
         description:
@@ -120,7 +74,7 @@ export const EXPERIENCES: Experience[] = [
     },
     {
         slug: "hakgala-botanical-garden",
-        category: "Nature",
+
         categories: ["nature", "wildlife"], // verify
         title: "Hakgala Botanical Garden",
         description:
@@ -137,7 +91,7 @@ export const EXPERIENCES: Experience[] = [
     },
     {
         slug: "grand-hotel-high-tea",
-        category: "Food & Local",
+
         categories: ["food-local", "culture"], // verify
         title: "Grand Hotel High Tea",
         description:
@@ -153,7 +107,7 @@ export const EXPERIENCES: Experience[] = [
     },
     {
         slug: "single-tree-hill-sunrise",
-        category: "Photography",
+
         categories: ["photography", "nature"], // verify
         title: "Single Tree Hill Sunrise Summit Hike",
         description:
@@ -170,7 +124,7 @@ export const EXPERIENCES: Experience[] = [
     },
     {
         slug: "lovers-leap-waterfall",
-        category: "Nature",
+
         categories: ["nature"], // verify
         title: "Lovers Leap Waterfall & Forest Trail",
         description:
@@ -187,7 +141,7 @@ export const EXPERIENCES: Experience[] = [
     },
     {
         slug: "victoria-park-birding",
-        category: "Wildlife",
+
         categories: ["wildlife", "nature"], // verify
         title: "Victoria Park Avian Walk & Flower Gardens",
         description:

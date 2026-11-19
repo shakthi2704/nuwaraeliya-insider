@@ -1,22 +1,28 @@
 import { notFound } from "next/navigation";
-import { TRIP_IDEAS } from "@/lib/data/trip-ideas";
 import TripIdeaDetail from "@/components/trip-ideas/TripIdeaDetail";
+import { routing } from "@/i18n/routing";
+import { getExperiences, getTripIdea, getTripIdeas } from "@/lib/content";
 
-export function generateStaticParams() {
-    return TRIP_IDEAS.map((idea) => ({ slug: idea.slug }));
+export async function generateStaticParams() {
+    /* Slugs are the same in every language. */
+    const ideas = await getTripIdeas(routing.defaultLocale);
+    return ideas.map((idea) => ({ slug: idea.slug }));
 }
 
 export default async function TripIdeaDetailPage({
     params,
 }: {
-    params: Promise<{ slug: string }>;
+    params: Promise<{ locale: string; slug: string }>;
 }) {
-    const { slug } = await params;
-    const idea = TRIP_IDEAS.find((i) => i.slug === slug);
+    const { locale, slug } = await params;
+    const [idea, experiences] = await Promise.all([
+        getTripIdea(slug, locale),
+        getExperiences(locale),
+    ]);
 
     if (!idea) {
         notFound();
     }
 
-    return <TripIdeaDetail idea={idea} />;
+    return <TripIdeaDetail idea={idea} experiences={experiences} />;
 }

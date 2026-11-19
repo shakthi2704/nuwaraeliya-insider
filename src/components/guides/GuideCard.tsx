@@ -1,7 +1,7 @@
 import { ArrowRight, Clock } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import type { Guide } from "@/lib/data/guides";
+import type { Guide } from "@/lib/content/types";
 
 /* Stitch-style guide card for the /guides index and the "Keep reading" row.
    The title link is stretched over the whole card. `as` sets the heading
@@ -14,6 +14,7 @@ export default function GuideCard({
     as?: "h2" | "h3";
 }) {
     const t = useTranslations("guidesPage");
+    const tMeta = useTranslations("guideMeta");
 
     return (
         <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl bg-surface-container-lowest shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-float has-[.card-link:focus-visible]:outline-2 has-[.card-link:focus-visible]:outline-offset-2 has-[.card-link:focus-visible]:outline-secondary">
@@ -27,11 +28,11 @@ export default function GuideCard({
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <span className="absolute left-3 top-3 rounded bg-surface-container-lowest/90 px-2.5 py-1 font-sans text-caption font-semibold text-primary backdrop-blur">
-                    {guide.category}
+                    {tMeta(`category.${guide.category}`)}
                 </span>
                 <span className="absolute bottom-3 right-3 inline-flex items-center gap-1 rounded bg-primary/80 px-2 py-0.5 font-sans text-caption text-on-primary backdrop-blur">
                     <Clock className="size-3" aria-hidden="true" />
-                    {guide.readTime}
+                    {tMeta("readTime", { minutes: guide.readMinutes })}
                 </span>
             </div>
 

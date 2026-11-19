@@ -1,13 +1,18 @@
 import type { Metadata } from "next";
 import PlannerWizard from "@/components/planner/PlannerWizard";
-import { EXPERIENCES, type CategoryId } from "@/lib/data/experiences";
+import { getExperiences, getTripIdea } from "@/lib/content";
+import type {
+    CategoryId,
+    Experience,
+    ExperienceSummary,
+    TripIdea,
+} from "@/lib/content/types";
 import {
     DAY_OPTIONS,
+    knownSlugs,
     parseDraft,
     type PartialAnswers,
 } from "@/lib/planner/answers";
-import { TRIP_IDEAS, type TripIdea } from "@/lib/data/trip-ideas";
-
 export const metadata: Metadata = {
     title: "Trip Planner",
 };
@@ -20,7 +25,10 @@ const first = (value?: string | string[]) =>
 /* A trip idea gives the questionnaire a head start: its length, and the
    main category of each experience it includes. Everything else is still
    asked. */
-function answersFromIdea(idea: TripIdea): PartialAnswers {
+function answersFromIdea(
+    idea: TripIdea,
+    experiences: Experience[]
+): PartialAnswers {
     const head: PartialAnswers = {};
 
     const length = Math.min(idea.days.length, 4);
@@ -28,8 +36,8 @@ function answersFromIdea(idea: TripIdea): PartialAnswers {
     if (days) head.days = days;
 
     const interests: CategoryId[] = [];
-    for (const title of idea.highlights) {
-        const experience = EXPERIENCES.find((e) => e.title === title);
+    for (const slug of idea.experienceSlugs) {
+        const experience = experiences.find((e) => e.slug === slug);
         const category = experience?.categories[0];
         if (category && !interests.includes(category)) interests.push(category);
     }
@@ -39,19 +47,42 @@ function answersFromIdea(idea: TripIdea): PartialAnswers {
 }
 
 export default async function PlanMyTripPage({
+    params,
     searchParams,
 }: {
+    params: Promise<{ locale: string }>;
     searchParams: SearchParams;
 }) {
+    const { locale } = await params;
     const sp = await searchParams;
+    const experiences = await getExperiences(locale);
 
     /* Answers already in the link win over the trip idea's suggestions. */
-    const idea = TRIP_IDEAS.find((item) => item.slug === first(sp.idea));
+    const ideaSlug = first(sp.idea);
+    const idea = ideaSlug ? await getTripIdea(ideaSlug, locale) : undefined;
+    /* parseDraft only checks the shape of saved slugs: drop the ones that no
+       longer exist. */
+    const draft = parseDraft(sp);
+    if (draft.pinned) {
+        const pinned = knownSlugs(draft.pinned, experiences);
+        if (pinned.length > 0) draft.pinned = pinned;
+        else delete draft.pinned;
+    }
     const initial: PartialAnswers = {
-        ...(idea ? answersFromIdea(idea) : {}),
-        ...parseDraft(sp),
+        ...(idea ? answersFromIdea(idea, experiences) : {}),
+        ...draft,
     };
+    /* Only what the wizard shows goes to the browser. */
+    const summaries: ExperienceSummary[] = experiences.map(
+        ({ slug, categories, image, alt }) => ({ slug, categories, image, alt })
+    );
 
     /* The key restarts the wizard if the link changes during a visit. */
-    return <PlannerWizard key={JSON.stringify(initial)} initial={initial} />;
+    return (
+        <PlannerWizard
+            key={JSON.stringify(initial)}
+            initial={initial}
+            experiences={summaries}
+        />
+    );
 }

@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { ButtonLink } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
-import { EXPERIENCES } from "@/lib/data/experiences";
+import type { Experience } from "@/lib/content/types";
 import { cn } from "@/lib/utils";
 
 import CompactExperienceRow from "@/components/home/CompactExperienceRow";
@@ -23,12 +23,16 @@ const photo =
 
 const formatMetres = (m: number) => m.toLocaleString("en-US");
 
-export default function FeaturedExperiences() {
+export default function FeaturedExperiences({
+    experiences,
+}: {
+    experiences: Experience[];
+}) {
     const t = useTranslations("featuredExperiences");
     const tCategory = useTranslations("categories");
     const tEffort = useTranslations("effort");
 
-    const [lead, ...rest] = EXPERIENCES.slice(0, 3);
+    const [lead, ...rest] = experiences.slice(0, 3);
     if (!lead) return null;
 
     return (
@@ -210,7 +214,7 @@ export default function FeaturedExperiences() {
                     </div>
                 </div>
 
-                <CompactExperienceRow />
+                <CompactExperienceRow experiences={experiences} />
 
                 <div className="flex justify-center">
                     <ButtonLink href="/experiences" variant="outline" size="lg">

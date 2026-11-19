@@ -126,44 +126,8 @@
         "customize": "Customize in planner",
         "moreDays": "+{count} more days",
         "featuredTag": "Featured",
-        "experiencesCount": "{count, plural, one {# experience} other {# experiences}}",
-        "items": [
-            {
-                "slug": "week-in-the-hills",
-                "duration": "7 Days",
-                "title": "A Week in the Hills",
-                "description": "The unhurried version. Enough time to actually settle into the pace of the hill country — tea estates in the morning, the plateau at dawn, long lunches, and evenings that end early because the air turns cold. Built for people who would rather do four things well than ten things quickly.",
-                "highlights": [
-                    "Horton Plains & World's End",
-                    "Pedro Tea Estate",
-                    "Gregory Lake at First Light"
-                ],
-                "alt": "Winding road through misty tea plantation hills",
-                "featured": true
-            },
-            {
-                "slug": "three-days-as-a-couple",
-                "duration": "3 Days",
-                "title": "3 Days as a Couple",
-                "description": "A short, quiet trip built around slow mornings and one good view. Less itinerary, more mood.",
-                "highlights": [
-                    "Gregory Lake at First Light",
-                    "Pedro Tea Estate"
-                ],
-                "alt": "Couple silhouetted together at sunset"
-            },
-            {
-                "slug": "the-long-weekend",
-                "duration": "2 Days",
-                "title": "The Long Weekend",
-                "description": "For when you can only get away for two days but still want it to feel like a proper trip, not a rushed detour.",
-                "highlights": [
-                    "Horton Plains & World's End",
-                    "Gregory Lake at First Light"
-                ],
-                "alt": "Aerial view of rolling green hills under a cloudy sky"
-            }
-        ]
+        "duration": "{count, plural, one {# Day} other {# Days}}",
+        "experiencesCount": "{count, plural, one {# experience} other {# experiences}}"
     },
     "seasonalGuide": {
         "eyebrow": "When to Visit",
@@ -684,6 +648,16 @@
             "guides": "Read the guides"
         }
     },
+    "guideMeta": {
+        "readTime": "{minutes} min read",
+        "category": {
+            "getting-there": "Getting There",
+            "practical-info": "Practical Info",
+            "before-you-go": "Before You Go",
+            "planning": "Planning",
+            "local-advice": "Local Advice"
+        }
+    },
     "guideDetail": {
         "backToGuides": "Back to Guides",
         "breadcrumb": "Breadcrumb",
@@ -853,6 +827,7 @@
             "experiences": "Experiences included"
         },
         "daysValue": "{count, plural, one {# day} other {# days}}",
+        "durationValue": "{count, plural, one {# Day} other {# Days}}",
         "experiencesValue": "{count, plural, one {# experience} other {# experiences}}",
         "about": {
             "eyebrow": "Overview",

@@ -3,15 +3,22 @@ import { useTranslations } from "next-intl";
 import GuideCard from "@/components/guides/GuideCard";
 import { ButtonLink } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
-import { GUIDES, type Guide } from "@/lib/data/guides";
+import type { Guide } from "@/lib/content/types";
 
-export default function GuideDetail({ guide }: { guide: Guide }) {
+export default function GuideDetail({
+    guide,
+    guides,
+}: {
+    guide: Guide;
+    guides: Guide[];
+}) {
     const t = useTranslations("guideDetail");
+    const tMeta = useTranslations("guideMeta");
 
     const [lead, ...paragraphs] = guide.body.split("\n\n");
 
     /* Keep reading: same category first, then data order. */
-    const related = GUIDES.filter((g) => g.slug !== guide.slug)
+    const related = guides.filter((g) => g.slug !== guide.slug)
         .map((g) => ({ g, sameCategory: g.category === guide.category ? 1 : 0 }))
         .sort((a, b) => b.sameCategory - a.sameCategory)
         .slice(0, 2)
@@ -74,7 +81,7 @@ export default function GuideDetail({ guide }: { guide: Guide }) {
                                 </span>
                                 <span className="inline-flex items-center gap-1.5 font-sans text-label-md text-surface">
                                     <Clock className="size-4" aria-hidden="true" />
-                                    {guide.readTime}
+                                    {tMeta("readTime", { minutes: guide.readMinutes })}
                                 </span>
                             </div>
 

@@ -2,7 +2,7 @@ import { ArrowRight, Clock, Footprints, MapPin, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
 import AddToTripButton from "@/components/experiences/AddToTripButton";
 import { Link } from "@/i18n/navigation";
-import type { Experience } from "@/lib/data/experiences";
+import type { Experience } from "@/lib/content/types";
 
 const formatMetres = (m: number) => m.toLocaleString("en-US");
 

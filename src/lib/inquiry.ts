@@ -57,7 +57,7 @@ export type ValidationResult =
     | { ok: false; errors: InquiryErrors };
 
 /* Control characters (except tab and line breaks) have no place in text. */
-// eslint-disable-next-line no-control-regex
+
 const CONTROL = /[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g;
 
 const text = (value: unknown) =>
