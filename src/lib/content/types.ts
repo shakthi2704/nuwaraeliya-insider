@@ -1,7 +1,7 @@
 
 // Shared content types and fixed vocabularies. These stay in code whatever
-// the content source is (today the static files in src/lib/data, later
-// Sanity). Display labels for categories and effort live in messages/*.json
+// the content source (today Sanity, read through @/lib/content). Display
+// labels for categories and effort live in messages/*.json
 // (`categories.*`, `effort.*`).
 
 /** The 8 canonical categories from EXPERIENCE_SYSTEM.md. */
