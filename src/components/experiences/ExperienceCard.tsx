@@ -1,4 +1,5 @@
 import { ArrowRight, Clock, Footprints, MapPin, Users } from "lucide-react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import AddToTripButton from "@/components/experiences/AddToTripButton";
 import { Link } from "@/i18n/navigation";
@@ -30,14 +31,13 @@ export default function ExperienceCard({
         <article className="group relative flex flex-col overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:ring-2 hover:ring-tertiary-container hover:shadow-float has-[.card-link:focus-visible]:outline-2 has-[.card-link:focus-visible]:outline-offset-2 has-[.card-link:focus-visible]:outline-secondary">
             {/* Photo, category chip, elevation */}
             <div className="relative aspect-4/3 w-full overflow-hidden bg-surface-container">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                     src={experience.image}
                     alt={experience.alt}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-
 
                 <span className="absolute left-4 top-4 rounded-full bg-surface-container-lowest/90 px-2.5 py-1 font-sans text-caption font-semibold uppercase tracking-wider text-primary backdrop-blur-sm">
                     {tCategory(experience.categories[0])}

@@ -1,4 +1,5 @@
 import { ArrowRight, Clock } from "lucide-react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Guide } from "@/lib/content/types";
@@ -20,12 +21,12 @@ export default function GuideCard({
         <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl bg-surface-container-lowest shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-float has-[.card-link:focus-visible]:outline-2 has-[.card-link:focus-visible]:outline-offset-2 has-[.card-link:focus-visible]:outline-secondary">
             {/* Photo, category chip, read time */}
             <div className="relative h-56 w-full shrink-0 overflow-hidden bg-surface-container">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                     src={guide.image}
                     alt={guide.alt}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <span className="absolute left-3 top-3 rounded bg-surface-container-lowest/90 px-2.5 py-1 font-sans text-caption font-semibold text-primary backdrop-blur">
                     {tMeta(`category.${guide.category}`)}

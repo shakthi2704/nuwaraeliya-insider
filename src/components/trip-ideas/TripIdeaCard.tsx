@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ButtonLink } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
@@ -21,13 +22,12 @@ export default function TripIdeaCard({ idea }: { idea: TripIdea }) {
         <article className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-primary/10 bg-surface-container-lowest shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-float has-[.card-link:focus-visible]:outline-2 has-[.card-link:focus-visible]:outline-offset-2 has-[.card-link:focus-visible]:outline-secondary">
             {/* Photo */}
             <div className="relative h-60 w-full shrink-0 overflow-hidden">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                     src={idea.image}
                     alt={idea.alt}
-                    loading="lazy"
-                    decoding="async"
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    fill
+                    sizes="(min-width: 1024px) 33vw, 100vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 {idea.featured ? (
                     <span className="absolute left-4 top-4 rounded-full bg-tertiary-fixed px-3 py-1 font-sans text-caption font-semibold uppercase tracking-wider text-on-tertiary-fixed">

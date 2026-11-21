@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Guide } from "@/lib/content/types";
@@ -56,12 +57,12 @@ export default function LatestGuides({ guides }: { guides: Guide[] }) {
                         >
                             {/* Photo + category badge */}
                             <div className="relative h-56 w-full overflow-hidden rounded-lg bg-surface-container">
-                                {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img
+                                <Image
                                     src={guide.image}
                                     alt={guide.alt}
-                                    loading="lazy"
-                                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    fill
+                                    sizes="(min-width: 768px) 33vw, 100vw"
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
 
                                 <span className="absolute left-3 top-3 rounded bg-surface-container-lowest/90 px-2.5 py-1 font-sans text-label-md text-on-surface backdrop-blur">
